@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>DBConnection</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@DivisionID">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>select ID, SubDivision
+from
+(
+	select 0 ID, 'All' SubDivision
+	UNION
+	select ID, Name SubDivision
+	from CO_SubDivision
+	where (DivisionID = @DivisionID or @DivisionID = 0)
+) as records
+order by case when ID = 0 then 1 else 2 end, SubDivision</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="ID">
+        <DataField>ID</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="SubDivision">
+        <DataField>SubDivision</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

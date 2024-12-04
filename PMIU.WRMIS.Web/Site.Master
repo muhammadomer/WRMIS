@@ -1,0 +1,669 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="PMIU.WRMIS.Web.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>WRMIS - Water Resources Management Information System</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!--base css styles-->
+    <link href="/Content/DefaultStyle.css" rel="stylesheet" type="text/css" />
+    <%--<link href="/Content/pager.css"  rel="stylesheet" type="text/css" />--%>
+
+    <link rel="stylesheet" href="/Design/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Design/assets/font-awesome/css/font-awesome.min.css">
+
+    <!--page specific css styles-->
+    <link rel="stylesheet" type="text/css" href="/Design/assets/bootstrap-datepicker/css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="/Design/assets/bootstrap-timepicker/css/bootstrap-timepicker.min.css" />
+    <!--flaty css styles-->
+    <link rel="stylesheet" href="/Design/css/flaty.css?v=0">
+    <link rel="stylesheet" href="/Design/css/flaty-responsive.css">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="/Design/img/favicon.ico" />
+    <%--<link rel="icon"            type="image/ico"    href="/Design/img/favicon.ico" runat="server" />--%>
+    <%--<link rel="shortcut icon" href="/Design/img/favicon.html">--%>
+
+    <!-- Css Style for Add User Screen -->
+    <%--<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.19/themes/cupertino/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet" />--%>
+    <link href="/Design/css/jquery-ui.css" rel="stylesheet" />
+
+    <link href="/Design/css/custom.css?v=1.7" rel="stylesheet" />
+
+    <%--These local files have been used due to internet problem--%>
+    <%-- Original files have been restored 01-06-2016 --%>
+    <%--START--%>
+    <%--<script src="/Design/assets/jquery/jquery-2.1.1.min.js"></script>
+    <script src="/Design/assets/jquery-ui/jquery-ui.min.js"></script>--%>
+    <script type="text/ecmascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.min.css">
+    <script src="/Scripts/jquery.mcautocomplete.js"></script>
+    <%--END--%>
+</head>
+<body>
+
+
+
+
+    <!-- BEGIN Theme Setting -->
+    <form id="frm" runat="server">
+        <%--<%PMIU.WRMIS.Logging.LogMessage.LogMessageNow(2, "Site Master Load ASPX - IIS Session: " + Environment.MachineName.ToString());%>--%>
+        <%--<asp:scriptmanager runat="server"></asp:scriptmanager>--%>
+        <div runat="server" id="dvMessage"></div>
+        <div runat="server" id="dvLoading" class="Loading">Loading ...</div>
+        <div runat="server" id="dvSwitchUser" style="display: none;" class="Loading">You are working on behalf of another user!</div>
+
+        <asp:ScriptManager ID="ScriptManagerMaster" runat="server" EnablePartialRendering="true">
+        </asp:ScriptManager>
+
+        <asp:UpdatePanel ID="UpdatePanelMaster" runat="server" UpdateMode="Conditional">
+            <ContentTemplate>
+                <asp:Label ID="lblMsgs" runat="server" ClientIDMode="Static"></asp:Label>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+
+        <script type="text/javascript">
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(
+                function () {
+                    if ($("#lblMsgs") != null)
+                        setTimeout(function () { $("#lblMsgs").hide(); }, 5000);                   
+                }
+            );
+
+            function stopEnterKey(evt) {
+                var evt = (evt) ? evt : ((event) ? event : null);
+                var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+                if ((evt.keyCode == 13) && (node.type == "text")) { return false; }
+            }
+
+            document.onkeypress = stopEnterKey;
+
+        </script>
+
+        <div id="theme-setting" style="visibility: hidden;">
+            <a href="#"><i class="fa fa-gears fa fa-2x"></i></a>
+            <ul>
+                <li>
+                    <span>Skin</span>
+                    <ul class="colors" data-target="body" data-prefix="skin-">
+                        <li class="active"><a class="blue" href="#"></a></li>
+                        <li><a class="red" href="#"></a></li>
+                        <li><a class="green" href="#"></a></li>
+                        <li><a class="orange" href="#"></a></li>
+                        <li><a class="yellow" href="#"></a></li>
+                        <li><a class="pink" href="#"></a></li>
+                        <li><a class="magenta" href="#"></a></li>
+                        <li><a class="gray" href="#"></a></li>
+                        <li><a class="black" href="#"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>Header</span>
+                    <ul class="colors" data-target="#navbar" data-prefix="navbar-">
+                        <li class="active"><a class="blue" href="#"></a></li>
+                        <li><a class="red" href="#"></a></li>
+                        <li><a class="green" href="#"></a></li>
+                        <li><a class="orange" href="#"></a></li>
+                        <li><a class="yellow" href="#"></a></li>
+                        <li><a class="pink" href="#"></a></li>
+                        <li><a class="magenta" href="#"></a></li>
+                        <li><a class="gray" href="#"></a></li>
+                        <li><a class="black" href="#"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>Sidebar</span>
+                    <ul class="colors" data-target="#main-container" data-prefix="sidebar-">
+                        <li class="active"><a class="blue" href="#"></a></li>
+                        <li><a class="red" href="#"></a></li>
+                        <li><a class="green" href="#"></a></li>
+                        <li><a class="orange" href="#"></a></li>
+                        <li><a class="yellow" href="#"></a></li>
+                        <li><a class="pink" href="#"></a></li>
+                        <li><a class="magenta" href="#"></a></li>
+                        <li><a class="gray" href="#"></a></li>
+                        <li><a class="black" href="#"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span></span>
+                    <a data-target="navbar" href="#"><i class="fa fa-square-o"></i>Fixed Header</a>
+                    <a class="hidden-inline-xs" data-target="sidebar" href="#"><i class="fa fa-square-o"></i>Fixed Sidebar</a>
+                </li>
+            </ul>
+        </div>
+        <!-- END Theme Setting -->
+
+        <!-- BEGIN Navbar -->
+        <div id="navbar" class="navbar">
+            <button type="button" class="navbar-toggle navbar-btn collapsed" data-toggle="collapse" data-target="#sidebar">
+                <span class="fa fa-bars"></span>
+            </button>
+            <a class="navbar-brand" href="/Default.aspx">
+                <img src="/Design/img/logo.png" height="31px" width="400px" />
+            </a>
+
+            <!-- BEGIN Navbar Buttons -->
+            <ul class="nav flaty-nav pull-right" style="display: block; height: 50px;">
+
+                <!-- BEGIN Button Notifications -->
+                <li class="hidden-xs">
+                    <a id="NotiCount" data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <i class="fa fa-bell"></i>
+                        <span id="badge" class="badge badge-important">
+                            <asp:Label ID="lblCounter" runat="server"></asp:Label>
+                        </span>
+                        <%-- <span class="badge badge-important">5</span>--%>
+                    </a>
+
+                    <!-- BEGIN Notifications Dropdown -->
+                    <ul class="dropdown-navbar dropdown-menu test" id="AlertNotification" runat="server" style="overflow-y: auto; overflow-x: hidden; max-height: 500px; min-height: 0px; width: 350px">
+                        <li class="nav-header">
+                            <i class="fa fa-"><a style="font-family: Open Sans; color: #ffffff; font-size: 12px" href="/Modules/UsersAdministration/AllNotifications.aspx">All Notifications</a></i>
+
+                            <%--                            <asp:Label ID="lblNotification" runat="server"> </asp:Label>--%>
+                            Notifications
+                        </li>
+                        <%-- <li class="more">
+                            <a href="Modules/UsersAdministration/AllNotifications.aspx">See all notifications</a>
+                        </li>--%>
+                    </ul>
+                    <!-- END Notifications Dropdown -->
+                </li>
+                <!-- END Button Notifications -->
+
+                <!-- BEGIN Button User -->
+                <li class="user-profile">
+                    <a data-toggle="dropdown" href="#" class="user-menu dropdown-toggle">
+                        <%--<img class="nav-user-photo" src="/Design/img/demo/avatar/male_avatar.png" alt="" />--%>
+                        <span id="user_info" runat="server">Zohaib Shahid
+                        </span>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+
+                    <!-- BEGIN User Dropdown -->
+                    <ul class="dropdown-menu dropdown-navbar" id="user_menu">
+                        <%
+                            PMIU.WRMIS.BLL.UserAdministration.UserAdministrationBLL bllUserAdmin = new PMIU.WRMIS.BLL.UserAdministration.UserAdministrationBLL();
+
+                            if (Session[PMIU.WRMIS.Common.SessionValues.OriginalUserID] != null && Session[PMIU.WRMIS.Common.SessionValues.IsSwitchUser] != null)
+                            {
+                                long OriginalUserID = Convert.ToInt32(Session[PMIU.WRMIS.Common.SessionValues.OriginalUserID]);
+                                string sRevertSwitchUser = bllUserAdmin.RevertSwitchUser(OriginalUserID);
+                                Response.Write(sRevertSwitchUser);
+                            }
+                        %>
+
+                        <%
+                            
+                            long UserID = Convert.ToInt32(Session[PMIU.WRMIS.Common.SessionValues.UserID]);
+                            string sSwitchUsers = bllUserAdmin.GetSwitchUsers(UserID, DateTime.Now);
+                            Response.Write(sSwitchUsers);
+                            
+                        %>
+
+                        <%--<li>
+                            <asp:LinkButton ID="lnkSwitchUser11" runat="server" data-id='2' Text='Log In as Admin'  OnClick="btnSwitchUser_Click" /> 
+                        </li>--%>
+
+
+
+
+                        <li>
+                            <a href="/Modules/UsersAdministration/UserNotificationPreferences.aspx">My Preferences 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Modules/UsersAdministration/DownloadUserManual.aspx">User Manuals
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Modules/UsersAdministration/ChangePassword.aspx">Change Password 
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <asp:LinkButton ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" />
+                            <%--<a href="/Login.aspx">Logout
+                            </a>--%>
+                        </li>
+
+                    </ul>
+                    <!-- BEGIN User Dropdown -->
+                </li>
+                <!-- END Button User -->
+            </ul>
+
+
+            <!-- END Navbar Buttons -->
+        </div>
+        <!-- END Navbar -->
+
+        <!-- BEGIN Container -->
+        <div class="container" id="main-container">
+            <!-- BEGIN Sidebar -->
+            <div id="sidebar" class="navbar-collapse collapse">
+                <!-- BEGIN Navlist -->
+                <ul id="navlist" runat="server" class="nav nav-list">
+
+                    <li>
+                        <a href="index-2.html">
+                            <i class="fa fa-dashboard"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="dropdown-toggle">
+                            <i class="fa fa-gears"></i>
+                            <span>Irrigation Network</span>
+                            <b class="arrow fa fa-angle-right"></b>
+                        </a>
+
+                        <!-- BEGIN Submenu -->
+                        <ul class="submenu">
+                            <li><a href="/Modules/IrrigationNetwork/Channel/ChannelSearch.aspx">Channel Data</a></li>
+                            <li><a href="/Modules/IrrigationNetwork/ReferenceData/DivisionDistrictRelation.aspx">Division District Relation</a></li>
+                            <li><a href="#">Irrigation Boundaries</a></li>
+                            <li class="active"><span>Reference Data</span>
+                                <ul>
+                                    <li><a href="/Modules/IrrigationNetwork/ReferenceData/Zone.aspx">Zone</a></li>
+                                    <li><a href="/Modules/IrrigationNetwork/ReferenceData/Circle.aspx">Circle</a></li>
+                                    <li><a href="/Modules/IrrigationNetwork/ReferenceData/Division.aspx">Division</a></li>
+                                    <li><a href="/Modules/IrrigationNetwork/ReferenceData/SubDivision.aspx">Sub Division</a></li>
+                                    <li><a href="/Modules/IrrigationNetwork/ReferenceData/Section.aspx">Section</a></li>
+                                    <li><a href="/Modules/IrrigationNetwork/ReferenceData/District.aspx">District</a></li>
+                                    <li><a href="/Modules/IrrigationNetwork/ReferenceData/Tehsil.aspx">Tehsil</a></li>
+                                    <li><a href="/Modules/IrrigationNetwork/ReferenceData/PoliceStation.aspx">Police Station</a></li>
+                                    <li><a href="/Modules/IrrigationNetwork/ReferenceData/Village.aspx">Village</a></li>
+                                    <li><a href="/Modules/IrrigationNetwork/ReferenceData/GaugeType.aspx">Gauge Type</a></li>
+                                    <li><a href="/Modules/IrrigationNetwork/ReferenceData/OutletType.aspx">Outlet Type</a></li>
+                                    <li><a href="/Modules/IrrigationNetwork/ReferenceData/Province.aspx">Province</a></li>
+                                    <li><a href="/Modules/IrrigationNetwork/ReferenceData/Structure.aspx">Structure</a></li>
+                                    <li><a href="/Modules/IrrigationNetwork/ReferenceData/StructureData.aspx">Structure Data</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- END Submenu -->
+                    </li>
+
+                    <li>
+                        <a href="#" class="dropdown-toggle">
+                            <i class="fa fa-bar-chart-o"></i>
+                            <span id="DailyData">Daily Data</span>
+                            <b class="arrow fa fa-angle-right"></b>
+                        </a>
+
+                        <!-- BEGIN Submenu -->
+                        <ul class="submenu">
+                            <li><a href="#">Gauge Slip</a></li>
+                            <li><a href="/Modules/DailyData/OperationalData.aspx">Operational Data</a></li>
+                            <li><a href="#">Divisional Daily Data</a></li>
+                            <li><a href="#">Hourly Discharge Data</a></li>
+                            <li><a href="/Modules/DailyData/AddBarrageDataFrequency.aspx">Data Frequency for Barrages</a></li>
+                            <li><a href="/Modules/DailyData/AddOutletPerformanceData.aspx">Outlet Performance Data</a></li>
+                            <li><a href="/Modules/DailyData/SearchForPlacingIndents.aspx">Placing Indents</a></li>
+                            <li><a href="/Modules/DailyData/ReferenceData/ReasonForChange.aspx">Reason For Change</a></li>
+                        </ul>
+                        <!-- END Submenu -->
+                    </li>
+
+                    <li>
+                        <a href="#" class="dropdown-toggle">
+                            <i class="fa fa-bar-chart-o"></i>
+                            <span>User Administration</span>
+                            <b class="arrow fa fa-angle-right"></b>
+                        </a>
+
+                        <!-- BEGIN Submenu -->
+                        <ul class="submenu">
+                            <li><a href="/Modules/UsersAdministration/SearchUser.aspx">Users</a></li>
+                            <li><a href="/Modules/UsersAdministration/Designation.aspx">Designations</a></li>
+                            <li><a href="/Modules/UsersAdministration/Offices.aspx">Organizations</a></li>
+                            <li><a href="/Modules/UsersAdministration/Roles.aspx">Roles</a></li>
+                            <li><a href="/Modules/UsersAdministration/RoleRights.aspx">Role Rights</a></li>
+                            <li><a href="/Modules/UsersAdministration/SearchTempAssignment.aspx">Temporary Assignments</a></li>
+                            <li><a href="/Modules/UsersAdministration/NotificationsLimit.aspx">Notifications Limit</a></li>
+                            <li><a href="/Modules/UsersAdministration/AlertConfiguration.aspx">Alert Configuration</a></li>
+                        </ul>
+                        <!-- END Submenu -->
+                    </li>
+
+                    <li>
+                        <a href="#" class="dropdown-toggle">
+                            <i class="fa fa-bar-chart-o"></i>
+                            <span>User Administration</span>
+                            <b class="arrow fa fa-angle-right"></b>
+                        </a>
+
+                        <!-- BEGIN Submenu -->
+                        <ul class="submenu">
+                            <li><a href="/Modules/UsersAdministration/SearchUser.aspx">Users</a></li>
+                            <li><a href="/Modules/UsersAdministration/Designation.aspx">Designations</a></li>
+                            <li><a href="/Modules/UsersAdministration/Offices.aspx">Organizations</a></li>
+                            <li><a href="/Modules/UsersAdministration/Roles.aspx">Roles</a></li>
+                            <li><a href="/Modules/UsersAdministration/RoleRights.aspx">Role Rights</a></li>
+                            <li><a href="/Modules/UsersAdministration/SearchTempAssignment.aspx">Temporary Assignments</a></li>
+                            <li><a href="/Modules/UsersAdministration/NotificationsLimit.aspx">Notifications Limit</a></li>
+                            <li><a href="/Modules/UsersAdministration/AlertConfiguration.aspx">Alert Configuration</a></li>
+                        </ul>
+                        <!-- END Submenu -->
+                    </li>
+
+                </ul>
+                <!-- END Navlist -->
+
+                <!-- BEGIN Sidebar Collapse Button -->
+                <div id="sidebar-collapse" class="visible-lg">
+                    <i class="fa fa-angle-double-left"></i>
+                </div>
+                <!-- END Sidebar Collapse Button -->
+            </div>
+            <!-- END Sidebar -->
+
+            <!-- BEGIN Content -->
+            <div id="main-content">
+                <!-- BEGIN Page Title -->
+                <div id="dvPageTitle" runat="server" class="page-title">
+                    <div>
+                        <h1 id="ModuleTitle"><%--<i class="fa fa-file-o"></i>--%>
+                            <asp:Literal ID="ltlModuleTitle" runat="server">Irrigation Network</asp:Literal></h1>
+                    </div>
+                </div>
+                <!-- END Page Title -->
+                <!-- BEGIN Main Content -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Content Area Starts here -->
+                        <div class="body-content">
+                            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <asp:HiddenField ID="hdnUserID" runat="server" Value="0" />
+                        <asp:HiddenField ID="hdnUserDesignationID" runat="server" Value="0" />
+                        <asp:HiddenField ID="hdnUserRoleID" runat="server" Value="0" />
+                        <asp:HiddenField ID="hdnDateFormat" runat="server" Value="dd-MMM-yyyy" />
+                        <!--07:30 AM // 12 hour clock // hour is always 2 digits-->
+                        <asp:HiddenField ID="hdnTimeFormat" runat="server" Value="hh:mm tt" />
+                        <asp:HiddenField ID="hdnTimeInterval" runat="server" Value="0" />
+                        <!-- Content Area End here -->
+                    </div>
+                </div>
+                <!-- END Main Content -->
+
+                <footer>
+                    <p>&copy; <%: 2018 %> - WRMIS Portal. Designed and Developed by NESPAK</p>
+                </footer>
+
+                <a id="btn-scrollup" class="btn btn-circle btn-lg" href="#"><i class="fa fa-chevron-up"></i></a>
+            </div>
+            <!-- END Content -->
+        </div>
+        <!-- END Container -->
+
+
+        <!--basic scripts-->
+
+        <script>window.jQuery || document.write('<script src="/Design/assets/jquery/jquery-2.1.1.min.js"><\/script>')</script>
+        <script src="/Design/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/Design/assets/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="/Design/assets/jquery-cookie/jquery.cookie.js"></script>
+
+        <!--page specific plugin scripts-->
+        <script type="text/javascript" src="/Design/assets/bootstrap-datepicker/js/bootstrap-datepicker.js?1"></script>
+        <script type="text/javascript" src="/Design/assets/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+
+        <script src="/Scripts/IrrigationNetwork/InputValidations.js"></script>
+        <!--flaty scripts-->
+        <script src="/Design/js/flaty.js"></script>
+        <script src="/Design/js/custom.js"></script>
+        <script src="/Scripts/jquery.numeric.js"></script>
+        <%--<script src="/Scripts/jquery.walidate.js"></script>--%>
+        <%-- Scripts for Add User Screen --%>
+
+        <%--        <script src="/Scripts/jquery.mcautocomplete.js"></script>--%>
+        <script type="text/javascript">
+            var userID, userDesignationID, userRoleID = "0";
+            var dateFormat, timeFormat = "";
+            var timeInterval;
+            $(document).ready(function () {
+                $("#dvLoading").hide();
+
+                $('#lblCounter').text(' ');
+                userID = $('#<%= hdnUserID.ClientID %>').val();
+                userDesignationID = $('#<%= hdnUserDesignationID.ClientID %>').val();
+                userRoleID = $('#<%= hdnUserRoleID.ClientID %>').val();
+                dateFormat = $('#<%= hdnDateFormat.ClientID %>').val();
+                timeFormat = $('#<%= hdnTimeFormat.ClientID %>').val();
+
+                timeInterval = $('#<%= hdnTimeInterval.ClientID %>').val();
+
+                InitilizeNumericValidation();
+                InitilizeDate();
+                AddInputTextboxAttributes();
+
+                $("#AlertNotification").on("click", ".test", function (event) {
+                    var rowid = this.id;
+                    $.ajax({
+                        dataType: "json",
+                        contentType: "application/json; charset=utf-8",
+                        type: 'GET',
+                        data: { "rowid": rowid },
+                        url: '<%= ResolveUrl("Modules/UsersAdministration/AllNotifications.aspx/ConvertToAsRead") %>',
+                        success: function (data) {
+                            // alert(data);
+                        },
+                        error: function (xhr, err) {
+                            $('#ajaxResponse').html(xhr.responseText);
+                        }
+                    });
+                });
+
+            });
+
+            function InitilizeNumericValidation() {
+                //Numeric values only allowed (With Decimal Point)
+                $(".decimalInput").numeric({ decimal: ".", negative: false, scale: 3, decimalPlaces: 3 });
+                //Numeric values only allowed (Without Decimal Point)
+                $(".integerInput").numeric({ decimal: false, negative: false });
+                //For Mobile No Input
+                $(".phoneNoInput").numeric({ decimal: false, negative: false });
+                //Numeric values only allowed (With Decimal Point both positive and negative)
+                $(".decimalIntegerInput").numeric({ decimal: ".", scale: 3, decimalPlaces: 3 });
+                $(".NegativeintegerInput").numeric({ decimal: false, negative: true });
+                $(".NegativedecimalInput").numeric({ decimal: ".", negative: true, scale: 3, decimalPlaces: 3 });
+                //Numeric values only allowed (With 2 Decimal Points)
+                $(".decimal2PInput").numeric({ decimal: ".", negative: false, decimalPlaces: 2 });
+            }
+            function InitilizeDate() {
+                var currentDate = new Date(GetParsedDate(GetCurrentDate(), "dd-MM-yyyy"));
+                var previousDate = currentDate;
+
+                $(".currentDate").val(GetFormatedDate((currentDate)));
+                $(".previousDate").val(GetFormatedDate(previousDate.addDays(-1)));
+            }
+            //Disabled today and Past Dates in Picker
+            function InitilizeTodayPastDatePickerOnUpdatePanelRefresh() {
+                if (jQuery().datepicker) {
+                    $('.disabled-todayPast-date-picker').datepicker({
+                        startDate: '+1d',
+                        autoclose: true,
+                        todayHighlight: true,
+                        language: 'ru'
+                    });
+                }
+            }
+            function InitilizeDatePickerOnUpdatePanelRefresh() {
+                if (jQuery().datepicker) {
+                    $('.disabled-future-date-picker').datepicker({
+                        endDate: 'today',
+                        autoclose: true,
+                        todayHighlight: true,
+                        language: 'ru'
+                    });
+                }
+            }
+            function ClearDateField() {
+                $(".clear").click(function () {
+                    var parent = $(this).parent();
+                    var clear = parent.find('.date-picker');
+
+                    if (clear.length < 1)
+                        clear = parent.find('.disabled-future-date-picker');
+
+                    clear.datepicker('setDate', null);
+                    var input = parent.find(':input');
+                    input.val('');
+                })
+            }
+            function InitilizeDatePickerStateOnUpdatePanelRefresh() {
+                if (jQuery().datepicker) {
+                    $('.date-picker').datepicker({
+                        autoclose: true,
+                        todayHighlight: true,
+                        language: 'ru'
+                    });
+                }
+            }
+            //Disabled Past Dates in Picker
+            function InitilizePastDatePickerOnUpdatePanelRefresh() {
+                if (jQuery().datepicker) {
+                    $('.disabled-Past-date-picker').datepicker({
+                        startDate: 'd',
+                        autoclose: true,
+                        todayHighlight: true,
+                        language: 'ru'
+                    });
+                }
+            }
+
+
+            //////////////// Time Picker Initialize //////////////
+            function InitilizeTimePickerOnUpdatePanelRefresh() {
+                if (jQuery().timepicker) {
+                    $('.timepicker-default').timepicker({
+                        minuteStep: 1
+                        //showInputs: false,
+                        //disableFocus: true
+                    });
+
+                    $('.timepicker-24').timepicker({
+                        minuteStep: 1,
+                        showSeconds: true,
+                        showMeridian: false
+                    });
+                }
+            }
+            //////////////////////////////////////////////////////
+
+
+            function AddInputTextboxAttributes() {
+                $(".commentsMaxLengthRow").attr("MaxLength", "250").attr("Rows", "5");
+                $(".commentsLength").attr("MaxLength", "250").attr("MinLength", "3");
+                $(".RDMaxLength").attr("Maxlength", "3");
+                $(".IMISCodeLength").attr("Maxlength", "17");
+            }
+
+            function SetDatePickerRange(fromDateID, toDateID) {
+                $('#' + fromDateID).datepicker().on('changeDate', function (selected) {
+                    var minDate = new Date($(this).val());
+                    $('#' + toDateID).datepicker('setStartDate', minDate);
+                });
+
+                $('#' + toDateID).datepicker()
+                    .on('changeDate', function (selected) {
+                        var minDate = new Date($(this).val());
+                        $('#' + fromDateID).datepicker('setEndDate', minDate);
+                    });
+            }
+
+            $("#NotiCount").click(function () {
+                $('#lblCounter').text(' ');
+                $('#badge').hide();
+                // Call method
+                $.ajax({
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    type: 'POST',
+                    data: [],
+                    url: '<%= ResolveUrl("~/Modules/UsersAdministration/AllNotifications.aspx/OnSubmit") %>',
+                    success: function (data) {
+                        // alert(data);
+                    },
+                    error: function (xhr, err) {
+                        $('#ajaxResponse').html(xhr.responseText);
+                    }
+                });
+
+            });
+
+            (function worker() {
+                $.ajax({
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    type: 'POST',
+                    data: "",
+                    url: '<%= ResolveUrl("Modules/UsersAdministration/AllNotifications.aspx/GetAlertsCounts") %>',
+                    success: function (data) {
+                        if (data.d != 0) {
+                            $('#lblCounter').text(data.d);
+                            $('#badge').show();
+
+                        }
+                        else {
+                            $('#badge').hide();
+                        }
+                    },
+                    complete: function () {
+                        // Schedule the next request when the current one's complete
+                        setTimeout(worker, timeInterval);
+                    }
+                });
+            })();
+
+
+            (function Notifications() {
+                var list = "";
+                //$('#AlertNotification li').not('li:first').remove();
+                $.ajax({
+                    type: "POST",
+                    url: '<%= ResolveUrl("Modules/UsersAdministration/AllNotifications.aspx/GetAlertsNotification") %>',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    data: {},
+                    success: function (data) {                        
+                        // list += "<li class=more> <a href=/Modules/UsersAdministration/AllNotifications.aspx>See all notifications</a></li>";
+                        $.each(data.d, function (key, val) {
+                            //alert($('#AlertNotification li[ID="' + val.ID + '"]'));
+                            if ($('#AlertNotification li[ID="' + val.ID + '"]').length > 0) {
+                                //alert('If ' + val.ID);
+                            }
+                            else {
+                                //alert('else ' + val.ID);
+                                list += "<li class='notify test' ID=" + val.ID + "><a href=" + val.AlertURL + "><p>" + val.AlertText + "</p></a></li>";
+                            }
+                        });
+
+                        $("#AlertNotification").prepend(list);
+                    },
+                    complete: function () {
+                        // Schedule the next request when the current one's complete
+                        setTimeout(Notifications, timeInterval);
+                    }
+                });
+            })();
+        </script>
+    </form>
+</body>
+</html>

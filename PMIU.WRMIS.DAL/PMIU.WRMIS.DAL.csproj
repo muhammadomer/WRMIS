@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5E35AA1-EE88-426D-A248-13B718DD14A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PMIU.WRMIS.DAL</RootNamespace>
+    <AssemblyName>PMIU.WRMIS.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data">
+      <HintPath>..\ExternalLib\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\WRMIS\NESPAKSVN\Development\Sourcecode\PMIU.WRMIS\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseDAL.cs" />
+    <Compile Include="ContextDB.cs" />
+    <Compile Include="DataAccess\Accounts\AccountsDAL.cs" />
+    <Compile Include="DataAccess\Accounts\ReferenceDataDAL.cs" />
+    <Compile Include="DataAccess\AssetsAndWorks\AssetsWorkDAL.cs" />
+    <Compile Include="DataAccess\Auctions\AuctionDAL.cs" />
+    <Compile Include="DataAccess\ClosureOperations\ClosureOperationsDAL.cs" />
+    <Compile Include="DataAccess\ComplaintsManagement\ComplaintsManagementDAL.cs" />
+    <Compile Include="DataAccess\DailyData\DailyDataDAL.cs" />
+    <Compile Include="DataAccess\DailyData\IndentsDAL.cs" />
+    <Compile Include="DataAccess\DailyData\ReferenceDataDAL.cs" />
+    <Compile Include="DataAccess\EffluentAndWaterCharges\Effluent_WaterChargesDAL.cs" />
+    <Compile Include="DataAccess\EntitlementDelivery\EntitlementDeliveryDAL.cs" />
+    <Compile Include="DataAccess\FloodOperations\DivisionStoreDAL.cs" />
+    <Compile Include="DataAccess\FloodOperations\FloodFightingPlanDAL.cs" />
+    <Compile Include="DataAccess\FloodOperations\FloodInspectionsDAL.cs" />
+    <Compile Include="DataAccess\FloodOperations\FloodOperationsDAL.cs" />
+    <Compile Include="DataAccess\FloodOperations\OnsiteMonitoringDAL.cs" />
+    <Compile Include="DataAccess\FloodOperations\ReferenceData\ItemsDAL.cs" />
+    <Compile Include="DataAccess\IrrigationNetwork\Channel\ChannelDAL.cs" />
+    <Compile Include="DataAccess\IrrigationNetwork\OutletData\OutletDAL.cs" />
+    <Compile Include="DataAccess\IrrigationNetwork\Reach\ReachDAL.cs" />
+    <Compile Include="DataAccess\IrrigationNetwork\ReferenceData\CircleDAL.cs" />
+    <Compile Include="DataAccess\IrrigationNetwork\ReferenceData\ControlledInfrastructureDAL.cs" />
+    <Compile Include="DataAccess\IrrigationNetwork\ReferenceData\DistrictDAL.cs" />
+    <Compile Include="DataAccess\IrrigationNetwork\ReferenceData\DivisionDAL.cs" />
+    <Compile Include="DataAccess\IrrigationNetwork\ReferenceData\DivisionDistrictRelationDAL.cs" />
+    <Compile Include="DataAccess\IrrigationNetwork\ReferenceData\DrainDAL.cs" />
+    <Compile Include="DataAccess\IrrigationNetwork\ReferenceData\GaugeTypeDAL.cs" />
+    <Compile Include="DataAccess\IrrigationNetwork\ReferenceData\InfrastructureDAL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataAccess\IrrigationNetwork\ReferenceData\OutletTypeDAL.cs" />
+    <Compile Include="DataAccess\IrrigationNetwork\ReferenceData\PoliceStationDAL.cs" />
+    <Compile Include="DataAccess\IrrigationNetwork\ReferenceData\ProvinceDAL.cs" />
+    <Compile Include="DataAccess\IrrigationNetwork\ReferenceData\SectionDAL.cs" />
+    <Compile Include="DataAccess\IrrigationNetwork\ReferenceData\StructureDAL.cs" />
+    <Compile Include="DataAccess\IrrigationNetwork\ReferenceData\SubDivisionDAL.cs" />
+    <Compile Include="DataAccess\IrrigationNetwork\ReferenceData\TehsilDAL.cs" />
+    <Compile Include="DataAccess\IrrigationNetwork\ReferenceData\VillageDAL.cs" />
+    <Compile Include="DataAccess\IrrigationNetwork\ReferenceData\ZoneDAL.cs" />
+    <Compile Include="DataAccess\IrrigatorsFeedback\IrrigatorFeedbackDAL.cs" />
+    <Compile Include="DataAccess\LoginDAL.cs" />
+    <Compile Include="DataAccess\Notifications\NotificationsDAL.cs" />
+    <Compile Include="DataAccess\PerformanceEvaluation\PerformanceEvaluationDAL.cs" />
+    <Compile Include="DataAccess\PerformanceEvaluation\ReferenceDataDAL.cs" />
+    <Compile Include="DataAccess\Reports\ReportsDAL.cs" />
+    <Compile Include="DataAccess\RotationalProgram\RotationalProgramDAL.cs" />
+    <Compile Include="DataAccess\ScheduleInspection\ScheduleInspectionDAL.cs" />
+    <Compile Include="DataAccess\SeasonalPlanning\SeasonalPlanningDAL.cs" />
+    <Compile Include="DataAccess\SmallDams\SamllDamsDAL.cs" />
+    <Compile Include="DataAccess\Tenders\TenderManagementDAL.cs" />
+    <Compile Include="DataAccess\UserAdministration\AlertConfigurationDAL.cs" />
+    <Compile Include="DataAccess\UserAdministration\DesignationDAL.cs" />
+    <Compile Include="DataAccess\UserAdministration\NotificationsLimitDAL.cs" />
+    <Compile Include="DataAccess\UserAdministration\OfficeDAL.cs" />
+    <Compile Include="DataAccess\UserAdministration\RoleRightsDAL.cs" />
+    <Compile Include="DataAccess\UserAdministration\RolesDAL.cs" />
+    <Compile Include="DataAccess\UserAdministration\UserAdministrationDAL.cs" />
+    <Compile Include="DataAccess\UserAdministration\UserDAL.cs" />
+    <Compile Include="DataAccess\WaterLosses\WaterLossesDAL.cs" />
+    <Compile Include="DataAccess\WaterTheft\WaterTheftDAL.cs" />
+    <Compile Include="IContextDB.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\Accounts\AccountsRepository.cs" />
+    <Compile Include="Repositories\Accounts\ReferenceDataRepository.cs" />
+    <Compile Include="Repositories\AssetsAndWorks\AssetsWorkRepository.cs" />
+    <Compile Include="Repositories\Auctions\AuctionRepository.cs" />
+    <Compile Include="Repositories\ClosureOperations\ClosureOperationsRepository.cs" />
+    <Compile Include="Repositories\ComplaintsManagement\ComplaintsManagementRepository.cs" />
+    <Compile Include="Repositories\DailyData\DailyDataRepository.cs" />
+    <Compile Include="Repositories\DailyData\IndentRepository.cs" />
+    <Compile Include="Repositories\EffluentAndWaterCharges\Effluent_WaterChargesRepositry.cs" />
+    <Compile Include="Repositories\EntitlementDelivery\EntitlementDeliveryRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repositories\FEWS\FEWSRepository.cs" />
+    <Compile Include="Repositories\FloodOperations\DivisionStoreRepository.cs" />
+    <Compile Include="Repositories\FloodOperations\FloodFightingPlanRepository.cs" />
+    <Compile Include="Repositories\FloodOperations\FloodInspectionRepository.cs" />
+    <Compile Include="Repositories\FloodOperations\FloodOperationsRepository.cs" />
+    <Compile Include="Repositories\FloodOperations\OnsiteMonitoringRepository.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\IrrigationNetwork\Channel\ChannelRepository.cs" />
+    <Compile Include="Repositories\IrrigationNetwork\OutletRepository\OutletRepository.cs" />
+    <Compile Include="Repositories\IrrigationNetwork\Reach\ReachRepository.cs" />
+    <Compile Include="Repositories\IrrigationNetwork\ReferenceData\DrainRepository.cs" />
+    <Compile Include="Repositories\IrrigationNetwork\ReferenceData\InfrastructureRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repositories\IrrigatorsFeedback\IrrigatorsFeedbackRepository.cs" />
+    <Compile Include="Repositories\PerformanceEvaluation\PerformanceEvaluationRepository.cs" />
+    <Compile Include="Repositories\PerformanceEvaluation\PE_CategoryWeightageRepository.cs" />
+    <Compile Include="Repositories\PerformanceEvaluation\PE_EvaluationScoresDetailRepository.cs" />
+    <Compile Include="Repositories\PerformanceEvaluation\PE_EvaluationScoresRepository.cs" />
+    <Compile Include="Repositories\PerformanceEvaluation\PE_FieldChannelDataRepository.cs" />
+    <Compile Include="Repositories\PerformanceEvaluation\PE_HeadGaugeDifferenceRepository.cs" />
+    <Compile Include="Repositories\PerformanceEvaluation\PE_PMIUChannelDataRepository.cs" />
+    <Compile Include="Repositories\PerformanceEvaluation\PE_SubCategoryWeightageRepository.cs" />
+    <Compile Include="Repositories\PerformanceEvaluation\PE_TailGaugeDifferenceRepository.cs" />
+    <Compile Include="Repositories\Reports\ReportsRepository.cs" />
+    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Repositories\RepositoryQuery.cs" />
+    <Compile Include="Repositories\IrrigationNetwork\ReferenceData\ZoneRepository.cs" />
+    <Compile Include="Repositories\RotationalProgram\RotationalProgramRepository.cs" />
+    <Compile Include="Repositories\ScheduleInspection\ScheduleInspectionRepository.cs" />
+    <Compile Include="Repositories\SeasonalPlanning\SeasonalPlanningRepository.cs" />
+    <Compile Include="Repositories\SmallDams\SmallDamsRepository.cs" />
+    <Compile Include="Repositories\SYS\SYSLogsRepository.cs" />
+    <Compile Include="Repositories\Tenders\TenderManagementRepository.cs" />
+    <Compile Include="Repositories\UserAdministration\AlertConfigurationRepository.cs" />
+    <Compile Include="Repositories\UserAdministration\DesignationRepository.cs" />
+    <Compile Include="Repositories\UserAdministration\RoleRightsRepository.cs" />
+    <Compile Include="Repositories\UserAdministration\SearchUserRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repositories\UserAdministration\TokenRepository.cs" />
+    <Compile Include="Repositories\UserAdministration\UserAdministrationRepository.cs" />
+    <Compile Include="Repositories\WaterLosses\WaterLossesRepository.cs" />
+    <Compile Include="Repositories\WaterTheft\WaterTheftRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PMIU.WRMIS.AppBlocks\PMIU.WRMIS.AppBlocks.csproj">
+      <Project>{0363f836-264b-4135-a43d-61a64132a031}</Project>
+      <Name>PMIU.WRMIS.AppBlocks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PMIU.WRMIS.Common\PMIU.WRMIS.Common.csproj">
+      <Project>{f531fd6b-f0cf-4aa4-9086-0885713cf3f8}</Project>
+      <Name>PMIU.WRMIS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PMIU.WRMIS.Database\PMIU.WRMIS.Database.csproj">
+      <Project>{21fdfa67-c0a1-419a-8add-5906b8654177}</Project>
+      <Name>PMIU.WRMIS.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PMIU.WRMIS.Exceptions\PMIU.WRMIS.Exceptions.csproj">
+      <Project>{1b087bec-b854-4977-8ff1-a79ec9ac3da1}</Project>
+      <Name>PMIU.WRMIS.Exceptions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PMIU.WRMIS.Model\PMIU.WRMIS.Model.csproj">
+      <Project>{b847cbbc-1c62-433f-bcab-ba644d0d314e}</Project>
+      <Name>PMIU.WRMIS.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

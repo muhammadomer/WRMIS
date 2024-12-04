@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C92380A1-4505-47A2-99D4-4C12230E72E9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PMIU.WRMIS.BLL</RootNamespace>
+    <AssemblyName>PMIU.WRMIS.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts\AccountsBLL.cs" />
+    <Compile Include="Accounts\ReferenceDataBLL.cs" />
+    <Compile Include="AssetsAndWorks\AssetsWorkBLL.cs" />
+    <Compile Include="Auctions\AuctionBLL.cs" />
+    <Compile Include="BaseBLL.cs" />
+    <Compile Include="ClosureOperations\ClosureOperationsBLL.cs" />
+    <Compile Include="ComplaintsManagement\ComplaintsManagementBLL.cs" />
+    <Compile Include="DailyData\DailyDataBLL.cs" />
+    <Compile Include="DailyData\IndentsBLL.cs" />
+    <Compile Include="DailyData\ReferenceDataBLL.cs" />
+    <Compile Include="EffluentAndWaterCharges\Effluent_WaterChargesBLL.cs" />
+    <Compile Include="EntitlementDelivery\EntitlementDeliveryBLL.cs" />
+    <Compile Include="FEWS\FEWSBLL.cs" />
+    <Compile Include="FloodOperations\DivisionStoreBLL.cs" />
+    <Compile Include="FloodOperations\FloodFightingPlanBLL.cs" />
+    <Compile Include="FloodOperations\FloodInspectionsBLL.cs" />
+    <Compile Include="FloodOperations\FloodOperationsBLL.cs" />
+    <Compile Include="FloodOperations\OnsiteMonitoringBLL.cs" />
+    <Compile Include="FloodOperations\ReferenceData\ItemsBLL.cs" />
+    <Compile Include="IrrigationNetwork\Channel\ChannelBLL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IrrigationNetwork\OutletData\IN_OutletBLL.cs" />
+    <Compile Include="IrrigationNetwork\Reach\ReachBLL.cs" />
+    <Compile Include="IrrigationNetwork\ReferenceData\ControlledInfrastructureBLL.cs" />
+    <Compile Include="IrrigationNetwork\ReferenceData\CO_RefrenceDataBLL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IrrigationNetwork\ReferenceData\DivisionDistrictRelationBLL.cs" />
+    <Compile Include="IrrigationNetwork\ReferenceData\GaugeTypeBLL.cs" />
+    <Compile Include="IrrigationNetwork\ReferenceData\DrainBLL.cs" />
+    <Compile Include="IrrigationNetwork\ReferenceData\InfrastructureBLL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IrrigationNetwork\ReferenceData\OutletTypeBLL.cs" />
+    <Compile Include="IrrigationNetwork\ReferenceData\PoliceStationBLL.cs" />
+    <Compile Include="IrrigationNetwork\ReferenceData\CircleBLL.cs" />
+    <Compile Include="IrrigationNetwork\ReferenceData\DivisionBLL.cs" />
+    <Compile Include="IrrigationNetwork\ReferenceData\SectionBLL.cs" />
+    <Compile Include="IrrigationNetwork\ReferenceData\StructureBLL.cs" />
+    <Compile Include="IrrigationNetwork\ReferenceData\SubDivisionBLL.cs" />
+    <Compile Include="IrrigationNetwork\ReferenceData\VillageBLL.cs" />
+    <Compile Include="IrrigationNetwork\ReferenceData\ProvinceBLL.cs" />
+    <Compile Include="IrrigatorsFeedback\IrrigatorFeedbackBLL.cs" />
+    <Compile Include="LoginBLL.cs" />
+    <Compile Include="Notifications\BaseNotifyEvent.cs" />
+    <Compile Include="Notifications\ModuleNotifyEvent\AssetWorksNotifyEvent.cs" />
+    <Compile Include="Notifications\ModuleNotifyEvent\AuctionsNotifyEvent.cs" />
+    <Compile Include="Notifications\ModuleNotifyEvent\ClosureOperationsNotifyEvent.cs" />
+    <Compile Include="Notifications\ModuleNotifyEvent\ComplaintsNotifyEvent.cs" />
+    <Compile Include="Notifications\ModuleNotifyEvent\DailyDataNotifyEvent.cs" />
+    <Compile Include="Notifications\ModuleNotifyEvent\FloodOperationsNotifyEvent.cs" />
+    <Compile Include="Notifications\ModuleNotifyEvent\IrrigationNetworkNotifyEvent.cs" />
+    <Compile Include="Notifications\ModuleNotifyEvent\ScheduleInspectionNotifyEvent.cs" />
+    <Compile Include="Notifications\ModuleNotifyEvent\TenderNotifyEvent.cs" />
+    <Compile Include="Notifications\ModuleNotifyEvent\WaterTheftNotifyEvent.cs" />
+    <Compile Include="Notifications\NotificationsBLL.cs" />
+    <Compile Include="Notifications\NotifyEvent.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="PerformanceEvaluation\PerformanceEvaluationBLL.cs" />
+    <Compile Include="PerformanceEvaluation\ReferenceDataBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IrrigationNetwork\ReferenceData\DistrictBLL.cs" />
+    <Compile Include="IrrigationNetwork\ReferenceData\TehsilBLL.cs" />
+    <Compile Include="IrrigationNetwork\ReferenceData\ZoneBLL.cs" />
+    <Compile Include="Reports\ReportBLL.cs" />
+    <Compile Include="RotaionalProgram\RotationalProgramBLL.cs" />
+    <Compile Include="ScheduleInspection\ScheduleInspectionBLL.cs" />
+    <Compile Include="SeasonalPlanning\SeasonalPlanningBLL.cs" />
+    <Compile Include="SmallDams\SmallDamsBLL.cs" />
+    <Compile Include="Tenders\TenderManagementBLL.cs" />
+    <Compile Include="UserAdministration\AlertConfigurationBLL.cs" />
+    <Compile Include="UserAdministration\DesignationBLL.cs" />
+    <Compile Include="UserAdministration\NotificationsLimitBLL.cs" />
+    <Compile Include="UserAdministration\OfficeBLL.cs" />
+    <Compile Include="UserAdministration\RoleRightsBLL.cs" />
+    <Compile Include="UserAdministration\RolesBLL.cs" />
+    <Compile Include="UserAdministration\UserBLL.cs" />
+    <Compile Include="UserAdministration\UserAdministrationBLL.cs" />
+    <Compile Include="WaterLosses\WaterLossesBLL.cs" />
+    <Compile Include="WaterTheft\WaterTheftBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\Debug\EntityFramework.xml" />
+    <Content Include="bin\Debug\Microsoft.ApplicationBlocks.Data.dll" />
+    <Content Include="bin\Debug\PMIU.WRMIS.AppBlocks.dll" />
+    <Content Include="bin\Debug\PMIU.WRMIS.AppBlocks.pdb" />
+    <Content Include="bin\Debug\PMIU.WRMIS.BLL.dll" />
+    <Content Include="bin\Debug\PMIU.WRMIS.BLL.pdb" />
+    <Content Include="bin\Debug\PMIU.WRMIS.Common.dll" />
+    <Content Include="bin\Debug\PMIU.WRMIS.Common.pdb" />
+    <Content Include="bin\Debug\PMIU.WRMIS.DAL.dll" />
+    <Content Include="bin\Debug\PMIU.WRMIS.DAL.pdb" />
+    <Content Include="bin\Debug\PMIU.WRMIS.Database.dll" />
+    <Content Include="bin\Debug\PMIU.WRMIS.Database.pdb" />
+    <Content Include="bin\Debug\PMIU.WRMIS.Exceptions.dll" />
+    <Content Include="bin\Debug\PMIU.WRMIS.Exceptions.pdb" />
+    <Content Include="bin\Debug\PMIU.WRMIS.Logging.dll" />
+    <Content Include="bin\Debug\PMIU.WRMIS.Logging.pdb" />
+    <Content Include="bin\Debug\PMIU.WRMIS.Model.dll" />
+    <Content Include="bin\Debug\PMIU.WRMIS.Model.pdb" />
+    <Content Include="bin\Release\PMIU.WRMIS.BLL.dll" />
+    <Content Include="bin\Release\PMIU.WRMIS.BLL.pdb" />
+    <Content Include="obj\Debug\PMIU.WRMIS.BLL.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\PMIU.WRMIS.BLL.dll" />
+    <Content Include="obj\Debug\PMIU.WRMIS.BLL.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PMIU.WRMIS.AppBlocks\PMIU.WRMIS.AppBlocks.csproj">
+      <Project>{0363f836-264b-4135-a43d-61a64132a031}</Project>
+      <Name>PMIU.WRMIS.AppBlocks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PMIU.WRMIS.Common\PMIU.WRMIS.Common.csproj">
+      <Project>{f531fd6b-f0cf-4aa4-9086-0885713cf3f8}</Project>
+      <Name>PMIU.WRMIS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PMIU.WRMIS.DAL\PMIU.WRMIS.DAL.csproj">
+      <Project>{b5e35aa1-ee88-426d-a248-13b718dd14a1}</Project>
+      <Name>PMIU.WRMIS.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PMIU.WRMIS.Exceptions\PMIU.WRMIS.Exceptions.csproj">
+      <Project>{1b087bec-b854-4977-8ff1-a79ec9ac3da1}</Project>
+      <Name>PMIU.WRMIS.Exceptions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PMIU.WRMIS.Model\PMIU.WRMIS.Model.csproj">
+      <Project>{b847cbbc-1c62-433f-bcab-ba644d0d314e}</Project>
+      <Name>PMIU.WRMIS.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\PMIU.WRMIS.BLL.csprojResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

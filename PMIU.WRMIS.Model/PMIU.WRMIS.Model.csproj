@@ -1,0 +1,1608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B847CBBC-1C62-433F-BCAB-BA644D0D314E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PMIU.WRMIS.Model</RootNamespace>
+    <AssemblyName>PMIU.WRMIS.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AC_AdvertisementSource.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AC_ApprovelAuthority.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AC_AuctionAssetDetail.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AC_AuctionAssetItems.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AC_AuctionAssets.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AC_AuctionBidder.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AC_AuctionCategory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AC_AuctionCommiteeMembers.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AC_AuctionNotice.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AC_AuctionNoticeAttachment.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AC_AuctionOpening.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AC_AuctionPayment.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AC_AuctionPrice.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AC_AuctionStatusDetails.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AC_AuctionType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AC_BidderEarnestMoney.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AC_GetApprovedCanceledNotifyData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AC_GetAuctionsNotifyReciever_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AC_GetPendingApprovalNotifyData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AddChannelDailyGaugeReading_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AddUserGauges_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_AssetAttributes.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_AssetCondition.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_AssetInspectionInd.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_AssetInspectionLot.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_AssetInspectLotCondition.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_AssetItems.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_AssetWork.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_AssetWorkDetail.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_AssetWorkProgress.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_AssetWorkProgressAttachment.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_AssetWorkType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_Attachment.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_Attributes.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_Category.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_GetAssetWorksNotifyReciever_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_GetAWAssetAssociationNotifyData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_GetAWProgressNotifyData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_GetAWPublishNotifyData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_GetAWPublishNotifyData_Result1.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_GetWorkAssociationNotifyReciever_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_HeadquarterDivision.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_Offices.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AM_SubCategory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_AccountsHead.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_AccountsSetup.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_AssetAllocation.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_AssetType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_BudgetApprovel.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_BudgetUtilization.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_DailyRate.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_ExpenseOfParts.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_ExpenseQuotation.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_ExpenseSanction.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_ExpenseType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_FundRelease.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_FundReleaseDetails.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_FundReleaseTypes.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_GetBudgetUtilizationList_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_KeyParts.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_MonthlyExpenses.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_ObjectClassification.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_PaymentDetails.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_ResourceAllocation.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_Sanction.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_SanctionPayment.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_SanctionStatus.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AT_TaxRate.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CM_Complaint.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CM_ComplaintAssignmentHistory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CM_ComplaintComments.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CM_ComplaintMarked.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CM_ComplaintNotification.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CM_ComplaintSource.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CM_ComplaintStatus.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CM_ComplaintType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CM_GetComplaintsCommentsNotifyParameters_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CM_GetComplaintsNotifyParameters_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CM_ModuleRef.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CM_NotificationList.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CM_SearchComplaint_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CM_SearchForPublicWebSite_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_Attribute.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_BarrageDailyData.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_BarrageDailyDataDetail.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_BarrageDailyDataDetailHistory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_BarrageDailyDataHistory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_BarrageGaugeReadingFrequency.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_Channel.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ChannelAdminBoundries.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ChannelComndType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ChannelDailyGaugeHistory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ChannelDailyGaugeReading.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ChannelFlowType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ChannelGauge.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ChannelGaugeDTPFall.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ChannelGaugeDTPGatedStructure.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ChannelIndent.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ChannelIndentOfftakes.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ChannelIrrigationBoundaries.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ChannelOutlets.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ChannelOutletsLocation.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ChannelOutletsPerformance.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ChannelParentFeeder.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ChannelReach.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ChannelReachHistory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ChannelReachLSP.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ChannelType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_Channel_SearchForPublicWebSite_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_Circle.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_District.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_DistrictDivision.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_Division.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_Divisions_GetListForPublicWebSite_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_Domain.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_GaugeCategory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_GaugeLag.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_GaugeLevel.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_GaugeSlipDailyData.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_GaugeSlipSite.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_GaugeType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_LiningType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_OutletAlterationHistroy.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_OutletType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_PoliceStation.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_Province.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ReadingFrequency.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ReadingFrequencyTimeStamp.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_ReasonForChange.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_River.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_Section.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_Station.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_StructureGauge.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_StructureTechPara.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_StructureType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_SubDivision.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_Tehsil.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_VehicleReadings.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_Village.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_Zone.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CW_ACPExcludedChannel.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CW_AnnualClosureProgram.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CW_AnnualClosureProgramDetail.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CW_AnnualClosureProgramOrder.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CW_ClosureWork.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CW_ClosureWorkPlan.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CW_GetClosureOperationsNotifyReciever_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CW_GetCWPPublishNotifyData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CW_GetCWProgressNotifyData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CW_TechnicalSanctionUnit.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CW_WorkItem.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CW_WorkProgress.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CW_WorkProgressAttachment.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CW_WorkStatus.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CW_WorkType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DD_GetChannelsByUserIDForIndentss_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DD_GetChannelsByUserIDForIndents_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DD_GetDailyDataNotifyRecievers_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DD_GetDailyGaugeReadingNotifyData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DD_GetDailyIndentNotifyData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DD_GetDailyIndentsData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DD_GetGaugesBulkEntry_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DD_GetPlaceDataDailyData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EC_ApplicableTaxes.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EC_Bank.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EC_BillFactor.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EC_Bills.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EC_CanalSpecialWater.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EC_DischargeSupplySource.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EC_EffuentWaterDetails.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EC_GenerateBillParameters.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EC_Industry.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EC_IndustryType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EC_Payments.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EC_PaymentType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EC_PrintBillSertup.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EC_SanctionedDischargeSupply.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EC_ServiceType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EC_SurchargeAmount.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EC_WaterCharges.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EditBarrageDailyDischargeData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ED_ChannelDeliveries.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ED_ChannelEntitlement.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ED_ChannelFlow7782.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ED_ChannelFlowPara2.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ED_ChannelWeightedAvg.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ED_ChannelWeightedAvgDeliveries.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ED_ChildChannelEntitlement.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ED_CommandChannel.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ED_CommandChannelChilds.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ED_ProvincialEntitlement.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ED_SeasonalDeliveries.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ED_SeasonalEntitlement.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ED_SeasonalWeightedAvg.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ED_SeasonalWeightedAvgDeliveries.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ED_TDailyGaugeReading.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ET_Leaves.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ET_LeaveTypes.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ET_RotationalViolation.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ET_VehicleReading.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_BreachingSectionExplosives.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_DAttachments.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_DInfrastructures.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_DivisionStore.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_DivisionSummary.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_DMemberDetails.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_Drain.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_DrainOutfall.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_DSEntryType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_EmergencyPurchase.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_EncroachmentType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_EPItem.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_EPWork.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_ExplosivesCustody.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_FFPArrangements.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_FFPArrangementType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_FFPCampSites.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_FFPStonePosition.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_FloodFightingPlan.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_FloodGauge.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_FloodGaugeReading.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_FloodGaugeType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_FloodInspection.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_FloodInspectionDetail.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_GateType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_GetFloodFightingPlanNotifyData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_GetFloodInspectionNotifyData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_GetFloodInspectionsDetailByID_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_GetFloodInspectionsDetailByID_Result1.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_GetFloodInspectionsDetailByID_Result2.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_GetFloodOperationsNotifyReciever_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_GetInfrastructureNamesByType_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_IBreachingSection.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_IGCBarrageHW.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_IGCBarrageHWGates.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_IGCDrain.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_IGCProtectionInfrastructure.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_InfrastructureBreachingSection.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_InfrastructureForDivisionSummary_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_InfrastructureParent.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_InfrastructureRepresentative.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_InfrastructureStoneStock.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_InspectionCategory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_InspectionConditions.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_InspectionStatus.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_InspectionType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_IProblems.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_IRDWiseCondition.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_IStonePosition.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_ItemCategory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_Items.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_JAttachments.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_JInfrastructures.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_JMemberDetails.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_MaterialDisposal.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_MaterialDisposalAttachment.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_NatureOfWork.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_OMCampSiteItems.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_OMCampSites.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_OMStonePosition.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_OverallDivItems.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_PreMBStatus.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_ProblemNature.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_ProtectionInfrastructure.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_RDWiseType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_SDImages.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_SearchEmergencyPurchases_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_SearchIndependentInspection_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_StoneDeployment.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_StonePitchSide.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_StructureAdminBoundaries.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_StructureIrrigationBoundaries.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FO_StructureNalaHillTorant.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FW_Ref_Classifications.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetBarrageAttribute_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetBarrageDailyDischargeDataMobile_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetBarrageDailyDischargeData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetChannelOfDivision_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetChannelSectionOutlets_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetChannelSectionOutlet_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDailyDischarge_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDailyGaugeReadingAndroid_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetGaugeCurrentReading_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetGauges_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetSubDivDeliveredTo_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetSubDivisionalWL_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetTailofChannelinDivision_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetTailStatus1_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetUserDivisions_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetUserGaugesofStation_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetUserGaugesStationBaised_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetUserGauges_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetUserOutletsLocationBaised_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetUserSection_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetUserSubDivisions_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetWaterLosses_ChannelWise_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IF_Irrigator.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IF_IrrigatorFeedback.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IsChannelClosedNow_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IW_PunjabIndent.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="PE_CategoryWeightage.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PE_ChannelExcluded.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PE_ComplexityFactor.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PE_DivisionComplexityLevel.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PE_DivisionExcluded.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PE_EvaluationReports.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PE_EvaluationScores.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PE_EvaluationScoresDetail.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PE_FieldChannelData.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PE_HeadGaugeDifference.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PE_KPICategories.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PE_KPISubCategories.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PE_PMIUChannelData.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PE_SubCategoryWeightage.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PE_TailGaugeDifference.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Proc_FO_FFPSearch_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RPT_AT_SanctionOnDropdown_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RPT_GetComplaintStatus_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RPT_GetPerformanceEvaluation_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RPT_GetTailStatusFieldStaff_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RPT_GetTailStatusPMIUStaff_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RPT_GetWaterTheftStatuses_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RPT_SP_DistributionKharif_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RPT_SP_DistributionRabi_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RP_Approval.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RP_Attachment.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RP_AvgDPR.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RP_Channel.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RP_Division.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RP_EnteringChannel.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RP_GetAvgDPRChannelName_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RP_GetBandFrequency_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RP_Group.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RP_PlanImplementation.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RP_PlanImplementationPercentage.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RP_PriorityType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RP_RotationalProgram.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RP_RotationalViolation.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RP_Rotation_Circle.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RP_Rotation_DivisionSubDivision.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RP_SubGroup.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SDChannelReading1_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SDDamReading_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SDViewChannelReading_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SDViewDamReading_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SD_DamTechPara.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SD_DamType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SD_OMCost.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SD_SmallChannel.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SD_SmallChannelData.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SD_SmallDam.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SD_SmallDamData.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SD_SpillwayType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SD_Village.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_ChannelGaugeReading.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_GeneralInspections.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_GeneralInspectionsAttachment.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_GeneralInspectionType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_GetDischargeTableCalcBLNotifyDataAndroid_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_GetDischargeTableCalcBLNotifyData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_GetDischargeTableCalcBLOrCLNotifyRecieverAndroid_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_GetDischargeTableCalcBLOrCLNotifyReciever_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_GetDischargeTableCalcBL_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_GetGaugeInspectionAreas_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_GetOutletDetail_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_GetOutletInspectionAreas_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_GetOutletInspection_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_GetScheduleInspectionNotifyData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_GetScheduleInspectionNotifyReciever_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_GetUserInspectionsByDate_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_GetUserSchedule_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_InspectionType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_OutletAlterationHistroy.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_OutletChecking.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_Schedule.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_ScheduleDetailChannel.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_ScheduleDetailGeneral.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_ScheduleDetailTender.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_ScheduleDetailWorks.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_ScheduleStatus.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_ScheduleStatusDetail.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SI_ScheduleTypes_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPGetEasternComponentTDailies_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ForecastData.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ForecastDraft.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ForecastScenario.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetForecastedValues_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetMatchingYears_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetParaKPKBalochistanMAFRabi_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetParaKPKBalochistanMAF_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetPreviousSeasonMaf_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetSelectedFinalForecast_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition1_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition2_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams1_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams2_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_PlanBalance.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_PlanData.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_PlanDraft.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_PlanDraftHistory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_PlanScenario.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ProbabilityTable.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_RefEastern.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_RefElevationCapacity.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_RefElevationCapacityHistory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_RefFillingFraction.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_RefFillingFractionHistory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_RefPercentile.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_RefShareDistribution.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_RefShareDistributionHistory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_RefTDailyCalendar.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_RefWaterDistribution.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_TDailyBarrageData.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_TDailyCanalData.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_TDailyReservoirData.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_TDailyRiverData.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SubDivDailyGaugeData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_Logs.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp__GetModules_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TM_ADMAttachment.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TM_CommitteeMembers.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TM_Contractors.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TM_FundingSource.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TM_GetTenderMonitoringUsersList_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TM_GetTenderNotifyParameters_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TM_SaveBulkDataOfCommitteeMembers_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TM_TenderCommitteeMembers.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TM_TenderNotice.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TM_TenderOpeningOffice.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TM_TenderPrice.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TM_TenderPriceCDR.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TM_TenderPublishedIn.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TM_TenderWorkAttachment.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TM_TenderWorks.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TM_TenderWorksContractors.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TM_WorkStatus.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_ActingRoles.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_AlertNotification.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_AndroidRoleRights.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_AndroidScreens.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_AssociatedLocation.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_AssociatedLocationHistory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_AssociatedStations.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_AssociatedStationsHistory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_Designations.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_EmailNotification.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_GetCrestBedLevelNotifyDTParameters_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_GetIrrigationNetworkNotificationRecievers_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_GetNotificationsRecievers_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_GetNotifications_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_GetUserNotificationPreferences_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_IrrigationLevel.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_LoginHistory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_Modules.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_NotificationConfiguration.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_NotificationEvents.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_Organization.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_Pages.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_RoleRights.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_Roles.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_SearchAlertNotification_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_SMSNotification.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_SystemParameters.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_Tokens.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_UserManager.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_UserManagerClone.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_UserNotificationConfiguration.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_Users.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UA_UsersHistory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ufn_GetChannelIrrigationData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetDailyDataAuditTrail_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetDailyGaugeData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetOutletAlterationHistory_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetSearchChannel_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WL_ChannelLG.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WL_ChannelLGHistory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WL_GetDivisionalLGData_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WL_GetDivisionalWatertoNextDivisions_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WL_ReachLag.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WL_ReachLagHistory.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WL_RiverIndus.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WL_RiverJhelumChenab.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WL_SubDivisionLG.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WL_SubDivisionOfftakeLG.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WRMIS.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="WT_Abiana.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_AreaType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_Breach.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_BreachAttachments.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_ChiefAppealDetails.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_FeettoIgnore.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_GetBreachNotifyParameters_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_GetDateToFillPlaceHolder_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_GetSBESDOWorkingByWaterTheftID_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_GetWaterTheftNotifyDTParameters_Result.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_OffenceType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_OutletDefectiveDetails.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_OutletDefectiveType.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_Status.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_TheftSiteCondition.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_WaterTheftAttachments.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_WaterTheftCanalWire.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_WaterTheftCase.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_WaterTheftDecisionFineDetail.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_WaterTheftOffender.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_WaterTheftPoliceCase.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WT_WaterTheftStatus.cs">
+      <DependentUpon>WRMIS.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="WRMIS.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>WRMIS.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\PMIU.WRMIS.Model.dll" />
+    <Content Include="bin\Debug\PMIU.WRMIS.Model.pdb" />
+    <Content Include="bin\Release\PMIU.WRMIS.Model.dll" />
+    <Content Include="bin\Release\PMIU.WRMIS.Model.pdb" />
+    <Content Include="obj\Debug\PMIU.WRMIS.Model.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\PMIU.WRMIS.Model.dll" />
+    <Content Include="obj\Debug\PMIU.WRMIS.Model.pdb" />
+    <Content Include="obj\Debug\TempPE\WRMIS.cs.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

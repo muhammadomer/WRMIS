@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="722ab9d6ed934803aeb1647ee0df0797" Name="Diagram1" ZoomLevel="51">
+        <EntityTypeShape EntityType="WRMIS_Model.CM_Complaint" Width="1.5" PointX="16.25" PointY="70" />
+        <EntityTypeShape EntityType="WRMIS_Model.CM_ComplaintAssignmentHistory" Width="1.5" PointX="27.5" PointY="77.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.CM_ComplaintMarked" Width="1.5" PointX="24.5" PointY="72.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.CM_ComplaintNotification" Width="1.5" PointX="21.5" PointY="76" />
+        <EntityTypeShape EntityType="WRMIS_Model.CM_ComplaintSource" Width="1.5" PointX="14" PointY="54.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.CM_ComplaintStatus" Width="1.5" PointX="14" PointY="111.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.CM_ComplaintType" Width="1.5" PointX="14" PointY="99.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.CM_NotificationList" Width="1.5" PointX="8.25" PointY="87.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_Attribute" Width="1.5" PointX="25.25" PointY="47.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_BarrageDailyDataDetail" Width="1.5" PointX="27.5" PointY="71.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_BarrageDailyDataDetailHistory" Width="1.5" PointX="30.5" PointY="91.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_BarrageGaugeReadingFrequency" Width="1.5" PointX="28" PointY="40.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ChannelAdminBoundries" Width="1.5" PointX="27.25" PointY="102.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ChannelComndType" Width="1.5" PointX="11.75" PointY="119.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ChannelFlowType" Width="1.5" PointX="11.75" PointY="122.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ChannelIndent" Width="1.5" PointX="24.5" PointY="98.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ChannelIndentOfftakes" Width="1.5" PointX="26.75" PointY="111.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ChannelIrrigationBoundaries" Width="1.5" PointX="19.25" PointY="101.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ChannelOutletsLocation" Width="1.5" PointX="28.25" PointY="64.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ChannelReach" Width="1.5" PointX="16.25" PointY="127" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ChannelReachHistory" Width="1.5" PointX="18.5" PointY="134" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ChannelType" Width="1.5" PointX="11.75" PointY="126.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_Circle" Width="1.5" PointX="14" PointY="103.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_District" Width="1.5" PointX="14" PointY="115.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_DistrictDivision" Width="1.5" PointX="16.25" PointY="48.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_Division" Width="1.5" PointX="14" PointY="43.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_Domain" Width="1.5" PointX="11.75" PointY="44" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_GaugeCategory" Width="1.5" PointX="17" PointY="101.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_GaugeLag" Width="1.5" PointX="21.5" PointY="115.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_GaugeLevel" Width="1.5" PointX="17" PointY="113.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_GaugeType" Width="1.5" PointX="17" PointY="109.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_LiningType" Width="1.5" PointX="16.25" PointY="123.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_OutletType" Width="1.5" PointX="22.25" PointY="101.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_PoliceStation" Width="1.5" PointX="11.75" PointY="49.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_Province" Width="1.5" PointX="11.75" PointY="115.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ReadingFrequency" Width="1.5" PointX="25.75" PointY="30.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ReadingFrequencyTimeStamp" Width="1.5" PointX="28" PointY="30.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ReasonForChange" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_River" Width="1.5" PointX="20.75" PointY="51.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_Section" Width="1.5" PointX="17" PointY="105.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_Station" Width="1.5" PointX="20.75" PointY="45.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_SubDivision" Width="1.5" PointX="14" PointY="69.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_Tehsil" Width="1.5" PointX="14" PointY="107.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_Village" Width="1.5" PointX="14" PointY="48.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_Zone" Width="1.5" PointX="11.75" PointY="103.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.IF_Irrigator" Width="1.5" PointX="30.25" PointY="96.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.IF_IrrigatorFeedback" Width="1.5" PointX="35.5" PointY="72.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_ForecastData" Width="1.5" PointX="6" PointY="23.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_ForecastDraft" Width="1.5" PointX="1.5" PointY="7.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_ForecastScenario" Width="1.5" PointX="3.75" PointY="6.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_ProbabilityTable" Width="1.5" PointX="31" PointY="46" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_RefEastern" Width="1.5" PointX="3" PointY="30.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_RefElevationCapacity" Width="1.5" PointX="23" PointY="41" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_RefElevationCapacityHistory" Width="1.5" PointX="25.25" PointY="41" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_RefPercentile" Width="1.5" PointX="28.75" PointY="36.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_RefTDailyCalendar" Width="1.5" PointX="0.75" PointY="22.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_TDailyBarrageData" Width="1.5" PointX="23" PointY="31.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_TDailyCanalData" Width="1.5" PointX="19.25" PointY="74" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_TDailyReservoirData" Width="1.5" PointX="26" PointY="35.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_TDailyRiverData" Width="1.5" PointX="23" PointY="35.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_ActingRoles" Width="1.5" PointX="21.5" PointY="144.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_AlertNotification" Width="1.5" PointX="21.5" PointY="92.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_AndroidRoleRights" Width="1.5" PointX="35.25" PointY="78.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_AndroidScreens" Width="1.5" PointX="6" PointY="74" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_AssociatedLocation" Width="1.5" PointX="3" PointY="81.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_AssociatedStations" Width="1.5" PointX="30.5" PointY="86.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_AssociatedStationsHistory" Width="1.5" PointX="32.75" PointY="86.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_EmailNotification" Width="1.5" PointX="8.25" PointY="61.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_IrrigationLevel" Width="1.5" PointX="0.75" PointY="81.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_Modules" Width="1.5" PointX="3.75" PointY="66.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_NotificationConfiguration" Width="1.5" PointX="8.25" PointY="74.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_NotificationEvents" Width="1.5" PointX="6" PointY="62.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_Organization" Width="1.5" PointX="3.75" PointY="78" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_Pages" Width="1.5" PointX="3.75" PointY="61.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_RoleRights" Width="1.5" PointX="33.25" PointY="62.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_SMSNotification" Width="1.5" PointX="21.5" PointY="87.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_SystemParameters" Width="1.5" PointX="9.75" PointY="0.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_Tokens" Width="1.5" PointX="9.75" PointY="3.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_UserManager" Width="1.5" PointX="21.5" PointY="140.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_UserManagerClone" Width="1.5" PointX="21.5" PointY="148.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_UserNotificationConfiguration" Width="1.5" PointX="27.5" PointY="82.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_UsersHistory" Width="1.5" PointX="21.5" PointY="135.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.WT_Abiana" Width="1.5" PointX="33.5" PointY="35.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.WT_AreaType" Width="1.5" PointX="31.25" PointY="36" />
+        <EntityTypeShape EntityType="WRMIS_Model.WT_BreachAttachments" Width="1.5" PointX="21.5" PointY="60.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.WT_ChiefAppealDetails" Width="1.5" PointX="30.5" PointY="52.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.WT_WaterTheftCanalWire" Width="1.5" PointX="30.5" PointY="81.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.WT_WaterTheftDecisionFineDetail" Width="1.5" PointX="33.5" PointY="52.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.WT_WaterTheftOffender" Width="1.5" PointX="30.5" PointY="61.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.WT_WaterTheftPoliceCase" Width="1.5" PointX="30.5" PointY="40" />
+        <EntityTypeShape EntityType="WRMIS_Model.WT_WaterTheftStatus" Width="1.5" PointX="32.75" PointY="79.875" />
+        <AssociationConnector Association="WRMIS_Model.CMComplaint_CMComplaintAssignmentHistory_ComplaintID" />
+        <AssociationConnector Association="WRMIS_Model.CMComplaint_CMComplaintMarked_ComplaintID" />
+        <AssociationConnector Association="WRMIS_Model.CMComplaint_CMComplaintNotification_ComplaintID" />
+        <AssociationConnector Association="WRMIS_Model.CMComplaintSource_CMComplaint_ComplaintSourceID" />
+        <AssociationConnector Association="WRMIS_Model.CMComplaintStatus_CMComplaint_ComplaintStatusID" />
+        <AssociationConnector Association="WRMIS_Model.CMComplaintType_CMComplaint_ComplaintTypeID" />
+        <AssociationConnector Association="WRMIS_Model.COCircle_CMComplaint_CircleID" />
+        <AssociationConnector Association="WRMIS_Model.CODistrict_CMComplaint_DistrictID" />
+        <AssociationConnector Association="WRMIS_Model.CODivision_CMComplaintStructure_DivisionID" />
+        <AssociationConnector Association="WRMIS_Model.CODomain_CMComplaint_DomainID" />
+        <AssociationConnector Association="WRMIS_Model.COSubDivision_CMComplaint_SubDivID" />
+        <AssociationConnector Association="WRMIS_Model.COTehsil_CMComplaint_TehsilID" />
+        <AssociationConnector Association="WRMIS_Model.COVillage_CMComplaint_VillageID" />
+        <AssociationConnector Association="WRMIS_Model.COZone_CMComplaint_ZoneID" />
+        <AssociationConnector Association="WRMIS_Model.CMComplaintStatus_CMComplaintAssignmentHistory_ComplaintStatusID" />
+        <AssociationConnector Association="WRMIS_Model.CMNotificationList_CMComplaintNotification_NotificationListID" />
+        <AssociationConnector Association="WRMIS_Model.UAOrganization_CMNotificationList_OrgID" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_BARRA_ATTRIBUTE_CO_ATTRI" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_BARRA_ATTRIBUTE_CO_ATTRI2" />
+        <AssociationConnector Association="WRMIS_Model.ReadingFrequency_BarrageGaugeReadingFrequency" />
+        <AssociationConnector Association="WRMIS_Model.ReadingFrequency_Station" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_CHANN_POLICE_ST_CO_POLIC" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_CHANN_VILLAGE_C_CO_VILLA" />
+        <AssociationConnector Association="WRMIS_Model.COChannelIndent_COChannelIndentOfftakes_IndentID" />
+        <AssociationConnector Association="WRMIS_Model.COSubDivision_COChannelIndent_SubDivID" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_CHANN_SECTION_C_CO_SECTI2" />
+        <AssociationConnector Association="WRMIS_Model.OutletLocation_village" />
+        <AssociationConnector Association="WRMIS_Model.ChannelReachHistory" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_CIRCL_ZONE_CIRC_CO_ZONE" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_DIVIS_CIRCLE_DI_CO_CIRCL" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_DISTR_PROVINCE__CO_PROVI" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_DISTR_DISTRICTD_CO_DIVIS" />
+        <AssociationConnector Association="WRMIS_Model.Division_Domain" />
+        <AssociationConnector Association="WRMIS_Model.Division_Irrigator" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_SUBDI_DIV_SUB_D_CO_DIVIS" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_VILLA_PS_VILLAG_CO_POLIC" />
+        <AssociationConnector Association="WRMIS_Model.Station_Province" />
+        <AssociationConnector Association="WRMIS_Model.ReadingFrequency_TimeStamp" />
+        <AssociationConnector Association="WRMIS_Model.Station_River" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_SECTI_SUB_DIV_S_CO_SUBDI" />
+        <AssociationConnector Association="WRMIS_Model.COStation_SPForecastScenario_StationID" />
+        <AssociationConnector Association="WRMIS_Model.COStation_SPProbabilityTable_StationID" />
+        <AssociationConnector Association="WRMIS_Model.COStation_SPRefElevationCapacity_StationID" />
+        <AssociationConnector Association="WRMIS_Model.COStation_SPTDailyBarrageData_StationID" />
+        <AssociationConnector Association="WRMIS_Model.COStation_SPTDailyReservoirData_StationID" />
+        <AssociationConnector Association="WRMIS_Model.COStation_SPTDailyRiverData_StationID" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_VILLA_TEHSIL_VI_CO_TEHSI" />
+        <AssociationConnector Association="WRMIS_Model.FK_IF_irrigatorfeedback_CO_Village_VillageID" />
+        <AssociationConnector Association="WRMIS_Model.Irrigator_IrrigatorFeedback" />
+        <AssociationConnector Association="WRMIS_Model.SPForecastScenario_SPForecastData_ForecastScenarioID" />
+        <AssociationConnector Association="WRMIS_Model.SPRefTDailyCalendar_SPForecastData_TDailyCalendarID" />
+        <AssociationConnector Association="WRMIS_Model.SPForecastDraft_SPForecastScenario_ForecastDraftID" />
+        <AssociationConnector Association="WRMIS_Model.SPForecastDraft_SPForecastScenario_ModelDraftID" />
+        <AssociationConnector Association="WRMIS_Model.SPRefPercentile_SPProbabilityTable_PercentileID" />
+        <AssociationConnector Association="WRMIS_Model.SPRefTDailyCalendar_SPRefEastern_TDailyCalendarID" />
+        <AssociationConnector Association="WRMIS_Model.SPRefElevationCapacity_SPRefElevationCapacityHistory_ElevationCapacityID" />
+        <AssociationConnector Association="WRMIS_Model.SPRefTDailyCalendar_SPTDailyBarrageData_TDailyCalendarID" />
+        <AssociationConnector Association="WRMIS_Model.SPRefTDailyCalendar_SPTDailyCanalData_TDailyCalendarID" />
+        <AssociationConnector Association="WRMIS_Model.SPRefTDailyCalendar_SPTDailyReservoirData_TDailyCalendarID" />
+        <AssociationConnector Association="WRMIS_Model.SPRefTDailyCalendar_SPTDailyRiverData_TDailyCalendarID" />
+        <AssociationConnector Association="WRMIS_Model.UANotificationEvents_UAAlertNotification_NotificationEventID" />
+        <AssociationConnector Association="WRMIS_Model.UAAndroidScreens_UAAndroidRoleRights_ScreenID" />
+        <AssociationConnector Association="WRMIS_Model.UAModules_UAAndroidScreens_ModuleID" />
+        <AssociationConnector Association="WRMIS_Model.IrrigationLevel_LocationAssiciations" />
+        <AssociationConnector Association="WRMIS_Model.AssociatedStations_AssociatedStationsHistory" />
+        <AssociationConnector Association="WRMIS_Model.UANotificationEvents_UAEmailNotification_NotificationEventID" />
+        <AssociationConnector Association="WRMIS_Model.Module_Pages" />
+        <AssociationConnector Association="WRMIS_Model.UAModules_UANotificationEvents_ModuleID" />
+        <AssociationConnector Association="WRMIS_Model.UANotificationEvents_UANotificationConfiguration_NotificationEventID" />
+        <AssociationConnector Association="WRMIS_Model.UANotificationEvents_UASMSNotificaiton_NotificationEventID" />
+        <AssociationConnector Association="WRMIS_Model.UANotificationEvents_UAUserNotificationConfiguration_NotificationEventID" />
+        <AssociationConnector Association="WRMIS_Model.UAPages_UANotificationEvents_PageID" />
+        <AssociationConnector Association="WRMIS_Model.RoleRights_Page" />
+        <AssociationConnector Association="WRMIS_Model.AreaType_Abiana" />
+        <AssociationConnector Association="WRMIS_Model.AreaType_WaterTheftDecisionFineDetail" />
+        <AssociationConnector Association="WRMIS_Model.WaterTheftCanalWire_WaterTheftStatus" />
+        <EntityTypeShape EntityType="WRMIS_Model.CM_ComplaintComments" Width="1.5" PointX="35.5" PointY="68.75" />
+        <AssociationConnector Association="WRMIS_Model.CMComplaint_CMComplaintComments_ComplaintID" />
+        <AssociationConnector Association="WRMIS_Model.COStation_COAttribute_BarrageID" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_StructureType" Width="1.5" PointX="14" PointY="37.375" />
+        <AssociationConnector Association="WRMIS_Model.COStructureType_CMComplaint_StructureTypeID" />
+        <AssociationConnector Association="WRMIS_Model.CODomain_COStructureType_DomainID" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_STATI_STATION_S_CO_STRUC" />
+        <AssociationConnector Association="WRMIS_Model.FK_UA_ASSOC_STURCTURT_CO_STRUC" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_DrainOutfall" Width="1.5" PointX="36.25" PointY="64.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_InfrastructureBreachingSection" Width="1.5" PointX="18.5" PointY="40.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_InfrastructureParent" Width="1.5" PointX="18.5" PointY="45.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_InfrastructureRepresentative" Width="1.5" PointX="18.5" PointY="33.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_InfrastructureStoneStock" Width="1.5" PointX="18.5" PointY="37.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_StructureAdminBoundaries" Width="1.5" PointX="16.25" PointY="43.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_StructureIrrigationBoundaries" Width="1.5" PointX="36.25" PointY="59.375" />
+        <AssociationConnector Association="WRMIS_Model.CODivision_FOStructureIrrigationBoundaries_DivisionID" />
+        <AssociationConnector Association="WRMIS_Model.COPoliceStation_FOInfrastructureAdminBoundaries_PoliceStationID" />
+        <AssociationConnector Association="WRMIS_Model.COSection_FOStructureIrrigationBoundaries_SectionID" />
+        <AssociationConnector Association="WRMIS_Model.COStructureType_FOInfrastructureParent_StructureTypeID" />
+        <AssociationConnector Association="WRMIS_Model.COStructureType_FOStructureAdminBoundaries_StructureTypeID" />
+        <AssociationConnector Association="WRMIS_Model.COStructureType_FOStructureIrrigationBoundaries_StructureTypeID" />
+        <AssociationConnector Association="WRMIS_Model.COSubDivision_FODrainOutfall_SubDivID" />
+        <AssociationConnector Association="WRMIS_Model.COVillage_FOInfrastructureAdminBoundaries_VIllageID" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_Drain" Width="1.5" PointX="16.25" PointY="22.75" />
+        <AssociationConnector Association="WRMIS_Model.COStructureType_FODrain_DrainTypeID" />
+        <AssociationConnector Association="WRMIS_Model.FODrain_FODrainOutfall_DrainID" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_BreachingSectionExplosives" Width="1.5" PointX="20.75" PointY="21" />
+        <AssociationConnector Association="WRMIS_Model.FOInfrastructureBreachingSection_FOBreachingSectionExplosives_BreachingSectionID" />
+        <EntityTypeShape EntityType="WRMIS_Model.PE_ChannelExcluded" Width="1.5" PointX="16.25" PointY="120" />
+        <EntityTypeShape EntityType="WRMIS_Model.PE_ComplexityFactor" Width="1.5" PointX="14" PointY="32.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.PE_DivisionComplexityLevel" Width="1.5" PointX="16.25" PointY="32.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.PE_KPICategories" Width="1.5" PointX="10.375" PointY="12.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.PE_KPISubCategories" Width="1.5" PointX="12.625" PointY="12" />
+        <AssociationConnector Association="WRMIS_Model.CODivision_PEDivisionComplexityLevel_DivisionID" />
+        <AssociationConnector Association="WRMIS_Model.PEComplexityFactor_PEDivisionComplexityLevel_ComplexityFactorID" />
+        <AssociationConnector Association="WRMIS_Model.PEKPICategories_PEKPISubCategories_KPICategoryID" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_DivisionSummary" Width="1.5" PointX="15.375" PointY="8.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_ItemCategory" Width="1.5" PointX="14.375" PointY="4.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_Items" Width="1.5" PointX="16.625" PointY="4" />
+        <AssociationConnector Association="WRMIS_Model.FOItemCategory_FOItems_ItemCategoryID" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_ExplosivesCustody" Width="1.5" PointX="0.75" PointY="12.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_RefFillingFraction" Width="1.5" PointX="2.75" PointY="13.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_RefFillingFractionHistory" Width="1.5" PointX="15.75" PointY="12.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_RefShareDistribution" Width="1.5" PointX="4.75" PointY="16.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_RefShareDistributionHistory" Width="1.5" PointX="6.75" PointY="16.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_RefWaterDistribution" Width="1.5" PointX="8.75" PointY="16.75" />
+        <AssociationConnector Association="WRMIS_Model.FOExplosivesCustody_FOBreachingSectionExplosives_ExlosiveCustodyID" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_StructureGauge" Width="1.5" PointX="24" PointY="77.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_StructureTechPara" Width="1.5" PointX="23" PointY="22.875" />
+        <AssociationConnector Association="WRMIS_Model.COGaugeType_COStructureGauge_GaugeTypeID" />
+        <AssociationConnector Association="WRMIS_Model.COStation_COStructureGauge_StationID" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_STRUC_STATION_B_CO_STATI" />
+        <EntityTypeShape EntityType="WRMIS_Model.WL_RiverIndus" Width="1.5" PointX="11.375" PointY="16.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.WL_RiverJhelumChenab" Width="1.5" PointX="13.375" PointY="16.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_FloodInspection" Width="1.5" PointX="35.625" PointY="15.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_FloodInspectionDetail" Width="1.5" PointX="40.875" PointY="29.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_GateType" Width="1.5" PointX="37.875" PointY="33.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_IGCDrain" Width="1.5" PointX="37.875" PointY="37.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_IGCProtectionInfrastructure" Width="1.5" PointX="37.875" PointY="29.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_InspectionCategory" Width="1.5" PointX="33.375" PointY="12.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_InspectionConditions" Width="1.5" PointX="15.375" PointY="16.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_InspectionStatus" Width="1.5" PointX="33.375" PointY="16.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_InspectionType" Width="1.5" PointX="38.625" PointY="42.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_IRDWiseCondition" Width="1.5" PointX="37.875" PointY="15.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_PreMBStatus" Width="1.5" PointX="40.875" PointY="10.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_RDWiseType" Width="1.5" PointX="35.625" PointY="21.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_StonePitchSide" Width="1.5" PointX="35.625" PointY="11.625" />
+        <AssociationConnector Association="WRMIS_Model.COStructureType_FOFloodInspectionDetail_StructureTypeID" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodInspection_FOFloodInspectionDetail_FloodInspectionID" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodInspection_FOIGCDrain_FloodInspectionID" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodInspection_FOIGCProtectionInfrastructure_FloodInspectionID" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodInspection_FOIRDWiseCondition_FloodInspectionID" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodInspection_FOPreMBStatus_FloodInspectionID" />
+        <AssociationConnector Association="WRMIS_Model.FOInspectionCategory_FOFloodInspection_InspectionCategoryID" />
+        <AssociationConnector Association="WRMIS_Model.FOInspectionStatus_FOFloodInspection_InspectionStatusID" />
+        <AssociationConnector Association="WRMIS_Model.FOInspectionType_FOFloodInspectionDetail_InspectionTypeID" />
+        <AssociationConnector Association="WRMIS_Model.FORDWiseType_FOIRDWiseCondition_RDWiseTypeID" />
+        <AssociationConnector Association="WRMIS_Model.FOStonePitchSide_FOIRDWiseCondition_StonePitchSideID" />
+        <AssociationConnector Association="WRMIS_Model.FOItems_FOPreMBStatus_ItemID" />
+        <EntityTypeShape EntityType="WRMIS_Model.WL_ChannelLG" Width="1.5" PointX="24.5" PointY="115" />
+        <EntityTypeShape EntityType="WRMIS_Model.WL_ChannelLGHistory" Width="1.5" PointX="26.75" PointY="116.125" />
+        <AssociationConnector Association="WRMIS_Model.WLChannelLG_WLChannelLGHistory_ChannelLGID" />
+        <EntityTypeShape EntityType="WRMIS_Model.PE_CategoryWeightage" Width="1.5" PointX="12.625" PointY="57.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.PE_EvaluationScores" Width="1.5" PointX="3" PointY="86.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.PE_SubCategoryWeightage" Width="1.5" PointX="32.875" PointY="40.125" />
+        <AssociationConnector Association="WRMIS_Model.PEEvaluationScores_PECategoryWeightage_EvalScoreID" />
+        <AssociationConnector Association="WRMIS_Model.PEKPICategories_PECategoryWeightage_CatID" />
+        <AssociationConnector Association="WRMIS_Model.PEEvaluationScores_PESubCategoryWeightage_EvalScoreID" />
+        <AssociationConnector Association="WRMIS_Model.UAIrrigationLevel_PEEvaluationScores_IrrigationLevelID" />
+        <AssociationConnector Association="WRMIS_Model.PEKPISubCategories_PESubCategoryWeightage_SubCatID" />
+        <EntityTypeShape EntityType="WRMIS_Model.WL_SubDivisionLG" Width="1.5" PointX="24.5" PointY="104.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.WL_SubDivisionOfftakeLG" Width="1.5" PointX="26.75" PointY="107.75" />
+        <AssociationConnector Association="WRMIS_Model.COSubDivision_WLSubDivisionLG_SubDivID" />
+        <AssociationConnector Association="WRMIS_Model.WLSubDivisionLG_WLSubDivisionOfftakeLG_SubDivLGID" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_PlanData" Width="1.5" PointX="38.25" PointY="69.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_PlanDraft" Width="1.5" PointX="16.75" PointY="138.25" />
+        <AssociationConnector Association="WRMIS_Model.SPForecastDraft_SPPlanDraft_ForecastDraftID" />
+        <AssociationConnector Association="WRMIS_Model.SPRefTDailyCalendar_SPPlanData_TDailyCalendarID" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_EncroachmentType" Width="1.5" PointX="35.625" PointY="7.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_IProblems" Width="1.5" PointX="40.875" PointY="16.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_ProblemNature" Width="1.5" PointX="38.625" PointY="6.5" />
+        <AssociationConnector Association="WRMIS_Model.FOEncroachmentType_FOIRDWiseCondition_EncroachmentTypeID" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodInspection_FOIProblems_FloodInspectionID" />
+        <AssociationConnector Association="WRMIS_Model.FOProblemNature_FOIProblems_ProblemID" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_PlanBalance" Width="1.5" PointX="39" PointY="46.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_PlanScenario" Width="1.5" PointX="30" PointY="101.75" />
+        <AssociationConnector Association="WRMIS_Model.COStation_SPPlanBalance_StationID" />
+        <AssociationConnector Association="WRMIS_Model.COStation_SPPlanScenario_StationID" />
+        <AssociationConnector Association="WRMIS_Model.SPPlanScenario_SPPlanBalance_PlanScenarioID" />
+        <AssociationConnector Association="WRMIS_Model.SPPlanScenario_SPPlanData_PlanScenarioID" />
+        <AssociationConnector Association="WRMIS_Model.SPPlanDraft_SPPlanScenario_PlanDraftID" />
+        <EntityTypeShape EntityType="WRMIS_Model.CM_ModuleRef" Width="1.5" PointX="0.75" PointY="17.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.SP_PlanDraftHistory" Width="1.5" PointX="19.375" PointY="138.375" />
+        <AssociationConnector Association="WRMIS_Model.SPPlanDraft_SPPlanDraftHistory_PlanDraftID" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_IGCBarrageHW" Width="1.5" PointX="37.875" PointY="21.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_IGCBarrageHWGates" Width="1.5" PointX="40.125" PointY="25.5" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodInspection_FOIGCBarrageHW_FloodInspectionID" />
+        <AssociationConnector Association="WRMIS_Model.FOGateType_FOIGCBarrageHWGates_GateTypeID" />
+        <AssociationConnector Association="WRMIS_Model.FOIGCBarrageHW_FOIGCBarrageHWGates_IGCBarrageHWID" />
+        <EntityTypeShape EntityType="WRMIS_Model.PE_FieldChannelData" Width="1.5" PointX="16.25" PointY="146.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.PE_HeadGaugeDifference" Width="1.5" PointX="16.25" PointY="131.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.PE_PMIUChannelData" Width="1.5" PointX="16.25" PointY="151.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.PE_TailGaugeDifference" Width="1.5" PointX="16.25" PointY="143.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_IBreachingSection" Width="1.5" PointX="37.875" PointY="1.375" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodInspection_FOIBreachingSection_FloodInspectionID" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_DAttachments" Width="1.5" PointX="37.875" PointY="81.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_DInfrastructures" Width="1.5" PointX="42.875" PointY="24.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_DMemberDetails" Width="1.5" PointX="37.875" PointY="97.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_JAttachments" Width="1.5" PointX="37.875" PointY="101" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_JInfrastructures" Width="1.5" PointX="40.875" PointY="33.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_JMemberDetails" Width="1.5" PointX="37.875" PointY="104.25" />
+        <AssociationConnector Association="WRMIS_Model.COStructureType_FODInfrastructures_StructureTypeID" />
+        <AssociationConnector Association="WRMIS_Model.COStructureType_FOJInfrastructures_StructureTypeID" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodInspection_FODAttachments_FloodInspectionID" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodInspection_FODInfrastructures_FloodInspectionID" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodInspection_FODMemberDetails_FloodInspectionID" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodInspection_FOJAttachments_FloodInspectionID" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodInspection_FOJInfrastructures_FloodInspectionID" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodInspection_FOJMemberDetails_FloodInspectionID" />
+        <EntityTypeShape EntityType="WRMIS_Model.FW_Ref_Classifications" Width="1.5" PointX="19.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ChannelDailyGaugeHistory" Width="1.5" PointX="32.75" PointY="69.625" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_DISTR_DISTRICT__CO_DISTR" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_TEHSI_DISTRICT__CO_DISTR" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ChannelParentFeeder" Width="1.5" PointX="16.25" PointY="83.5" />
+        <AssociationConnector Association="WRMIS_Model.ParentFeder_StructureType" />
+        <EntityTypeShape EntityType="WRMIS_Model.WL_ReachLag" Width="1.5" PointX="16.25" PointY="88.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.WL_ReachLagHistory" Width="1.5" PointX="18.5" PointY="90.5" />
+        <AssociationConnector Association="WRMIS_Model.COChannelComndType_WLReachLag_ChannelComndTypeID" />
+        <AssociationConnector Association="WRMIS_Model.COStructureType_WLReachLag_FromStructureTypeID" />
+        <AssociationConnector Association="WRMIS_Model.COStructureType_WLReachLag_ToStructureTypeID" />
+        <AssociationConnector Association="WRMIS_Model.WLReachLag_WLReachLagHistory_ReachLagID" />
+        <EntityTypeShape EntityType="WRMIS_Model.PE_EvaluationReports" Width="1.5" PointX="8.25" PointY="82.25" />
+        <AssociationConnector Association="WRMIS_Model.PEEvaluationScores_PEEvaluationReports_EvalScoreID" />
+        <AssociationConnector Association="WRMIS_Model.UAIrrigationLevel_PEEvaluationReports_IrrigationLevelID" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_EmergencyPurchase" Width="1.5" PointX="18.375" PointY="13.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_EPWork" Width="1.5" PointX="20.625" PointY="9.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_MaterialDisposal" Width="1.5" PointX="22.875" PointY="9" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_MaterialDisposalAttachment" Width="1.5" PointX="25.125" PointY="9.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_NatureOfWork" Width="1.5" PointX="18.375" PointY="9.375" />
+        <AssociationConnector Association="WRMIS_Model.FOEmergencyPurchase_FOEPWork_EmergencyPurchaseID" />
+        <AssociationConnector Association="WRMIS_Model.FOEPWork_FOMaterialDisposal_EPWorkID" />
+        <AssociationConnector Association="WRMIS_Model.FONatureOfWork_FOEPWork_NatureOfWorkID" />
+        <AssociationConnector Association="WRMIS_Model.FOMaterialDisposal_FOMaterialDisposalAttachment_MaterialDisposalID" />
+        <EntityTypeShape EntityType="WRMIS_Model.TM_CommitteeMembers" Width="2.375" PointX="6.375" PointY="6.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.TM_Contractors" Width="1.5" PointX="6.375" PointY="10.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.TM_TenderOpeningOffice" Width="1.5" PointX="20.375" PointY="14.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.TM_FundingSource" Width="1.5" PointX="20.375" PointY="25.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.TM_TenderNotice" Width="1.5" PointX="31.25" PointY="57.125" />
+        <AssociationConnector Association="WRMIS_Model.CODivision_TMTenderNotice_DivisionID" />
+        <AssociationConnector Association="WRMIS_Model.CODomain_TMTenderNotice_DomainID" />
+        <EntityTypeShape EntityType="WRMIS_Model.CW_ClosureWorkPlan" Width="1.5" PointX="28.375" PointY="15.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.CW_WorkProgress" Width="1.5" PointX="33.875" PointY="28.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.CW_WorkProgressAttachment" Width="1.5" PointX="36.125" PointY="43.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.CW_WorkStatus" Width="1.5" PointX="31.625" PointY="8.875" />
+        <AssociationConnector Association="WRMIS_Model.CWWorkProgress_CWWorkProgressAttachment_WorkProgressID" />
+        <AssociationConnector Association="WRMIS_Model.CWWorkStatus_CWWorkProgress_WorkStatusID" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_EPItem" Width="1.5" PointX="22.625" PointY="13.75" />
+        <AssociationConnector Association="WRMIS_Model.FOEmergencyPurchase_FOEPItem_EmergencyPurchaseID" />
+        <AssociationConnector Association="WRMIS_Model.FOItems_FOEPItem_ItemID" />
+        <AssociationConnector Association="WRMIS_Model.CODivision_FODivisionSummary_DivisionID" />
+        <EntityTypeShape EntityType="WRMIS_Model.TM_TenderPublishedIn" Width="1.5" PointX="33.5" PointY="48.75" />
+        <AssociationConnector Association="WRMIS_Model.TMTenderNotice_TMTenderPublishedIn_TenderNoticeID" />
+        <EntityTypeShape EntityType="WRMIS_Model.TM_TenderCommitteeMembers" Width="1.5" PointX="43.75" PointY="30.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.TM_TenderPrice" Width="1.5" PointX="46" PointY="34.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.TM_TenderPriceCDR" Width="1.5" PointX="46" PointY="37.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.TM_TenderWorks" Width="1.5" PointX="36.5" PointY="50.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.TM_WorkStatus" Width="1.5" PointX="34.25" PointY="97.75" />
+        <AssociationConnector Association="WRMIS_Model.TenderNotice_CommitteeMembers" />
+        <AssociationConnector Association="WRMIS_Model.TMTenderWorks_TMTenderCommitteeMembers_TenderWorksID" />
+        <AssociationConnector Association="WRMIS_Model.TenderNotice_TenderWorks" />
+        <AssociationConnector Association="WRMIS_Model.TMWorkStatus_TMTenderWorks_WorkStatusID" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_FFPArrangements" Width="1.5" PointX="17.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_FFPArrangementType" Width="1.5" PointX="16.25" PointY="32.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_FFPCampSites" Width="1.5" PointX="18.5" PointY="23.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_FFPStonePosition" Width="1.5" PointX="43.125" PointY="45.625" />
+        <AssociationConnector Association="WRMIS_Model.COStructureType_FOFFPCampSites_StructureTypeID" />
+        <AssociationConnector Association="WRMIS_Model.COStructureType_FOFFPStonePosition_StructureTypeID" />
+        <AssociationConnector Association="WRMIS_Model.FOFFPArrangementType_FOFFPArrangements_FFPArrangementTypeID" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodInspectionDetail_FOFFPStonePosition_FloodInspectionDetailID" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_SDImages" Width="1.5" PointX="47.625" PointY="46.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.CW_WorkItem" Width="1.5" PointX="17.375" PointY="18" />
+        <AssociationConnector Association="WRMIS_Model.CWWorkItem_TMTenderPrice_WorkItemID" />
+        <EntityTypeShape EntityType="WRMIS_Model.CW_WorkType" Width="1.5" PointX="28.375" PointY="26.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.TM_TenderWorksContractors" Width="1.5" PointX="43.75" PointY="35" />
+        <AssociationConnector Association="WRMIS_Model.TMContractors_TMSoldTendersList_ContractorsID" />
+        <AssociationConnector Association="WRMIS_Model.TMSoldTenderList_TMTenderPrice_TWContractorID" />
+        <AssociationConnector Association="WRMIS_Model.TMSoldTenderList_TMTenderPriceCDR_TWContractorID" />
+        <AssociationConnector Association="WRMIS_Model.TMTenderWorks_TMSolderTenderList_TenderWorksID" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_DSEntryType" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.TM_TenderWorkAttachment" Width="1.5" PointX="38.75" PointY="64" />
+        <AssociationConnector Association="WRMIS_Model.TMTenderWorks_TMTenderWorkAttachment_TenderWorksID" />
+        <EntityTypeShape EntityType="WRMIS_Model.PE_EvaluationScoresDetail" Width="1.5" PointX="11.25" PointY="84" />
+        <AssociationConnector Association="WRMIS_Model.PEEvaluationScores_PEEvaluationScoresDetail_EvalScoreID" />
+        <AssociationConnector Association="WRMIS_Model.UAIrrigationLevel_PEEvaluationScoresDetail_IrrigationLevelID" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_OMCampSiteItems" Width="1.5" PointX="23" PointY="121.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_OMCampSites" Width="1.5" PointX="20.75" PointY="121.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_OMStonePosition" Width="1.5" PointX="47.625" PointY="50.5" />
+        <AssociationConnector Association="WRMIS_Model.FOFFPCampSites_FOOMCampSites_CampSiteID" />
+        <AssociationConnector Association="WRMIS_Model.FOOMCampSites_FOOMCampSiteItems_OMCampSiteID" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_OverallDivItems" Width="1.5" PointX="45.125" PointY="22.375" />
+        <AssociationConnector Association="WRMIS_Model.CODivision_FOOverallDivItems_DivisionID" />
+        <AssociationConnector Association="WRMIS_Model.FOFFPCampSites_FOOverallDivItems_CS_CampSiteID" />
+        <AssociationConnector Association="WRMIS_Model.FOItemCategory_FOOverallDivItems_ItemCategoryID" />
+        <AssociationConnector Association="WRMIS_Model.FOPreMBStatus_FOOverallDivItems_PreMBStatusID" />
+        <AssociationConnector Association="WRMIS_Model.FOOverallDivItems_FOOMCampSiteItems_OverallDivItemID" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_StoneDeployment" Width="1.5" PointX="45.375" PointY="45.875" />
+        <AssociationConnector Association="WRMIS_Model.FOFFPStonePosition_FOStoneDeployment_FFPStonePositionID" />
+        <AssociationConnector Association="WRMIS_Model.FOStoneDeployment_FOOMStonePosition_StoneDeploymentID" />
+        <AssociationConnector Association="WRMIS_Model.FOStoneDeployment_FOSDImages_SDID" />
+        <EntityTypeShape EntityType="WRMIS_Model.TM_ADMAttachment" Width="1.5" PointX="38.75" PointY="90.25" />
+        <AssociationConnector Association="WRMIS_Model.TMTenderWorks_TMADMAttachment_TenderWorksID" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodInspectionDetail_FOOverallDivItems_FloodInspectionDetailID" />
+        <EntityTypeShape EntityType="WRMIS_Model.ED_ChannelFlow7782" Width="1.5" PointX="25.5" PointY="145" />
+        <EntityTypeShape EntityType="WRMIS_Model.ED_ChildChannelEntitlement" Width="1.5" PointX="39.75" PointY="84.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.ED_TDailyGaugeReading" Width="1.5" PointX="24.25" PointY="93.75" />
+        <AssociationConnector Association="WRMIS_Model.SPRefTDailyCalendar_EDChildChannelEntitlement_TDailyCalendarID" />
+        <AssociationConnector Association="WRMIS_Model.SPRefTDailyCalendar_EDTDailyGaugeReading_TDailyCalendarID" />
+        <EntityTypeShape EntityType="WRMIS_Model.RP_Attachment" Width="1.5" PointX="5.25" PointY="96.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.RP_Division" Width="1.5" PointX="36.25" PointY="91.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.RP_Group" Width="1.5" PointX="12.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.RP_PriorityType" Width="1.5" PointX="6" PointY="92.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.RP_Rotation_Circle" Width="1.5" PointX="8.25" PointY="93.625" />
+        <AssociationConnector Association="WRMIS_Model.CODivision_RPDivision_DivisionID" />
+        <AssociationConnector Association="WRMIS_Model.RPPriorityType_RPRotation_PriorityTypeID" />
+        <EntityTypeShape EntityType="WRMIS_Model.RP_Channel" Width="1.5" PointX="19.25" PointY="114" />
+        <EntityTypeShape EntityType="WRMIS_Model.ED_ProvincialEntitlement" Width="1.5" PointX="32.25" PointY="119.75" />
+        <AssociationConnector Association="WRMIS_Model.COChannelComndType_EDProvincialEntitlement_ChannelCommandTypeID" />
+        <AssociationConnector Association="WRMIS_Model.COProvince_EDProvincialEntitlement_ProvinceID" />
+        <AssociationConnector Association="WRMIS_Model.FK_ED_ProvincialEntitlement_SP_PlanDraft" />
+        <AssociationConnector Association="WRMIS_Model.SPPlanScenario_EDProvincialEntitlement_PlanScenarioID" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_IStonePosition" Width="1.5" PointX="37.875" PointY="77" />
+        <AssociationConnector Association="WRMIS_Model.FOIStonePosition_FOFFPStonePosition_IStonePositionID" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodInspection_FOIStonePosition_FloodInspectionID" />
+        <EntityTypeShape EntityType="WRMIS_Model.RP_SubGroup" Width="1.5" PointX="8.375" PointY="21.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.ED_ChannelFlowPara2" Width="1.5" PointX="25.5" PointY="122.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.RP_Rotation_DivisionSubDivision" Width="1.5" PointX="11.25" PointY="91.875" />
+        <AssociationConnector Association="WRMIS_Model.RPPriorityType_RPRotationalDivisionSubDivision_PriorityTypeID" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ChannelDailyGaugeReading" Width="1.5" PointX="30.5" PointY="69.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ChannelGaugeDTPFall" Width="1.5" PointX="21.5" PointY="82" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ChannelGaugeDTPGatedStructure" Width="1.5" PointX="27.5" PointY="92.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ChannelOutletsPerformance" Width="1.5" PointX="21.5" PointY="69.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.WT_FeettoIgnore" Width="1.5" PointX="9.375" PointY="7.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.WT_OffenceType" Width="1.5" PointX="24.375" PointY="17.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.WT_OutletDefectiveDetails" Width="1.5" PointX="33.5" PointY="57.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.WT_OutletDefectiveType" Width="1.5" PointX="31.25" PointY="31.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.WT_Status" Width="1.5" PointX="30.5" PointY="77.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.WT_TheftSiteCondition" Width="1.5" PointX="25.375" PointY="5.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.WT_WaterTheftAttachments" Width="1.5" PointX="40.5" PointY="77.125" />
+        <AssociationConnector Association="WRMIS_Model.GaugeReadingHistory" />
+        <AssociationConnector Association="WRMIS_Model.OutletDefectiveType_Details" />
+        <AssociationConnector Association="WRMIS_Model.Status_WaterTheftCaseStatus" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_FloodFightingPlan" Width="1.5" PointX="16.25" PointY="27.875" />
+        <AssociationConnector Association="WRMIS_Model.CODivision_FOFloodFightingPlan_DivisionID" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodFightingPlan_FOFFPArrangements_FFPID" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodFightingPlan_FOFFPCampSites_FFPID" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodFightingPlan_FOFFPStonePosition_FFPID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AM_AssetInspectLotCondition" Width="1.5" PointX="38.125" PointY="108.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.AM_AssetItems" Width="1.5" PointX="33.625" PointY="1.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.AM_AssetWorkProgressAttachment" Width="1.5" PointX="45.75" PointY="76" />
+        <EntityTypeShape EntityType="WRMIS_Model.AM_AssetWorkType" Width="1.5" PointX="23.375" PointY="109.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.AM_Attributes" Width="1.5" PointX="20.75" PointY="97.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.AM_Category" Width="1.5" PointX="16.25" PointY="96.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.AM_Offices" Width="1.5" PointX="21.375" PointY="5.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.AM_SubCategory" Width="1.5" PointX="18.5" PointY="96.375" />
+        <AssociationConnector Association="WRMIS_Model.AMSubCategory_AMAssetItems_SubCategoryID" />
+        <AssociationConnector Association="WRMIS_Model.AMSubCategory_AMAttributes_SubCategoryID" />
+        <AssociationConnector Association="WRMIS_Model.AMCategory_AMSubCategory_CategoryID" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_DivisionStore" Width="1.5" PointX="20.75" PointY="38.5" />
+        <AssociationConnector Association="WRMIS_Model.AMSubCategory_FODivisionStore_ItemSubcategoryID" />
+        <AssociationConnector Association="WRMIS_Model.CODivision_FODivisionStore_DivisionID" />
+        <AssociationConnector Association="WRMIS_Model.COStructureType_FODivisionStore_StructureTypeID" />
+        <AssociationConnector Association="WRMIS_Model.FODSEntryType_FODivisionStore_EntryTypeID" />
+        <AssociationConnector Association="WRMIS_Model.FOFFPCampSites_FODivisionStore_FFPCampSitesID" />
+        <AssociationConnector Association="WRMIS_Model.FOItemCategory_FODivisionStore_ItemCategoryID" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_Roles" Width="1.5" PointX="27.375" PointY="5" />
+        <AssociationConnector Association="WRMIS_Model.UARoles_UAAndroidRoleRights_RoleID" />
+        <AssociationConnector Association="WRMIS_Model.Role_RoleRights" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_Designations" Width="1.5" PointX="6" PointY="79" />
+        <AssociationConnector Association="WRMIS_Model.UADesignations_CMComplaint_AssignedToDesig" />
+        <AssociationConnector Association="WRMIS_Model.UADesignations_CMComplaint_UserDesigID" />
+        <AssociationConnector Association="WRMIS_Model.UADesignations_CMComplaintAssignmentHistory_AssigedByDesig" />
+        <AssociationConnector Association="WRMIS_Model.UADesignations_CMComplaintAssignmentHistory_AssigedToDesig" />
+        <AssociationConnector Association="WRMIS_Model.UADesignations_CMComplaintComments_UserDesigID" />
+        <AssociationConnector Association="WRMIS_Model.UADesignations_CMComplaintMarked_UserDesigID" />
+        <AssociationConnector Association="WRMIS_Model.UADesignations_CMComplaintNotification_UserDesigID" />
+        <AssociationConnector Association="WRMIS_Model.UADesignations_CMNotificationList_DesigID" />
+        <AssociationConnector Association="WRMIS_Model.UADesignations_UAActingRoles_AssignedDesignationID" />
+        <AssociationConnector Association="WRMIS_Model.UADesignations_UAActingRoles_DesignationID" />
+        <AssociationConnector Association="WRMIS_Model.Designation_IrrigationLevel" />
+        <AssociationConnector Association="WRMIS_Model.Designation_Office" />
+        <AssociationConnector Association="WRMIS_Model.Designation_WaterTheftCanalWire" />
+        <AssociationConnector Association="WRMIS_Model.Designation_WaterTheftStatus" />
+        <AssociationConnector Association="WRMIS_Model.Designation_WaterTheftStatus_By" />
+        <AssociationConnector Association="WRMIS_Model.Designation_WaterTheftStatus_To" />
+        <AssociationConnector Association="WRMIS_Model.UADesignations_UANotificationConfiguration_DesignationID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AM_AssetWorkProgress" Width="1.5" PointX="47.875" PointY="28.375" />
+        <AssociationConnector Association="WRMIS_Model.AMAssetWorkProgress_AMAssetWorkProgressAttachment_AssetWorkProgressID" />
+        <AssociationConnector Association="WRMIS_Model.CWWorkStatus_AMAssetWorkProgress_WorkProgressID" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_GaugeSlipSite" Width="1.5" PointX="35" PointY="85.125" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_GAUGE_STATION_S_CO_STATI" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_BarrageDailyData" Width="1.5" PointX="23" PointY="152.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_BarrageDailyDataHistory" Width="1.5" PointX="25.25" PointY="152.75" />
+        <AssociationConnector Association="WRMIS_Model.COBarrageDailyData_COBarrageDailyDataHistory_BarrageDailyDataID" />
+        <AssociationConnector Association="WRMIS_Model.COStation_COBarrageDailyData_BarrageID" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_BARRA_BARRAGEDA_CO_BARRA" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_BARRA_BARRAGEDA_CO_BARRA2" />
+        <EntityTypeShape EntityType="WRMIS_Model.SD_DamTechPara" Width="1.5" PointX="47.5" PointY="82.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.SD_DamType" Width="1.5" PointX="40" PointY="113.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.SD_OMCost" Width="1.5" PointX="44.5" PointY="79.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.SD_SmallChannelData" Width="1.5" PointX="46.75" PointY="95.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.SD_SpillwayType" Width="1.5" PointX="45.25" PointY="84.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.SD_Village" Width="1.5" PointX="46.75" PointY="92.375" />
+        <AssociationConnector Association="WRMIS_Model.SDSpillwayType_SDDamTechPara_SpillwayTypeID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AC_AdvertisementSource" Width="1.5" PointX="27.5" PointY="46.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.AC_ApprovelAuthority" Width="1.5" PointX="23" PointY="49.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.AC_AuctionAssetDetail" Width="1.5" PointX="35.75" PointY="113.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.AC_AuctionCategory" Width="1.5" PointX="23" PointY="130.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.AC_AuctionNotice" Width="1.5" PointX="25.25" PointY="61.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.AC_AuctionType" Width="1.5" PointX="23" PointY="46.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.AC_BidderEarnestMoney" Width="1.5" PointX="43" PointY="71.25" />
+        <AssociationConnector Association="WRMIS_Model.ACAuctionNotice_ACAdvertisementSource_AuctionNoticeID" />
+        <AssociationConnector Association="WRMIS_Model.ACApprovelAuthority_ACAutionNotice_ApprovelAuthorityID" />
+        <AssociationConnector Association="WRMIS_Model.ACAuctionAssetDetail_ACBidderEarnestMoney_AuctionAssetDetailID" />
+        <AssociationConnector Association="WRMIS_Model.ACAuctionCategory_ACAuctionNotice_AuctionCategoryID" />
+        <AssociationConnector Association="WRMIS_Model.ACAuctionType_ACAuctionNotice_AuctionTypeID" />
+        <AssociationConnector Association="WRMIS_Model.CODivision_ACAuctionNotice_DivisionID" />
+        <EntityTypeShape EntityType="WRMIS_Model.EC_ApplicableTaxes" Width="1.5" PointX="8" PointY="29.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.EC_Bank" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.EC_CanalSpecialWater" Width="1.5" PointX="32.625" PointY="101.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.EC_DischargeSupplySource" Width="1.5" PointX="30.375" PointY="106.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.EC_EffuentWaterDetails" Width="1.5" PointX="41.625" PointY="90" />
+        <EntityTypeShape EntityType="WRMIS_Model.EC_Industry" Width="1.5" PointX="30.375" PointY="121.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.EC_IndustryType" Width="1.5" PointX="28.125" PointY="123.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.EC_PaymentType" Width="1.5" PointX="5.75" PointY="31.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.EC_ServiceType" Width="1.5" PointX="11.75" PointY="7.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.EC_SurchargeAmount" Width="1.5" PointX="8" PointY="33.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.EC_WaterCharges" Width="1.5" PointX="25.75" PointY="0.75" />
+        <AssociationConnector Association="WRMIS_Model.CODivision_ECEffluentWaterDetails_DivisionID" />
+        <AssociationConnector Association="WRMIS_Model.ECPaymentType_ECApplicableTaxes_PaymentTypeID" />
+        <AssociationConnector Association="WRMIS_Model.ECDischargeSupplySource_ECCanalSpecialWater_SupplySourceID" />
+        <AssociationConnector Association="WRMIS_Model.ECIndustry_ECCanalSpecialWater_IndustryID" />
+        <AssociationConnector Association="WRMIS_Model.ECDischargeSupplySource_ECEffluentWaterDetails_DischargeSourceID" />
+        <AssociationConnector Association="WRMIS_Model.ECIndustry_ECEffluentWaterDetails_IndustryID" />
+        <AssociationConnector Association="WRMIS_Model.ECIndustryType_ECIndustry_IndustryTypeID" />
+        <AssociationConnector Association="WRMIS_Model.ECTaxType_ECSurchargeOnArrears_TaxTypeID" />
+        <EntityTypeShape EntityType="WRMIS_Model.SD_SmallDam" Width="1.5" PointX="42.25" PointY="82.375" />
+        <AssociationConnector Association="WRMIS_Model.COSubDivision_SDSmallDam_SubDivID" />
+        <AssociationConnector Association="WRMIS_Model.COVillage_SDSmallDam_VillageID" />
+        <AssociationConnector Association="WRMIS_Model.SDSmallDam_SDDamTechPara_SmallDamID" />
+        <AssociationConnector Association="WRMIS_Model.SDDamType_SDSmallDam_DamTypeID" />
+        <AssociationConnector Association="WRMIS_Model.SDSmallDam_SDOMCost_SmallDamID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AM_Attachment" Width="1.5" PointX="43.5" PointY="55.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_FloodGauge" Width="1.5" PointX="3" PointY="38" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_FloodGaugeType" Width="1.5" PointX="0.75" PointY="38.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_StructureNalaHillTorant" Width="1.5" PointX="35.625" PointY="102" />
+        <AssociationConnector Association="WRMIS_Model.CODistrict_FOStructrueNalaHillTorant_DistrictID" />
+        <AssociationConnector Association="WRMIS_Model.CODivision_FOStructureNalaHillTorant_DivisionID" />
+        <AssociationConnector Association="WRMIS_Model.COTehsil_FOStructrueNalaHillTorant_TehsilID" />
+        <AssociationConnector Association="WRMIS_Model.COVillage_FOStructrueNalaHillTorant_VillageID" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodGaugeType_FOFloodGauge_GaugetypeID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AM_AssetCondition" Width="1.5" PointX="25.375" PointY="14" />
+        <AssociationConnector Association="WRMIS_Model.AMAssetCondition_AMAssetInspectLotCondition_ConditionID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AC_AuctionAssetItems" Width="1.5" PointX="44.125" PointY="50.875" />
+        <AssociationConnector Association="WRMIS_Model.AMAssetItems_ACAuctionAssetItems_AssetItemID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AM_HeadquarterDivision" Width="1.5" PointX="39.25" PointY="93.625" />
+        <AssociationConnector Association="WRMIS_Model.CODivision_AMHeadquarterDivision_DivisionID" />
+        <AssociationConnector Association="WRMIS_Model.COZone_AMHeadquarterDivision_ZoneID" />
+        <EntityTypeShape EntityType="WRMIS_Model.EC_PrintBillSertup" Width="1.5" PointX="21.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.EC_BillFactor" Width="1.5" PointX="36.875" PointY="122.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.EC_Bills" Width="1.5" PointX="34.625" PointY="121.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.EC_GenerateBillParameters" Width="1.5" PointX="32.375" PointY="130" />
+        <AssociationConnector Association="WRMIS_Model.ECBills_ECBillFactor_BillID" />
+        <AssociationConnector Association="WRMIS_Model.ECGenerateBill_ECBillTransaction_GenerateBillID" />
+        <AssociationConnector Association="WRMIS_Model.ECIndustry_ECBillTransaction_IndustryID" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ChannelReachLSP" Width="1.5" PointX="18.5" PointY="124" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_OutletAlterationHistroy" Width="1.5" PointX="24.5" PointY="87.125" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_CHANN_CHANNEL_R_CO_CHANN" />
+        <AssociationConnector Association="WRMIS_Model.LiningType_channelReach" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_OUTLE_OUTLET_TY_CO_OUTLE" />
+        <EntityTypeShape EntityType="WRMIS_Model.SD_SmallDamData" Width="1.5" PointX="44.5" PointY="88.625" />
+        <AssociationConnector Association="WRMIS_Model.SDSmallDam_SDSmallDamData_SmallDamID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AC_AuctionCommiteeMembers" Width="1.5" PointX="32.75" PointY="108.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.AC_AuctionOpening" Width="1.5" PointX="27.5" PointY="149.75" />
+        <AssociationConnector Association="WRMIS_Model.ACAuctionNotice_ACAuctionCommiteeMembers_AuctioNnoticeID" />
+        <AssociationConnector Association="WRMIS_Model.ACAuctionOpening_ACAuctionCommiteeMembers_AuctionOpeningID" />
+        <AssociationConnector Association="WRMIS_Model.ACAuctionNotice_ACAuctionOpening_AuctionNoticeID" />
+        <EntityTypeShape EntityType="WRMIS_Model.EC_SanctionedDischargeSupply" Width="1.5" PointX="38.875" PointY="117.125" />
+        <AssociationConnector Association="WRMIS_Model.ECCanalSpecialWater_ECSanctionedDischargeSupply_CanalSpecialWaterID" />
+        <AssociationConnector Association="WRMIS_Model.ECIndustry_ECSanctionedDischargeSupply_IdustryID" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_GaugeSlipDailyData" Width="1.5" PointX="37.25" PointY="85" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_GAUGE_SITE_DAIL_CO_GAUGE" />
+        <EntityTypeShape EntityType="WRMIS_Model.AC_AuctionPrice" Width="1.5" PointX="41" PointY="66" />
+        <AssociationConnector Association="WRMIS_Model.ACAuctionAssetDetail_ACAuctionPrice_AuctionAssetDetailID" />
+        <EntityTypeShape EntityType="WRMIS_Model.SI_ChannelGaugeReading" Width="1.5" PointX="13.375" PointY="25.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.SI_GeneralInspections" Width="1.5" PointX="21.5" PointY="55.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.SI_GeneralInspectionsAttachment" Width="1.5" PointX="23.75" PointY="69.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.SI_GeneralInspectionType" Width="1.5" PointX="17" PointY="155.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.SI_InspectionType" Width="1.5" PointX="11" PointY="79.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.SI_OutletAlterationHistroy" Width="1.5" PointX="24.5" PointY="81.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.SI_Schedule" Width="1.5" PointX="11" PointY="74.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.SI_ScheduleDetailChannel" Width="1.5" PointX="13.25" PointY="76.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.SI_ScheduleDetailGeneral" Width="1.5" PointX="19.25" PointY="62" />
+        <EntityTypeShape EntityType="WRMIS_Model.SI_ScheduleDetailTender" Width="1.5" PointX="45.75" PointY="57.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.SI_ScheduleDetailWorks" Width="1.5" PointX="16.25" PointY="55.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.SI_ScheduleStatus" Width="1.5" PointX="25.25" PointY="22.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.SI_ScheduleStatusDetail" Width="1.5" PointX="27.5" PointY="87.75" />
+        <AssociationConnector Association="WRMIS_Model.SIScheduleDetailChannel_COChannelGaugeDTPFall_ScheduleDetailChannelID" />
+        <AssociationConnector Association="WRMIS_Model.SIScheduleDetailChannel_COChannelGaugeDTPGatedStructure_ScheduleDetailChannelID" />
+        <AssociationConnector Association="WRMIS_Model.SIScheduleDetailChannel_COChannelOutletsPerformance_ScheduleDetailChannelID" />
+        <AssociationConnector Association="WRMIS_Model.ScheduleDetails_Division" />
+        <AssociationConnector Association="WRMIS_Model.ScheduleDetailsT_Division" />
+        <AssociationConnector Association="WRMIS_Model.ScheduleDetailW_Division" />
+        <AssociationConnector Association="WRMIS_Model.COOutletType_SIOutletAlterationHistory_OutletTypeID" />
+        <AssociationConnector Association="WRMIS_Model.CoSubDivision_SIScheduleDetailChannel_SubDivID" />
+        <AssociationConnector Association="WRMIS_Model.SIGeneralInspections_SIGeneralInspectionsAttachment_GeneralInspectionsID" />
+        <AssociationConnector Association="WRMIS_Model.SIGeneralInspectionType_SIGeneralInspections_GeneralInspectionTypeID" />
+        <AssociationConnector Association="WRMIS_Model.SIScheduleDetailGeneral_SIGeneralInspections_ScheduleDetailGeneralID" />
+        <AssociationConnector Association="WRMIS_Model.SIGeneralInspectionType_SIScheduleDetailGeneral_GeneralInspectionTypeID" />
+        <AssociationConnector Association="WRMIS_Model.ScheduleDetails_InsepctionType" />
+        <AssociationConnector Association="WRMIS_Model.SIScheduleDetailChannel_SIOutletAlterationHistory_ScheduleDetailChannelID" />
+        <AssociationConnector Association="WRMIS_Model.SCHEDULE_SCHEDULE_DETAIL_JOIN" />
+        <AssociationConnector Association="WRMIS_Model.Schedule_STender" />
+        <AssociationConnector Association="WRMIS_Model.Schedule_SworksDetails" />
+        <AssociationConnector Association="WRMIS_Model.SISchedule_SIScheduleDetailGeneral_ScheduleID" />
+        <AssociationConnector Association="WRMIS_Model.SISchedule_SIScheduleStatusDetail_ScheduleID" />
+        <AssociationConnector Association="WRMIS_Model.TMTenderNotice_SIScheduleDetailTender_TenderNoticeID" />
+        <AssociationConnector Association="WRMIS_Model.TMTenderWorks_SIScheduleDetailTender_TenderWorksID" />
+        <AssociationConnector Association="WRMIS_Model.ScheduleStatusJoin" />
+        <AssociationConnector Association="WRMIS_Model.UADesignations_SIScheduleStatusDetail_DesignationID" />
+        <AssociationConnector Association="WRMIS_Model.UADesignations_SIScheduleStatusDetail_SendToUserDesignationID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_AccountsHead" Width="1.5" PointX="0.75" PointY="45.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_AccountsSetup" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_AssetType" Width="1.5" PointX="46.25" PointY="71.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_DailyRate" Width="1.5" PointX="8.75" PointY="25.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_ExpenseOfParts" Width="1.5" PointX="25.75" PointY="26.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_ExpenseQuotation" Width="1.5" PointX="53" PointY="117.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_ExpenseType" Width="1.5" PointX="27.75" PointY="9.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_KeyParts" Width="1.5" PointX="48.5" PointY="71.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_ObjectClassification" Width="1.5" PointX="3" PointY="45.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_TaxRate" Width="1.5" PointX="10.75" PointY="27.75" />
+        <AssociationConnector Association="WRMIS_Model.ATAccountHead_ATObjectClassification_AccountHeadID" />
+        <AssociationConnector Association="WRMIS_Model.ATAssetType_ATKeyParts_AssetTypeID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_BudgetApprovel" Width="1.5" PointX="5.25" PointY="50" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_BudgetUtilization" Width="1.5" PointX="5.25" PointY="45.625" />
+        <AssociationConnector Association="WRMIS_Model.ATAccountsHead_ATBudgetUtilization_AccountHeadID" />
+        <AssociationConnector Association="WRMIS_Model.ATObjectClassification_ATBudgetApprovel_ObjectClassificationID" />
+        <AssociationConnector Association="WRMIS_Model.ATObjectClassification_ATBudgetUtilization_ObjectClassificationID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AC_AuctionAssets" Width="1.5" PointX="33.5" PointY="91.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.AC_AuctionPayment" Width="1.5" PointX="43.25" PointY="64" />
+        <AssociationConnector Association="WRMIS_Model.ACAuctionNotice_ACAuctionAssets_AuctionNoticeID" />
+        <AssociationConnector Association="WRMIS_Model.AMCategory_ACAuctionAssets_AssetCategoryID" />
+        <AssociationConnector Association="WRMIS_Model.AMSubCategory_ACAuctionAssets_AssetSubCategoryID" />
+        <AssociationConnector Association="WRMIS_Model.ACAuctionNotice_ACAuctionPayment_AuctionNoticeID" />
+        <AssociationConnector Association="WRMIS_Model.ACAuctionPrice_ACAuctionPayment_AuctionPriceID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AM_AssetAttributes" Width="1.5" PointX="41.875" PointY="51.25" />
+        <AssociationConnector Association="WRMIS_Model.AMAssetAttributes_ACAuctionAssetItems_AssetAttributeID" />
+        <AssociationConnector Association="WRMIS_Model.AMAssetItems_AMAssetAttributes_AssetItemID" />
+        <AssociationConnector Association="WRMIS_Model.AMAttributes_AMAssetAttributes_AttributeID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AM_AssetWork" Width="1.5" PointX="25.625" PointY="53.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.AM_AssetWorkDetail" Width="1.5" PointX="40.875" PointY="38.25" />
+        <AssociationConnector Association="WRMIS_Model.AMAssetItem_AMAssetWorkDetail_AssetItemID" />
+        <AssociationConnector Association="WRMIS_Model.AMAssetWork_AMAssetWorkDetail_AssetWorkID" />
+        <AssociationConnector Association="WRMIS_Model.AMAssetWork_AMAssetWorkProgress_AssetWorkID" />
+        <AssociationConnector Association="WRMIS_Model.AMAssetWorkType_AMAssetWork_AssetWorkTypeID" />
+        <AssociationConnector Association="WRMIS_Model.CODivision_AMAssetWork_DivisionID" />
+        <AssociationConnector Association="WRMIS_Model.TMFundingSource_AMAssetWork_FundingSourceID" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_FloodGaugeReading" Width="1.5" PointX="5.25" PointY="37.875" />
+        <AssociationConnector Association="WRMIS_Model.FOFloodGauge_FOFloodGaugeReading_FloodGaugeID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_AssetAllocation" Width="1.875" PointX="48.5" PointY="78.125" />
+        <AssociationConnector Association="WRMIS_Model.AMAssetAttributes_ATAssetAllocation_AssetAttributeID" />
+        <AssociationConnector Association="WRMIS_Model.AMAssetItems_ATAssetAllocation_AssetItemID" />
+        <AssociationConnector Association="WRMIS_Model.ATAssetType_ATAssetAllocation_AssetTypeID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AC_AuctionBidder" Width="1.5" PointX="27.5" PointY="22.5" />
+        <AssociationConnector Association="WRMIS_Model.ACAuctionNotice_ACAuctionBidder_AuctionNoticeID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_SanctionStatus" Width="1.5" PointX="3.375" PointY="3.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.SYS_Logs" Width="1.5" PointX="5.375" PointY="3.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_FundReleaseDetails" Width="1.5" PointX="18.875" PointY="56.25" />
+        <AssociationConnector Association="WRMIS_Model.ATBudgetApprovel_ATFundReleaseDetails_BudgetApprovelID" />
+        <EntityTypeShape EntityType="WRMIS_Model.RP_EnteringChannel" Width="1.5" PointX="16.25" PointY="116.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.EC_Payments" Width="1.5" PointX="45.875" PointY="65.5" />
+        <AssociationConnector Association="WRMIS_Model.ECBank_ECPayments_BankID" />
+        <AssociationConnector Association="WRMIS_Model.ECBills_ECPayments_BillID" />
+        <AssociationConnector Association="WRMIS_Model.ECIndustry_ECPayments_IndustryID" />
+        <EntityTypeShape EntityType="WRMIS_Model.SD_SmallChannel" Width="1.5" PointX="44.5" PointY="93.75" />
+        <AssociationConnector Association="WRMIS_Model.SDSmallChannel_SDSmallChannelData_SmallChannelID" />
+        <AssociationConnector Association="WRMIS_Model.SDSmallChannel_SDVillage_SmallChannelID" />
+        <AssociationConnector Association="WRMIS_Model.SDSmallDam_SDSmallChannel_SmallDamID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AM_AssetInspectionInd" Width="1.5" PointX="41.25" PointY="56.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.AM_AssetInspectionLot" Width="1.5" PointX="35.875" PointY="108.125" />
+        <AssociationConnector Association="WRMIS_Model.ACAuctionAssets_ACAuctionAssetDetail_AuctionAssetID" />
+        <AssociationConnector Association="WRMIS_Model.AMAssetCondition_AMAssetInspectionInd_ConditionID" />
+        <AssociationConnector Association="WRMIS_Model.AMAssetInspectionInd_AMAttachment_AssetInspectionIndID" />
+        <AssociationConnector Association="WRMIS_Model.AMAssetItems_AMInspectionLot_AssetItemID" />
+        <AssociationConnector Association="WRMIS_Model.AMInspectionLot_AMAssetCondition_InspectionLotID" />
+        <AssociationConnector Association="WRMIS_Model.AMInspectionLot_AMAttachment_AssetInspectLotID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_SanctionPayment" Width="1.5" PointX="50.75" PointY="21.875" />
+        <AssociationConnector Association="WRMIS_Model.ACAuctionAssets_ACAuctionAssetItems_AuctionAssetItemID" />
+        <AssociationConnector Association="WRMIS_Model.ACAuctionBidder_ACAuctionPrice_AuctionBidderID" />
+        <AssociationConnector Association="WRMIS_Model.ACAuctionBidder_ACBidderEarnestMoney_AuctionBidderID" />
+        <AssociationConnector Association="WRMIS_Model.AMAssetItems_AMAssetInspectionInd_AssetItemID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_ResourceAllocation" Width="1.5" PointX="40.5" PointY="71.5" />
+        <AssociationConnector Association="WRMIS_Model.ATResourceAllocation_ATAssetAllocation_ResourceAllocationID" />
+        <AssociationConnector Association="WRMIS_Model.UADesignations_ATResourceAllocation_DesignationID" />
+        <AssociationConnector Association="WRMIS_Model.SIScheduleDetailChannel_SIChannelGaugeReading" />
+        <AssociationConnector Association="WRMIS_Model.UADesignations_SIChannelGaugeReading_DesignationID" />
+        <EntityTypeShape EntityType="WRMIS_Model.RP_PlanImplementation" Width="1.5" PointX="28.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.RP_PlanImplementationPercentage" Width="1.5" PointX="18.375" PointY="29.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.AC_AuctionNoticeAttachment" Width="1.5" PointX="27.5" PointY="49.75" />
+        <AssociationConnector Association="WRMIS_Model.ACAuctionNotice_ACAuctionNoticeAttachment_AuctionNoticeID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_FundRelease" Width="1.5" PointX="9.625" PointY="38" />
+        <AssociationConnector Association="WRMIS_Model.ATFundRelease_ATFundReleaseDetails_FundReleaseID" />
+        <EntityTypeShape EntityType="WRMIS_Model.RP_Approval" Width="1.5" PointX="5.25" PointY="100.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_ExpenseSanction" Width="1.5" PointX="53.375" PointY="41.375" />
+        <EntityTypeShape EntityType="WRMIS_Model.AC_AuctionStatusDetails" Width="1.5" PointX="48.25" PointY="66.375" />
+        <AssociationConnector Association="WRMIS_Model.ACAuctionNotice_ACAuctionStatusdetails_AuctionNoticeID" />
+        <AssociationConnector Association="WRMIS_Model.ACAuctionPrice_ACAuctionStatusDetails_AuctionPriceID" />
+        <AssociationConnector Association="WRMIS_Model.UADesignations_ACAuctionStatusDetails_DesignationID" />
+        <EntityTypeShape EntityType="WRMIS_Model.CW_ClosureWork" Width="1.5" PointX="30.625" PointY="17" />
+        <AssociationConnector Association="WRMIS_Model.CWClosureWork_CWWorkProgress_ClosureWorkID" />
+        <AssociationConnector Association="WRMIS_Model.CWClosureWorkPlan_CWClosureWork_CWPID" />
+        <AssociationConnector Association="WRMIS_Model.CWWorkType_CWClosureWork_WorkTypeID" />
+        <AssociationConnector Association="WRMIS_Model.TMFundingSource_CWClosureWork_FundingSourceID" />
+        <EntityTypeShape EntityType="WRMIS_Model.RP_AvgDPR" Width="1.5" PointX="30.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_MonthlyExpenses" Width="1.5" PointX="51.125" PointY="37.75" />
+        <AssociationConnector Association="WRMIS_Model.ATAssetAllocation_ATMonthlyExpenses_AssetAllocationID" />
+        <AssociationConnector Association="WRMIS_Model.ATMonthlyExpenses_ATExpenseOfParts_MonthlyExpenseID" />
+        <AssociationConnector Association="WRMIS_Model.ATMonthlyExpenses_ATExpenseQuotation_MonthlyExpenseID" />
+        <AssociationConnector Association="WRMIS_Model.ATMonthlyExpenses_ATExpenseSanction_MonthlyExpenseID" />
+        <AssociationConnector Association="WRMIS_Model.ATExpenseType_ATMonthlyExpenses_ExpenseTypeID" />
+        <AssociationConnector Association="WRMIS_Model.ATObjectClassification_ATMonthlyExpenses_ObjectClassificationID" />
+        <AssociationConnector Association="WRMIS_Model.ATResourceAllocation_ATMonthlyExpenses_ResourceAllocationID" />
+        <AssociationConnector Association="WRMIS_Model.FK_AT_MonthlyExpenses_AT_SanctionStatus" />
+        <EntityTypeShape EntityType="WRMIS_Model.RP_RotationalProgram" Width="1.5" PointX="3" PointY="70.625" />
+        <AssociationConnector Association="WRMIS_Model.RPRotaionalProgram_RPApproval_RPID" />
+        <AssociationConnector Association="WRMIS_Model.RPRotationalProgram_RPAttachment_RPID" />
+        <AssociationConnector Association="WRMIS_Model.RPRotationalProgram_RPChannel_RPID" />
+        <AssociationConnector Association="WRMIS_Model.RPRotationalProgram_RPDivision_RPID" />
+        <AssociationConnector Association="WRMIS_Model.RPRotationalProgram_RPEnteringChannel_RPID" />
+        <AssociationConnector Association="WRMIS_Model.RPRotationalProgram_RPRotation_RPID" />
+        <AssociationConnector Association="WRMIS_Model.RPRotationalProgram_RPRotationalDivisionSubDivision_RPID" />
+        <AssociationConnector Association="WRMIS_Model.UAIrrigationLevel_RPRotationalProgram_IrrigationLevelID" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_LoginHistory" Width="1.5" PointX="21.5" PointY="65.875" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_AssociatedLocationHistory" Width="1.5" PointX="30.375" PointY="12.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.UA_Users" Width="1.5" PointX="48.625" PointY="34.5" />
+        <AssociationConnector Association="WRMIS_Model.UAUsers_ATResourceAllocation_ADMUserID" />
+        <AssociationConnector Association="WRMIS_Model.UAUsers_ATResourceAllocation_StaffUserID" />
+        <AssociationConnector Association="WRMIS_Model.UAUsers_CMComplaint_AssignedToUser" />
+        <AssociationConnector Association="WRMIS_Model.UAUsers_CMComplaint_UserID" />
+        <AssociationConnector Association="WRMIS_Model.UAUsers_CMComplaintAssignmentHistory_AssigedByUser" />
+        <AssociationConnector Association="WRMIS_Model.UAUsers_CMComplaintAssignmentHistory_AssigedToUser" />
+        <AssociationConnector Association="WRMIS_Model.UAUsers_CMComplaintComments_UserID" />
+        <AssociationConnector Association="WRMIS_Model.UAUsers_CMComaplaintMarked_UserID" />
+        <AssociationConnector Association="WRMIS_Model.UAUsers_CMComplaintNotification_UserID" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_BARRA_USERS_BAR_UA_USERS2" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_BARRA_USERS_BAR_UA_USERS" />
+        <AssociationConnector Association="WRMIS_Model.UAUsers_COChannelDailyGaugeReading_GaugeReaderID" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_CHANN_USERS_CHA_UA_USERS" />
+        <AssociationConnector Association="WRMIS_Model.UAuser_COOutletAlterationHistory_UserID" />
+        <AssociationConnector Association="WRMIS_Model.UAUsers_SIChannelGaugeReading_GaugeReaderID" />
+        <AssociationConnector Association="WRMIS_Model.UAUsers_SIOutletAlterationHistory_UserID" />
+        <AssociationConnector Association="WRMIS_Model.UAUsers_SIScheduleStatusDetail_SendToUserID" />
+        <AssociationConnector Association="WRMIS_Model.UAUsers_SiScheduleStatusDetail_UserID" />
+        <AssociationConnector Association="WRMIS_Model.UAUsers_UAActingRoles_AssignedUserID" />
+        <AssociationConnector Association="WRMIS_Model.Users_ActingRoles" />
+        <AssociationConnector Association="WRMIS_Model.UAUsers_UAAlertNotification_UserID" />
+        <AssociationConnector Association="WRMIS_Model.FK_UA_ASSOC_USER_ASSO_UA_USERS" />
+        <AssociationConnector Association="WRMIS_Model.User_AssociatedStations" />
+        <AssociationConnector Association="WRMIS_Model.Designation_User" />
+        <AssociationConnector Association="WRMIS_Model.UAUsers_UALoginHistory_UserID" />
+        <AssociationConnector Association="WRMIS_Model.User_Roles" />
+        <AssociationConnector Association="WRMIS_Model.UAUsers_UASMSNotification_UserID" />
+        <AssociationConnector Association="WRMIS_Model.User_UserManager" />
+        <AssociationConnector Association="WRMIS_Model.User_UserManager_manager" />
+        <AssociationConnector Association="WRMIS_Model.FK_UA_USERM_USERS_USE_UA_USERS" />
+        <AssociationConnector Association="WRMIS_Model.FK_UA_USERM_USERS_USE_UA_USERS2" />
+        <AssociationConnector Association="WRMIS_Model.UAUsers_UAUserNotificationConfiguration_UserID" />
+        <AssociationConnector Association="WRMIS_Model.Users_UserHistory" />
+        <AssociationConnector Association="WRMIS_Model.Users_WaterTheftCanalWire" />
+        <AssociationConnector Association="WRMIS_Model.Users_WaterTheftStatus" />
+        <AssociationConnector Association="WRMIS_Model.Users_WaterTheftStatus_By" />
+        <AssociationConnector Association="WRMIS_Model.Users_WaterTheftStatus_To" />
+        <EntityTypeShape EntityType="WRMIS_Model.PE_DivisionExcluded" Width="1.5" PointX="16.25" PointY="164.875" />
+        <AssociationConnector Association="WRMIS_Model.CODivision_PEDivisionExcluded_DivisionID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_FundReleaseTypes" Width="1.5" PointX="7.375" PointY="55.25" />
+        <AssociationConnector Association="WRMIS_Model.ATFundReleaseType_ATFundRelease_FundReleaseTypeID" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_Channel" Width="1.5" PointX="14" PointY="120.125" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_CMComplaint_ChannelID" />
+        <AssociationConnector Association="WRMIS_Model.CHANNEL_CHANNEL_ADMIN_BOUNDARIES_JOIN" />
+        <AssociationConnector Association="WRMIS_Model.CHANNEL_CHANNEL_IRRIGATION_BOUNDARIES_JOIN" />
+        <AssociationConnector Association="WRMIS_Model.CHANNEL_CHANNEL_PARENT_FEEDER_JOIN" />
+        <AssociationConnector Association="WRMIS_Model.CHANNEL_COMNDTYPE_CHANNEL_JOIN" />
+        <AssociationConnector Association="WRMIS_Model.Channel_GaugeSlip_join" />
+        <AssociationConnector Association="WRMIS_Model.Channel_Irrigator" />
+        <AssociationConnector Association="WRMIS_Model.CHANNELTYPE_CHANNEL_JOIN" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_COChannelIndent_ParentChannelID" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_COChannelIndentOfftakes_ChannelID" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_COGaugeLag_ChannelID" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_ECCanalSpecialWater" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_EDChildChannelEntitlement_ChannelID" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_EDTDailyGaugeReading_ChannelID" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_PEChannelExcluded_ChannelID" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_PEFieldChannelData_ChannelID" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_PEHeadGaugeDifference_ChannelID" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_PEPMIUChannelData_ChannelID" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_PETailGaugeDifference_ChannelID" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_RPChannel_ChannelID" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_RPEnteringChannel_ChannelID" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_SIScheduleDetailChannel_ChannelID" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_SPTDailyCanalData_ChannelID" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_WLChannelLG_ChannelID" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_WLSubDivisionLG_ParentChannelID" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_CHANN_CHANNEL_C_CO_CHANN2" />
+        <AssociationConnector Association="WRMIS_Model.FLOWTYPE_CHANNEL_JOIN" />
+        <EntityTypeShape EntityType="WRMIS_Model.ED_ChannelDeliveries" Width="1.5" PointX="18.5" PointY="79.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.ED_ChannelEntitlement" Width="1.5" PointX="19.5" PointY="105.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.ED_ChannelWeightedAvg" Width="1.5" PointX="18.5" PointY="84.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.ED_ChannelWeightedAvgDeliveries" Width="1.5" PointX="29.5" PointY="110.5" />
+        <EntityTypeShape EntityType="WRMIS_Model.ED_SeasonalDeliveries" Width="1.5" PointX="18.5" PointY="151.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.ED_SeasonalEntitlement" Width="1.5" PointX="18.5" PointY="169.25" />
+        <EntityTypeShape EntityType="WRMIS_Model.ED_SeasonalWeightedAvg" Width="1.5" PointX="18.5" PointY="159.125" />
+        <EntityTypeShape EntityType="WRMIS_Model.ED_SeasonalWeightedAvgDeliveries" Width="1.5" PointX="18.5" PointY="164.25" />
+        <AssociationConnector Association="WRMIS_Model.SPRefTDailyCalendar_EDChannelDeliveries_TDailyCalendarID" />
+        <AssociationConnector Association="WRMIS_Model.EDChannelEntitlement_EDChildChannelEntitlement_ChannelEntitlementID" />
+        <AssociationConnector Association="WRMIS_Model.SPRefTDailyCalendar_EDChannelEntitlement_TDailyCalendarID" />
+        <AssociationConnector Association="WRMIS_Model.SPRefTDailyCalendar_EDChannelWeightedAvg_TDailyCalendarID" />
+        <AssociationConnector Association="WRMIS_Model.SPRefTDailyCalendar_EDChannelWeightedAvgDeliveries_TDailyCalendarID" />
+        <EntityTypeShape EntityType="WRMIS_Model.ED_CommandChannelChilds" Width="1.5" PointX="21.25" PointY="126.625" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_EDCommandChannelChilds_ChannelID" />
+        <EntityTypeShape EntityType="WRMIS_Model.ED_CommandChannel" Width="1.5" PointX="25.25" PointY="126.25" />
+        <AssociationConnector Association="WRMIS_Model.COVillage_ED_CommandChannel_ChannelID" />
+        <AssociationConnector Association="WRMIS_Model.COChannelComndType_EDCommandChannel_ChannelComndTypeID" />
+        <AssociationConnector Association="WRMIS_Model.EDCommandChannel_EDChannelDeliveries_CommandChannelID" />
+        <AssociationConnector Association="WRMIS_Model.EDCommandChannel_EDChannelEntitlement_CommandChannelID" />
+        <AssociationConnector Association="WRMIS_Model.EDCommandChannel_EDChannelFlow7782_CommandChannelID" />
+        <AssociationConnector Association="WRMIS_Model.EDCommandChannel_EDChannelFlowPara2_CommandChannelID" />
+        <AssociationConnector Association="WRMIS_Model.EDCommandChannel_EDChannelWeightedAvg_CommandChannelID" />
+        <AssociationConnector Association="WRMIS_Model.EDCommandChannel_EDChannelWeightedAvgDeliveries_CommandChannelID" />
+        <AssociationConnector Association="WRMIS_Model.EDCommandChannel_EDCommandChannelChilds_CommandChannelID" />
+        <AssociationConnector Association="WRMIS_Model.EDCommandChannel_EDSeasonalDeliveries_CommandChannelID" />
+        <AssociationConnector Association="WRMIS_Model.EDCommandChannel_EDSeasonalEntitlement_CommandChannelID" />
+        <AssociationConnector Association="WRMIS_Model.EDCommandChannel_EDSeasonalWeightedAvg_CommandChannelID" />
+        <AssociationConnector Association="WRMIS_Model.EDCommandChannel_EDSeasonalWeightedAvgDeliveries_CommandChannelID" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ChannelGauge" Width="1.5" PointX="40.25" PointY="97.625" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_ATTRI_CHANNELGA_CO_CHANN" />
+        <AssociationConnector Association="WRMIS_Model.CHANNEL_CHANNEL_GUAGE_DETAIL_JOIN" />
+        <AssociationConnector Association="WRMIS_Model.COChannelGauge_COChannelDailyGaugeReading_GaugeID" />
+        <AssociationConnector Association="WRMIS_Model.COChannelGauge_COChannelIndent_SubDivGaugeID" />
+        <AssociationConnector Association="WRMIS_Model.COChannelGauge_COGaugeLag_GaugeID" />
+        <AssociationConnector Association="WRMIS_Model.COChannelGauge_SIChannelGaugeReading_GaugeID" />
+        <AssociationConnector Association="WRMIS_Model.COChannelGauge_SIScheduleDetailChannel_GaugeID" />
+        <AssociationConnector Association="WRMIS_Model.COChannelGauge_WLChannelLG_FromGaugeID" />
+        <AssociationConnector Association="WRMIS_Model.COChannelGauge_WLChannelLG_ToGaugeID" />
+        <AssociationConnector Association="WRMIS_Model.COChannelGauge_WLSubDivisionLG_SubDivGaugeID" />
+        <AssociationConnector Association="WRMIS_Model.CODivision_COChannelGauge_GaugeDivID" />
+        <AssociationConnector Association="WRMIS_Model.COSection_COChannelGauge_GaugeSecID" />
+        <AssociationConnector Association="WRMIS_Model.COSubDivision_COChannelGauge_GaugeSubDivID" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_CHANN_GUAGE_DTP_CO_CHANN" />
+        <AssociationConnector Association="WRMIS_Model.FK_CO_CHANN_SECTION_C_CO_SECTI" />
+        <AssociationConnector Association="WRMIS_Model.Gauge_DPTFalls" />
+        <AssociationConnector Association="WRMIS_Model.Gauge_GaugeCategory" />
+        <AssociationConnector Association="WRMIS_Model.Gauge_GaugeLevel" />
+        <AssociationConnector Association="WRMIS_Model.Gauge_GaugeSlip_join" />
+        <AssociationConnector Association="WRMIS_Model.GUAGE_TYPE_JOIN" />
+        <EntityTypeShape EntityType="WRMIS_Model.FO_ProtectionInfrastructure" Width="1.5" PointX="16.25" PointY="37" />
+        <AssociationConnector Association="WRMIS_Model.COStructureType_FOProtectionInfrastructure_InfrastructureTypeID" />
+        <AssociationConnector Association="WRMIS_Model.FOProtectionInfrastructure_FOInfrastructureBreachingSection_ProtectionInfrastructureID" />
+        <AssociationConnector Association="WRMIS_Model.FOProtectionInfrastructure_FOInfrastructureParent_ProtectionInfrastructureID" />
+        <AssociationConnector Association="WRMIS_Model.FOProtectionInfrastructure_FOInfrastructureRepresentative_ProtectionInfrastructureID" />
+        <AssociationConnector Association="WRMIS_Model.FOProtectionInfrastructure_FOInfrastructureStock_ProtectionInfrastructureID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_Sanction" Width="1.5" PointX="53.5" PointY="34.25" />
+        <AssociationConnector Association="WRMIS_Model.ATAssetType_ATSanction_AssetTypeID" />
+        <AssociationConnector Association="WRMIS_Model.ATBudgetApprovel_ATSanction_AbudgetApprovelID" />
+        <AssociationConnector Association="WRMIS_Model.ATSanction_ATExpenseSanction_SanctionID" />
+        <AssociationConnector Association="WRMIS_Model.ATExpenseType_ATSanction_ExpenseTypeID" />
+        <AssociationConnector Association="WRMIS_Model.ATObjectClassification_ATSanction_ObjectClassificationID" />
+        <AssociationConnector Association="WRMIS_Model.ATSanction_ATSanctionPayment_SanctionID" />
+        <AssociationConnector Association="WRMIS_Model.ATSanctionStatus_ATSanction_SanctionStatusID" />
+        <EntityTypeShape EntityType="WRMIS_Model.AT_PaymentDetails" Width="1.5" PointX="30" PointY="116.25" />
+        <AssociationConnector Association="WRMIS_Model.ATExpenses_ATSanctionPayment_ExpenseTypeID" />
+        <AssociationConnector Association="WRMIS_Model.ATPaymentDetails_ATSanctionPayment_PaymentDetailID" />
+        <EntityTypeShape EntityType="WRMIS_Model.WT_Breach" Width="1.5" PointX="19.25" PointY="66.875" />
+        <AssociationConnector Association="WRMIS_Model.FK_WT_BREAC_CHANNEL_B_CO_CHANN" />
+        <AssociationConnector Association="WRMIS_Model.CODivision_WTBreach_DivisionID" />
+        <AssociationConnector Association="WRMIS_Model.FK_WT_BREAC_BRECH_BRE_WT_BREAC" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_VehicleReadings" Width="1.5" PointX="29.375" PointY="4.75" />
+        <EntityTypeShape EntityType="WRMIS_Model.ET_RotationalViolation" Width="1.5" PointX="16.25" PointY="159.625" />
+        <EntityTypeShape EntityType="WRMIS_Model.ET_VehicleReading" Width="1.5" PointX="10.375" PointY="31.75" />
+        <AssociationConnector Association="WRMIS_Model.FK_COChannel_ETRotationalViolation_ChannelID" />
+        <EntityTypeShape EntityType="WRMIS_Model.ET_Leaves" Width="1.5" PointX="42.625" PointY="1" />
+        <EntityTypeShape EntityType="WRMIS_Model.ET_LeaveTypes" Width="1.5" PointX="40.375" PointY="1.5" />
+        <AssociationConnector Association="WRMIS_Model.FK_ETLeaveTypes_ETLeaves_LeaveTypeID" />
+        <EntityTypeShape EntityType="WRMIS_Model.SI_OutletChecking" Width="1.5" PointX="48.25" PointY="60.875" />
+        <AssociationConnector Association="WRMIS_Model.SIScheduleDetailChannel_SIOutletChecking_ScheduleDetailChannelID" />
+        <EntityTypeShape EntityType="WRMIS_Model.WT_WaterTheftCase" Width="1.5" PointX="50.75" PointY="57.25" />
+        <AssociationConnector Association="WRMIS_Model.Channel_WaterTheft" />
+        <AssociationConnector Association="WRMIS_Model.ChiefAppeal_WaterTheftCase" />
+        <AssociationConnector Association="WRMIS_Model.OffenceType_TheftCase" />
+        <AssociationConnector Association="WRMIS_Model.WatertheftOutletdefectiveDetail" />
+        <AssociationConnector Association="WRMIS_Model.Status_WatertheftCase" />
+        <AssociationConnector Association="WRMIS_Model.SiteCondition_TheftCase" />
+        <AssociationConnector Association="WRMIS_Model.WaterTheftAttachments" />
+        <AssociationConnector Association="WRMIS_Model.FK_WT_WATER_WT_CASE_C_WT_WATER" />
+        <AssociationConnector Association="WRMIS_Model.FK_WT_WATER_WT_CASE_D_WT_WATER" />
+        <AssociationConnector Association="WRMIS_Model.FK_WT_WATER_WT_CASE_O_WT_WATER" />
+        <AssociationConnector Association="WRMIS_Model.FK_WT_WATER_WT_CASE_P_WT_WATER" />
+        <AssociationConnector Association="WRMIS_Model.FK_WT_WATER_WT_CASE_W_WT_WATER" />
+        <EntityTypeShape EntityType="WRMIS_Model.CO_ChannelOutlets" Width="1.5" PointX="16.25" PointY="168.25" />
+        <AssociationConnector Association="WRMIS_Model.CHANNEL_OUTLET_JOIN" />
+        <AssociationConnector Association="WRMIS_Model.ChannelOutlet_WaterTheft" />
+        <AssociationConnector Association="WRMIS_Model.COChannelOutlets_ECCanalSpecialWater_ChannelOutletID" />
+        <AssociationConnector Association="WRMIS_Model.COChannelOutlets_SIScheduleDetailChannel_OutletID" />
+        <AssociationConnector Association="WRMIS_Model.COChannelOutletsSIOutletAlterationHistory_OutletID" />
+        <AssociationConnector Association="WRMIS_Model.FK_COChannelOutlets_SIOutletChecking_OutletID" />
+        <AssociationConnector Association="WRMIS_Model.Outlet_Location" />
+        <AssociationConnector Association="WRMIS_Model.OUTLET_OUTLET_ALTERATION_JOIN" />
+        <AssociationConnector Association="WRMIS_Model.Outlet_OutletPerformance" />
+        <EntityTypeShape EntityType="WRMIS_Model.RP_RotationalViolation" Width="1.5" PointX="32.25" PointY="113.125" />
+        <AssociationConnector Association="WRMIS_Model.COChannel_RPRotationalViolation_ChannelID" />
+        <AssociationConnector Association="WRMIS_Model.RPRotationalProgram_RPRotationalViolation_RPID" />
+        <AssociationConnector Association="WRMIS_Model.UAIrrigationLevel_RPRotationalViolation_IrrigationLevelID" />
+        <EntityTypeShape EntityType="WRMIS_Model.IW_PunjabIndent" Width="1.5" PointX="41.375" PointY="5.75" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

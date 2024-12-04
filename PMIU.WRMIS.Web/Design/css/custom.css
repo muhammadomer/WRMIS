@@ -1,0 +1,1108 @@
+﻿.SuccessMsg { /* success messages */
+    background: none no-repeat scroll 10px 50% #FFFFFF;
+    border: 2px solid green;
+    border-radius: 10px;
+    color: green;
+    /*display: block;*/
+    font-family: tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    height: 35px;
+    left: 45%;
+    margin: 0 0 0 -50px;
+    padding: 5px 10px;
+    position: fixed;
+    text-align: center;
+    top: 1px;
+    vertical-align: bottom;
+    width: auto;
+    z-index: 9999;
+}
+
+.ErrorMsg { /* error messages */
+    background: none no-repeat scroll 10px 50% #FFFFFF;
+    border: 2px solid red;
+    border-radius: 10px;
+    color: red;
+    /*display: none;*/
+    font-family: tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    height: 35px;
+    left: 45%;
+    margin: 0 0 0 -50px;
+    padding: 5px 10px;
+    position: fixed;
+    text-align: center;
+    top: 1px;
+    vertical-align: bottom;
+    width: auto;
+    z-index: 9999;
+}
+
+.WarningMsg { /* error messages */
+    background: none no-repeat scroll 10px 50% #FFFFFF;
+    border: 2px solid #FFBE00;
+    border-radius: 10px;
+    color: #FFBE00;
+    /*display: none;*/
+    font-family: tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    height: 35px;
+    left: 45%;
+    margin: 0 0 0 -50px;
+    padding: 5px 10px;
+    position: fixed;
+    text-align: center;
+    top: 1px;
+    vertical-align: bottom;
+    width: auto;
+    z-index: 9999;
+}
+
+
+.Loading { /* error messages */
+    background: none no-repeat scroll 10px 50% #FFFFFF;
+    border: 2px solid blue;
+    border-radius: 10px;
+    color: blue;
+    /*display: none;*/
+    font-family: tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    height: 35px;
+    left: 45%;
+    margin: 0 0 0 -50px;
+    padding: 5px 10px;
+    position: fixed;
+    text-align: center;
+    top: 1px;
+    vertical-align: bottom;
+    width: auto;
+    z-index: 9999;
+}
+
+.SwitchUser { /* error messages */
+    background: none no-repeat scroll 10px 50% #FFFFFF;
+    border: 2px solid blue;
+    border-radius: 10px;
+    color: magenta;
+    /*display: none;*/
+    font-family: tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    height: 35px;
+    left: 45%;
+    margin: 0 0 0 -50px;
+    padding: 5px 10px;
+    position: fixed;
+    text-align: center;
+    top: 1px;
+    vertical-align: bottom;
+    width: auto;
+    z-index: 9999;
+}
+
+input {
+}
+
+    input.required, select.required, textarea.required {
+        border-color: salmon;
+    }
+
+    input:focus {
+        border: 1px solid rgba(0, 0, 0, 0.6);
+        box-shadow: 0 0 3px rgba(0, 0, 0, 1);
+        outline: medium none;
+    }
+
+    input.error {
+        border: 1px solid #960a06;
+        box-shadow: 0 0 4px #f9a89f;
+    }
+
+    /*input:invalid {
+                border: 1px solid red;
+            }*/
+
+    input:required:valid, select:required:valid, textarea:required:valid {
+        border: 1px solid green;
+        /*box-shadow: 0 0 4px #7fc666;*/
+    }
+
+.btn_24, .btn_32 {
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 24px 24px;
+    width: 24px;
+    height: 24px;
+}
+
+.btn_add {
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: 20px 0px;
+    width: 65px;
+    height: 24px;
+    padding: 0px 10px 0px 28px;
+}
+
+.cross, .cross:hover, .cross:focus, .cross:active, .cross.active, .open > .dropdown-toggle.cross {
+    background-image: url(/Design/img/icons_24/cross.png);
+}
+
+.delete, .delete:hover, .delete:focus, .delete:active, .delete.active, .open > .dropdown-toggle.delete {
+    background-image: url(/Design/img/icons_24/delete.png);
+}
+
+.edit, .edit:hover, .edit:focus, .edit:active, .edit.active, .open > .dropdown-toggle.edit {
+    background-image: url(/Design/img/icons_24/edit.png);
+}
+
+
+.Clone, .Clone:hover, .Clone:focus, .Clone:active, .Clone.active, .open > .dropdown-toggle.Clone {
+    background-image: url(/Design/img/icons_24/clone_icon.png);
+}
+
+.gini, .gini:hover, .gini:focus, .gini:active, .gini.active, .open > .dropdown-toggle.gini {
+    background-image: url(/Design/img/icons_24/gini.png);
+}
+
+.RPGraph, .RPGraph:hover, .RPGraph:focus, .RPGraph:active, .RPGraph.active, .open > .dropdown-toggle.RPGraph {
+    background-image: url(/Design/img/icons_24/RPGraph.png);
+}
+
+.planImplementation, .planImplementation:hover, .planImplementation:focus, .planImplementation:active, .planImplementation.active, .open > .dropdown-toggle.planImplementation {
+    background-image: url(/Design/img/icons_24/plan_implementation.png);
+}
+
+
+.footnote, .footnote:hover, .footnote:focus, .footnote:active, .footnote.active, .open > .dropdown-toggle.footnote {
+    background-image: url(/Design/img/icons_24/footnote.png);
+}
+
+.bill-details, .bill-details:hover, .bill-details:focus, .bill-details:active, .bill-details.active, .open > .dropdown-toggle.bill-details {
+    background-image: url(/Design/img/icons_24/billdetails.png);
+}
+
+.adjustments, .adjustments:hover, .adjustments:focus, .adjustments:active, .adjustments.active, .open > .dropdown-toggle.adjustments {
+    background-image: url(/Design/img/icons_24/adjustments.png);
+}
+
+.sanctioned-charges, .sanctioned-charges:hover, .sanctioned-charges:focus, .sanctioned-charges:active, .sanctioned-charges.active, .open > .dropdown-toggle.sanctioned-charges {
+    background-image: url(/Design/img/icons_24/sanctionedcharges.png);
+}
+
+.Finilized-Bill, .Finilized-Bill:hover, .Finilized-Bill:focus, .Finilized-Bill:active, .Finilized-Bill.active, .open > .dropdown-toggle.Finilized-Bill {
+    background-image: url(/Design/img/icons_24/finilizedbill.png);
+}
+
+.services, .services:hover, .services:focus, .services:active, .services.active, .open > .dropdown-toggle.services {
+    background-image: url(/Design/img/icons_24/services.png);
+}
+
+.plus, .plus:hover, .plus:focus, .plus:active, .plus.active, .open > .dropdown-toggle.plus {
+    background-image: url(/Design/img/icons_24/plus.png);
+}
+
+.save, .save:hover, .save:focus, .save:active, .save.active, .open > .dropdown-toggle.save {
+    background-image: url(/Design/img/icons_24/save.png);
+}
+
+.search, .search:hover, .search:focus, .search:active, .search.active, .open > .dropdown-toggle.search {
+    background-image: url(/Design/img/icons_24/search.png);
+}
+
+.tick, .tick:hover, .tick:focus, .tick:active, .tick.active, .open > .dropdown-toggle.tick {
+    background-image: url(/Design/img/icons_24/tick.png);
+}
+
+.channel, .channel:hover, .channel:focus, .channel:active, .channel.active, .open > .dropdown-toggle.channel {
+    background-image: url(/Design/img/icons_24/channel.png);
+}
+
+.phyloc, .phyloc:hover, .phyloc:focus, .phyloc:active, .phyloc.active, .open > .dropdown-toggle.phyloc {
+    background-image: url(/Design/img/icons_24/physical-location.png);
+}
+
+.gauge, .gauge:hover, .gauge:focus, .gauge:active, .gauge.active, .open > .dropdown-toggle.gauge {
+    background-image: url(/Design/img/icons_24/gauge.png);
+}
+
+.pfch, .pfch:hover, .pfch:focus, .pfch:active, .pfch.active, .open > .dropdown-toggle.pfch {
+    background-image: url(/Design/img/icons_24/parent-feeder-channel.png);
+}
+
+.outlet, .outlet:hover, .outlet:focus, .outlet:active, .outlet.active, .open > .dropdown-toggle.outlet {
+    background-image: url(/Design/img/icons_24/outlet.png);
+}
+
+.reach, .reach:hover, .reach:focus, .reach:active, .reach.active, .open > .dropdown-toggle.reach {
+    background-image: url(/Design/img/icons_24/reach.png);
+}
+
+.parameters, .parameters:hover, .parameters:focus, .parameters:active, .parameters.active, .open > .dropdown-toggle.parameters {
+    background-image: url(/Design/img/icons_24/parameters.png);
+}
+
+.history, .history:hover, .history:focus, .history:active, .history.active, .open > .dropdown-toggle.history {
+    background-image: url(/Design/img/icons_24/history.png);
+}
+
+.outlet-performance, .outlet-performance:hover, .outlet-performance:focus, .outlet-performance:active, .outlet-performance.active, .open > .dropdown-toggle.outlet-performance {
+    background-image: url(/Design/img/icons_24/outlet-performance.png);
+}
+
+.performance-history, .performance-history:hover, .performance-history:focus, .performance-history:active, .performance-history.active, .open > .dropdown-toggle.performance-history {
+    background-image: url(/Design/img/icons_24/performance-history.png);
+}
+
+.outlet-history, .outlet-history:hover, .outlet-history:focus, .outlet-history:active, .outlet-history.active, .open > .dropdown-toggle.outlet-history {
+    background-image: url(/Design/img/icons_24/alteration-history.png);
+}
+
+.barrage, .barrage:hover, .barrage:focus, .barrage:active, .barrage.active, .open > .dropdown-toggle.barrage {
+    background-image: url(/Design/img/icons_24/barrage.png);
+}
+
+.outlet-alteration, .outlet-alteration:hover, .outlet-alteration:focus, .outlet-alteration:active, .outlet-alteration.active, .open > .dropdown-toggle.outlet-alteration {
+    background-image: url(/Design/img/icons_24/outlet-alteration.png);
+}
+
+.outlet-alteration-history, .outlet-alteration-history:hover, .outlet-alteration-history:focus, .outlet-alteration-history:active, .outlet-alteration-history.active, .open > .dropdown-toggle.outlet-alteration-history {
+    background-image: url(/Design/img/icons_24/outlet-alteration-history.png);
+}
+
+.outlet-villages, .outlet-villages:hover, .outlet-villages:focus, .outlet-villages:active, .outlet-villages.active, .open > .dropdown-toggle.outlet-villages {
+    background-image: url(/Design/img/icons_24/outlet-villages.png);
+}
+
+.dt-parameter, .dt-parameter:hover, .dt-parameter:focus, .dt-parameter:active, .dt-parameter.active, .open > .dropdown-toggle.dt-parameter {
+    background-image: url(/Design/img/icons_24/dt-parameter.png);
+}
+
+.dt-parameter-history, .dt-parameter-history:hover, .dt-parameter-history:focus, .dt-parameter-history:active, .dt-parameter-history.active, .open > .dropdown-toggle.dt-parameter-history {
+    background-image: url(/Design/img/icons_24/dt-parameter-history.png);
+}
+
+.starting-rd, .starting-rd:hover, .starting-rd:focus, .starting-rd:active, .starting-rd.active, .open > .dropdown-toggle.starting-rd {
+    background-image: url(/Design/img/icons_24/starting-rd.png);
+}
+
+.ending-rd, .ending-rd:hover, .ending-rd:focus, .ending-rd:active, .ending-rd.active, .open > .dropdown-toggle.ending-rd {
+    background-image: url(/Design/img/icons_24/ending-rd.png);
+}
+
+.starting-rd-history, .starting-rd-history:hover, .starting-rd-history:focus, .starting-rd-history:active, .starting-rd-history.active, .open > .dropdown-toggle.starting-rd-history {
+    background-image: url(/Design/img/icons_24/starting-rd-history.png);
+}
+
+.ending-rd-history, .ending-rd-history:hover, .ending-rd-history:focus, .ending-rd-history:active, .ending-rd-history.active, .open > .dropdown-toggle.ending-rd-history {
+    background-image: url(/Design/img/icons_24/ending-rd-history.png);
+}
+
+.audit, .audit:hover, .audit:focus, .audit:active, .audit.active, .open > .dropdown-toggle.audit {
+    background-image: url(../img/icons_24/audit-trail.png);
+}
+
+.viewimg, .viewimg:hover, .viewimg:focus, .viewimg:active, .viewimg.active, .open > .dropdown-toggle.viewimg {
+    background-image: url(../img/icons_24/view-img.png);
+}
+
+.indents, .indents:hover, .indents:focus, .indents:active, .indents.active, .open > .dropdown-toggle.indents {
+    background-image: url(../img/icons_24/indents.png);
+}
+
+.indents-history, .indents-history:hover, .indents-history:focus, .indents-history:active, .indents-history.active, .open > .dropdown-toggle.indents-history {
+    background-image: url(../img/icons_24/indents-history.png);
+}
+
+.view, .view:hover, .view:focus, .view:active, .view.active, .open > .dropdown-toggle.view {
+    background-image: url(../img/icons_24/view.png);
+}
+
+.appeal, .appeal:hover, .appeal:focus, .appeal:active, .appeal.active, .open > .dropdown-toggle.appeal {
+    background-image: url(../img/icons_24/appeal.png);
+}
+
+.assign-back, .assign-back:hover, .assign-back:focus, .assign-back:active, .assign-back.active, .open > .dropdown-toggle.assign-back {
+    background-image: url(../img/icons_24/assign_back.png);
+}
+
+.add-feedback, .add-feedback:hover, .add-feedback:focus, .add-feedback:active, .add-feedback.active, .open > .dropdown-toggle.add-feedback {
+    background-image: url(../img/icons_24/add_feedback.png);
+}
+
+.history-feedback, .history-feedback:hover, .history-feedback:focus, .history-feedback:active, .history-feedback.active, .open > .dropdown-toggle.history-feedback {
+    background-image: url(../img/icons_24/history_feedback.png);
+}
+
+.view-feedback, .view-feedback:hover, .view-feedback:focus, .view-feedback:active, .view-feedback.active, .open > .dropdown-toggle.view-feedback {
+    background-image: url(../img/icons_24/view_feedback.png);
+}
+
+.infrastructure_parent, .infrastructure_parent:hover, .infrastructure_parent:focus, .infrastructure_parent:active, .infrastructure_parent.active, .open > .dropdown-toggle.infrastructure_parent {
+    background-image: url(/Design/img/icons_24/infrastructure_parent.png);
+}
+
+.public_reps, .public_reps:hover, .public_reps:focus, .public_reps:active, .public_reps.active, .open > .dropdown-toggle.public_reps {
+    background-image: url(/Design/img/icons_24/public_reps.png);
+}
+
+.stone_stock, .stone_stock:hover, .stone_stock:focus, .stone_stock:active, .stone_stock.active, .open > .dropdown-toggle.stone_stock {
+    background-image: url(/Design/img/icons_24/stone_stock.png);
+}
+
+.technical_parameters, .technical_parameters:hover, .technical_parameters:focus, .technical_parameters:active, .technical_parameters.active, .open > .dropdown-toggle.technical_parameters {
+    background-image: url(/Design/img/icons_24/technical_parameters.png);
+}
+
+.QuickComplaint, .QuickComplaint:hover, .QuickComplaint:focus, .QuickComplaint:active, .QuickComplaint.active, .open > .dropdown-toggle.QuickComplaint {
+    background-image: url(/Design/img/icons_24/quick_complaint.png);
+}
+
+.BulkComplaint, .BulkComplaint:hover, .BulkComplaint:focus, .BulkComplaint:active, .BulkComplaint.active, .open > .dropdown-toggle.BulkComplaint {
+    background-image: url(/Design/img/icons_24/bulk_complaint.png);
+}
+
+.StarComplaint, .StarComplaint:hover, .StarComplaint:focus, .StarComplaint:active, .StarComplaint.active, .open > .dropdown-toggle.StarComplaint {
+    background-image: url(../img/icons_24/star-outline_32x32.png);
+}
+
+.FillStar, .FillStar:hover, .FillStar:focus, .FillStar:active, .FillStar.active, .open > .dropdown-toggle.FillStar {
+    background-image: url(../img/icons_24/star-only_32x32.png);
+}
+
+.gencond, .gencond:hover, .gencond:focus, .gencond:active, .gencond.active, .open > .dropdown-toggle.gencond {
+    background-image: url(../img/icons_24/general-conditions.png);
+}
+
+.measbook, .measbook:hover, .measbook:focus, .measbook:active, .measbook.active, .open > .dropdown-toggle.measbook {
+    background-image: url(../img/icons_24/measuring-book.png);
+}
+
+.prob, .prob:hover, .prob:focus, .prob:active, .prob.active, .open > .dropdown-toggle.prob {
+    background-image: url(../img/icons_24/problems.png);
+}
+
+.publish, .publish:hover, .publish:focus, .publish:active, .publish.active, .open > .dropdown-toggle.publish {
+    background-image: url(../img/icons_24/publish.png);
+}
+
+.rdwisecond, .rdwisecond:hover, .rdwisecond:focus, .rdwisecond:active, .rdwisecond.active, .open > .dropdown-toggle.rdwisecond {
+    background-image: url(../img/icons_24/rd-wise-condition.png);
+}
+
+.stnpos, .stnpos:hover, .stnpos:focus, .stnpos:active, .stnpos.active, .open > .dropdown-toggle.stnpos {
+    background-image: url(../img/icons_24/stone-position.png);
+}
+
+.stnpos_ffp, .stnpos_ffp:hover, .stnpos_ffp:focus, .stnpos_ffp:active, .stnpos_ffp.active, .open > .dropdown-toggle.stnpos_ffp {
+    background-image: url(../img/icons_24/stone_position_ffp.png);
+}
+
+.attachment, .attachment:hover, .attachment:focus, .attachment:active, .attachment.active, .open > .dropdown-toggle.attachment {
+    background-image: url(../img/icons_24/attachment.png);
+}
+
+.camp_sites, .camp_sites:hover, .camp_sites:focus, .camp_sites:active, .camp_sites.active, .open > .dropdown-toggle.camp_sites {
+    background-image: url(../img/icons_24/camp_sites.png);
+}
+
+.details, .details:hover, .details:focus, .details:active, .details.active, .open > .dropdown-toggle.details {
+    background-image: url(../img/icons_24/details.png);
+}
+
+.outfall, .outfall:hover, .outfall:focus, .outfall:active, .outfall.active, .open > .dropdown-toggle.outfall {
+    background-image: url(../img/icons_24/outfall.png);
+}
+
+.purchase, .purchase:hover, .purchase:focus, .purchase:active, .purchase.active, .open > .dropdown-toggle.purchase {
+    background-image: url(../img/icons_24/purchase.png);
+}
+
+.restoration_work, .restoration_work:hover, .restoration_work:focus, .restoration_work:active, .restoration_work.active, .open > .dropdown-toggle.restoration_work {
+    background-image: url(../img/icons_24/restoration_work.png);
+}
+
+.work, .work:hover, .work:focus, .work:active, .work.active, .open > .dropdown-toggle.work {
+    background-image: url(../img/icons_24/work.png);
+}
+
+.overall_d_item, .overall_d_item:hover, .overall_d_item:focus, .overall_d_item:active, .overall_d_item.active, .open > .dropdown-toggle.overall_d_item {
+    background-image: url(../img/icons_24/overall_division_item.png);
+}
+
+.arrangement, .arrangement:hover, .arrangement:focus, .arrangement:active, .arrangement.active, .open > .dropdown-toggle.arrangement {
+    background-image: url(../img/icons_24/arrangement.png);
+}
+
+.print_preview, .print_preview:hover, .print_preview:focus, .print_preview:active, .print_preview.active, .open > .dropdown-toggle.print_preview {
+    background-image: url(../img/icons_24/print_preview.png);
+}
+
+.member_detail, .member_detail:hover, .member_detail:focus, .member_detail:active, .member_detail.active, .open > .dropdown-toggle.member_detail {
+    background-image: url(../img/icons_24/member_detail.png);
+}
+
+.infr_based_item, .infr_based_item:hover, .infr_based_item:focus, .infr_based_item:active, .infr_based_item.active, .open > .dropdown-toggle.infr_based_item {
+    background-image: url(../img/icons_24/infr_based_item.png);
+}
+
+.division_store_item, .division_store_item:hover, .division_store_item:focus, .division_store_item:active, .division_store_item.active, .open > .dropdown-toggle.division_store_item {
+    background-image: url(../img/icons_24/division_store_item.png);
+}
+
+.Technical_Parameters_32x32, .Technical_Parameters_32x32:hover, .Technical_Parameters_32x32:focus, .Technical_Parameters_32x32:active, .Technical_Parameters_32x32.active, .open > .dropdown-toggle.Technical_Parameters_32x32 {
+    background-image: url(../img/icons_24/Technical_Parameters_32x32.png);
+}
+
+.Annual_maintane, .Annual_maintane:hover, .Annual_maintane:focus, .Annual_maintane:active, .Annual_maintane.active, .open > .dropdown-toggle.Annual_maintane {
+    background-image: url(../img/icons_24/Annual_maintane.png);
+}
+
+.channels_32x32, .channels_32x32:hover, .channels_32x32:focus, .channels_32x32:active, .channels_32x32.active, .open > .dropdown-toggle.channels_32x32 {
+    background-image: url(../img/icons_24/channels_32x32.png);
+}
+
+.villages, .villages:hover, .villages:focus, .villages:active, .villages.active, .open > .dropdown-toggle.villages {
+    background-image: url(../img/icons_24/villages.png);
+}
+
+.asset_allocation, .asset_allocation:hover, .asset_allocation:focus, .asset_allocation:active, .asset_allocation.active, .open > .dropdown-toggle.asset_allocation {
+    background-image: url(../img/icons_24/asset_allocation.png);
+}
+
+.reject, .reject:hover, .reject:focus, .reject:active, .reject.active, .open > .dropdown-toggle.reject {
+    background-image: url(../img/icons_24/reject.png);
+}
+
+.change_status, .change_status:hover, .change_status:focus, .change_status:active, .change_status.active, .open > .dropdown-toggle.change_status {
+    background-image: url(../img/icons_24/change_status.png);
+}
+
+.tax_sheet, .tax_sheet:hover, .tax_sheet:focus, .tax_sheet:active, .tax_sheet.active, .open > .dropdown-toggle.tax_sheet {
+    background-image: url(../img/icons_24/tax_sheet.png);
+}
+
+.PagerStyle td {
+    /*display: inline-block;*/
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+    .PagerStyle td table > tbody > tr > td {
+        display: inline;
+    }
+
+        .PagerStyle td table > tbody > tr > td > a,
+        .PagerStyle td table > tbody > tr > td > span {
+            position: relative;
+            float: left;
+            padding: 8px 12px;
+            line-height: 1.42857143;
+            text-decoration: none;
+            color: #337ab7;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin-left: -1px;
+        }
+
+        .PagerStyle td table > tbody > tr > td > span {
+            position: relative;
+            float: left;
+            padding: 8px 12px;
+            line-height: 1.42857143;
+            text-decoration: none;
+            margin-left: -1px;
+            z-index: 2;
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #337ab7;
+            cursor: default;
+        }
+
+        .PagerStyle td table > tbody > tr > td:first-child > a,
+        .PagerStyle td table > tbody > tr > td:first-child > span {
+            margin-left: 0;
+            border-bottom-left-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+
+        .PagerStyle td table > tbody > tr > td:last-child > a,
+        .PagerStyle td table > tbody > tr > td:last-child > span {
+            border-bottom-right-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+
+        .PagerStyle td table > tbody > tr > td > a:hover,
+        .PagerStyle td table > tbody > tr > td > span:hover,
+        .PagerStyle td table > tbody > tr > td > a:focus,
+        .PagerStyle td table > tbody > tr > td > span:focus {
+            color: #23527c;
+            background-color: #eee;
+            border-color: #ddd;
+        }
+
+
+.HeaderAction {
+    text-align: center;
+}
+
+input::-webkit-input-placeholder {
+    color: #D8D8D8 !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+    color: #D8D8D8 !important;
+}
+
+input::-moz-placeholder { /* Firefox 19+ */
+    color: #D8D8D8 !important;
+}
+
+input:-ms-input-placeholder {
+    color: #D8D8D8 !important;
+}
+
+.tbl-info {
+    background-color: #FAFAFA;
+}
+
+.table > tbody > tr > th, .table > tbody > tr > th:hover {
+    border: 0px;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > td:hover {
+    border: 0px;
+}
+
+.header > tbody > tr > th, .header > tbody > tr > th:hover {
+    background-color: #E6E6E6;
+    color: #585858;
+    vertical-align: middle;
+    border-bottom: 2px solid #dddddd;
+    border-top: 0;
+}
+
+.header > tbody > tr:nth-child(odd) {
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #dddddd;
+}
+
+.header > tbody > tr:nth-child(even) {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+}
+
+.header > tbody > tr:hover {
+    background-color: #F2F2F2;
+}
+
+.fnc-btn {
+    margin: 0px 0px 10px 10px;
+}
+
+/*Right align integer, decimal and decimalInteger input values*/
+.integerInput, .decimalInput, .decimalIntegerInput, .NegativeintegerInput, .NegativedecimalInput, .decimal2PInput {
+    text-align: right;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: none;
+    background-color: #ebebeb;
+    border: 0px;
+    padding: 5px;
+}
+
+::-ms-browse {
+    background-color: #ebebeb;
+    border: 0px;
+    padding: 5px;
+}
+
+.multiline-no-resize {
+    resize: none;
+}
+
+.numberAlign {
+    text-align: right;
+}
+
+.animate:hover {
+    -webkit-transform: rotate(360deg);
+    -webkit-transition: 1s;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.login-page form input[type="text"], .login-page form input[type="password"] {
+    padding: 4px 0px 3px 35px !important;
+}
+
+.login-page:before {
+    background: url(../img/login_bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.dropdown-navbar .notify {
+    width: 350px;
+}
+
+.tablee {
+    table-layout: fixed;
+}
+
+    .tablee > tbody > tr > th, .tablee > tbody > tr > td {
+        width: 120px;
+    }
+
+
+.table-special {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+}
+
+    .table-special > .table {
+        table-layout: fixed;
+        margin-bottom: 0;
+    }
+
+        .table-special > .table > tbody > tr > th, .table-special > .table > tbody > tr > td {
+            width: 120px;
+        }
+
+.tablee > tbody > tr > th, .tablee > tbody > tr > td {
+    width: 120px;
+}
+
+.table-special > .table-bordered {
+    border: 0;
+}
+
+    .table-special > .table-bordered > thead > tr > th:first-child, .table-special > .table-bordered > tbody > tr > th:first-child, .table-special > .table-bordered > tfoot > tr > th:first-child, .table-special > .table-bordered > thead > tr > td:first-child, .table-special > .table-bordered > tbody > tr > td:first-child, .table-special > .table-bordered > tfoot > tr > td:first-child {
+        border-left: 0;
+    }
+
+    .table-special > .table-bordered > thead > tr > th:last-child, .table-special > .table-bordered > tbody > tr > th:last-child, .table-special > .table-bordered > tfoot > tr > th:last-child, .table-special > .table-bordered > thead > tr > td:last-child, .table-special > .table-bordered > tbody > tr > td:last-child, .table-special > .table-bordered > tfoot > tr > td:last-child {
+        border-right: 0;
+    }
+
+    .table-special > .table-bordered > tbody > tr:last-child > th, .table-special > .table-bordered > tfoot > tr:last-child > th, .table-special > .table-bordered > tbody > tr:last-child > td, .table-special > .table-bordered > tfoot > tr:last-child > td {
+        border-bottom: 0;
+    }
+
+
+.panel > .table, .panel > .table-special > .table, .panel > .panel-collapse > .table {
+    margin-bottom: 0;
+}
+
+    .panel > .table:first-child, .panel > .table-special:first-child > .table:first-child {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+        .panel > .table:first-child > thead:first-child > tr:first-child td:first-child, .panel > .table-special:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child, .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child, .panel > .table-special:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child, .panel > .table:first-child > thead:first-child > tr:first-child th:first-child, .panel > .table-special:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child, .panel > .table:first-child > tbody:first-child > tr:first-child th:first-child, .panel > .table-special:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
+            border-top-left-radius: 3px;
+        }
+
+        .panel > .table:first-child > thead:first-child > tr:first-child td:last-child, .panel > .table-special:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child, .panel > .table:first-child > tbody:first-child > tr:first-child td:last-child, .panel > .table-special:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child, .panel > .table:first-child > thead:first-child > tr:first-child th:last-child, .panel > .table-special:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child, .panel > .table:first-child > tbody:first-child > tr:first-child th:last-child, .panel > .table-special:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
+            border-top-right-radius: 3px;
+        }
+
+    .panel > .table:last-child, .panel > .table-special:last-child > .table:last-child {
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+        .panel > .table:last-child > tbody:last-child > tr:last-child td:first-child, .panel > .table-special:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child, .panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child, .panel > .table-special:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child, .panel > .table:last-child > tbody:last-child > tr:last-child th:first-child, .panel > .table-special:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child, .panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child, .panel > .table-special:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
+            border-bottom-left-radius: 3px;
+        }
+
+        .panel > .table:last-child > tbody:last-child > tr:last-child td:last-child, .panel > .table-special:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child, .panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child, .panel > .table-special:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child, .panel > .table:last-child > tbody:last-child > tr:last-child th:last-child, .panel > .table-special:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child, .panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child, .panel > .table-special:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
+            border-bottom-right-radius: 3px;
+        }
+
+.panel > .panel-body + .table, .panel > .panel-body + .table-special {
+    border-top: 1px solid #ddd;
+}
+
+.panel > .table > tbody:first-child > tr:first-child th, .panel > .table > tbody:first-child > tr:first-child td {
+    border-top: 0;
+}
+
+.panel > .table-bordered, .panel > .table-special > .table-bordered {
+    border: 0;
+}
+
+    .panel > .table-bordered > thead > tr > th:first-child, .panel > .table-special > .table-bordered > thead > tr > th:first-child, .panel > .table-bordered > tbody > tr > th:first-child, .panel > .table-special > .table-bordered > tbody > tr > th:first-child, .panel > .table-bordered > tfoot > tr > th:first-child, .panel > .table-special > .table-bordered > tfoot > tr > th:first-child, .panel > .table-bordered > thead > tr > td:first-child, .panel > .table-special > .table-bordered > thead > tr > td:first-child, .panel > .table-bordered > tbody > tr > td:first-child, .panel > .table-special > .table-bordered > tbody > tr > td:first-child, .panel > .table-bordered > tfoot > tr > td:first-child, .panel > .table-special > .table-bordered > tfoot > tr > td:first-child {
+        border-left: 0;
+    }
+
+    .panel > .table-bordered > thead > tr > th:last-child, .panel > .table-special > .table-bordered > thead > tr > th:last-child, .panel > .table-bordered > tbody > tr > th:last-child, .panel > .table-special > .table-bordered > tbody > tr > th:last-child, .panel > .table-bordered > tfoot > tr > th:last-child, .panel > .table-special > .table-bordered > tfoot > tr > th:last-child, .panel > .table-bordered > thead > tr > td:last-child, .panel > .table-special > .table-bordered > thead > tr > td:last-child, .panel > .table-bordered > tbody > tr > td:last-child, .panel > .table-special > .table-bordered > tbody > tr > td:last-child, .panel > .table-bordered > tfoot > tr > td:last-child, .panel > .table-special > .table-bordered > tfoot > tr > td:last-child {
+        border-right: 0;
+    }
+
+    .panel > .table-bordered > thead > tr:first-child > td, .panel > .table-special > .table-bordered > thead > tr:first-child > td, .panel > .table-bordered > tbody > tr:first-child > td, .panel > .table-special > .table-bordered > tbody > tr:first-child > td, .panel > .table-bordered > thead > tr:first-child > th, .panel > .table-special > .table-bordered > thead > tr:first-child > th, .panel > .table-bordered > tbody > tr:first-child > th, .panel > .table-special > .table-bordered > tbody > tr:first-child > th {
+        border-bottom: 0;
+    }
+
+    .panel > .table-bordered > tbody > tr:last-child > td, .panel > .table-special > .table-bordered > tbody > tr:last-child > td, .panel > .table-bordered > tfoot > tr:last-child > td, .panel > .table-special > .table-bordered > tfoot > tr:last-child > td, .panel > .table-bordered > tbody > tr:last-child > th, .panel > .table-special > .table-bordered > tbody > tr:last-child > th, .panel > .table-bordered > tfoot > tr:last-child > th, .panel > .table-special > .table-bordered > tfoot > tr:last-child > th {
+        border-bottom: 0;
+    }
+
+.panel > .table-special {
+    margin-bottom: 0;
+    border: 0;
+}
+
+.table-calender {
+    width: 100%;
+    color: #000;
+    border: 1px solid #C1C1C1;
+}
+
+    .table-calender tr:first-child th {
+        text-align: center;
+        background-color: #248dc1;
+        font-size: 32px;
+        color: #fff;
+    }
+
+    .table-calender tr:nth-child(2) th {
+        background-color: #32323A;
+        color: #fff;
+    }
+
+    .table-calender td, th {
+        padding: 5px;
+    }
+
+    .table-calender tr:nth-child(even) {
+        background: #ECECEC;
+    }
+
+.table-header > td {
+    background-color: #E6E6E6;
+    color: #585858;
+    border-bottom: 2px solid #dddddd;
+    font-weight: bold;
+}
+
+.border-left {
+    border-left: 1px solid #DDDDDD;
+}
+
+.border-bottom {
+    border-top: 2px solid #DDDDDD;
+    border-bottom: 2px solid #DDDDDD;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.table-lowpad > tbody > tr > th, .table-lowpad > tbody > tr > td {
+    padding: 6px;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.bitext {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    vertical-align: middle;
+}
+
+.table-lowpadd > tbody > tr > th, .table-lowpadd > tbody > tr > td {
+    padding: 6px;
+    font-size: 11px;
+}
+
+.CheckboxAligned {
+    padding-left: 20px;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+    padding-top: 7px;
+    margin-bottom: 0;
+    float: left;
+    margin-left: -20px;
+    margin-top: -5px;
+}
+
+.CheckboxAlligne {
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+
+
+.tbl-info > tbody > tr > td {
+    padding-top: 0px !important;
+    padding-bottom: 2px !important;
+}
+
+.tbl-info > tbody > tr > th {
+    padding-bottom: 0px !important;
+}
+
+.Paddingleft {
+    padding-left: 20px;
+}
+
+.AddPrgs, .AddPrgs:hover, .AddPrgs:focus, .AddPrgs:active, .AddPrgs.active, .open > .dropdown-toggle.AddPrgsadd_progress {
+    background-image: url(../img/icons_24/add_progress.png);
+}
+
+.Prgs, .Prgs:hover, .Prgs:focus, .Prgs:active, .Prgs.active, .open > .dropdown-toggle.Prgs_progress {
+    background-image: url(../img/icons_24/progress_history.png);
+}
+
+.Exclude, .Exclude:hover, .Exclude:focus, .Exclude:active, .Exclude.active, .open > .dropdown-toggle.Exclude_exclude {
+    background-image: url(../img/icons_24/exclude_canal.png);
+}
+
+.print, .print:hover, .print:focus, .print:active, .print.active, .open > .dropdown-toggle.Print_print {
+    background-image: url(../img/icons_24/print.png);
+}
+
+.order, .order:hover, .order:focus, .order:active, .order.active, .open > .dropdown-toggle.Order_order {
+    background-image: url(../img/icons_24/orders.png);
+}
+
+.tenderevalcommittee, .tenderevalcommittee:hover, .tenderevalcommittee:focus, .tenderevalcommittee:active, .tenderevalcommittee.active, .open > .dropdown-toggle.tenderevalcommittee {
+    background-image: url(../img/icons_24/tender-evaluation-committee.png);
+}
+
+.tenderopenprocess, .tenderopenprocess:hover, .tenderopenprocess:focus, .tenderopenprocess:active, .tenderopenprocess.active, .open > .dropdown-toggle.tenderopenprocess {
+    background-image: url(../img/icons_24/tender-opening-process.png);
+}
+
+.tenderworks, .tenderworks:hover, .tenderworks:focus, .tenderworks:active, .tenderworks.active, .open > .dropdown-toggle.tenderworks {
+    background-image: url(../img/icons_24/tender-works.png);
+}
+
+.tenderworksProcess, .tenderworksProcess:hover, .tenderworksProcess:focus, .tenderworksProcess:active, .tenderworksProcess.active, .open > .dropdown-toggle.tenderworksProcess {
+    background-image: url(../img/icons_24/tenderworksProcess1.png);
+}
+
+.workdetails, .workdetails:hover, .workdetails:focus, .workdetails:active, .workdetails.active, .open > .dropdown-toggle.workdetails {
+    background-image: url(../img/icons_24/work-details.png);
+}
+
+.soldtenderlist, .soldtenderlist:hover, .soldtenderlist:focus, .soldtenderlist:active, .soldtenderlist.active, .open > .dropdown-toggle.soldtenderlist {
+    background-image: url(../img/icons_24/sold-tender-list.png);
+}
+
+.userlocation, .userlocation:hover, .userlocation:focus, .userlocation:active, .userlocation.active, .open > .dropdown-toggle.userlocation {
+    background-image: url(../img/icons_24/user-location.png);
+}
+
+
+.fa_mdl_ua { /* User Administration */
+    background-image: url(../../../Design/img/menu/fa_mdl_ua.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_in { /* Irrigation Network */
+    background-image: url(../../../Design/img/menu/fa_mdl_in.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_dod { /* Daily Operational Data */
+    background-image: url(../../../Design/img/menu/fa_mdl_dod.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_wt { /* Water Theft */
+    background-image: url(../../../Design/img/menu/fa_mdl_wt.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_si { /* Schedule & Inspections */
+    background-image: url(../../../Design/img/menu/fa_mdl_si.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_sd { /* Small Dams */
+    background-image: url(../../../Design/img/menu/fa_mdl_sd.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_if { /* Irrigator Feedback */
+    background-image: url(../../../Design/img/menu/fa_mdl_if.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_cm { /* Complaints Management */
+    background-image: url(../../../Design/img/menu/fa_mdl_cm.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_tm { /* Tenders Monitoring */
+    background-image: url(../../../Design/img/menu/fa_mdl_tm.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_fo { /* Flood Operations */
+    background-image: url(../../../Design/img/menu/fa_mdl_fo.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_co { /* Closure Operations */
+    background-image: url(../../../Design/img/menu/fa_mdl_co.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_pws { /* Public Website */
+    background-image: url(../../../Design/img/menu/fa_mdl_pws.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_ew { /* Efflent Water */
+    background-image: url(../../../Design/img/menu/fa_mdl_ew.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_pe { /* Performance Evaluation */
+    background-image: url(../../../Design/img/menu/fa_mdl_pe.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_am { /* Assets Management */
+    background-image: url(../../../Design/img/menu/fa_mdl_am.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_auc { /* Auctions */
+    background-image: url(../../../Design/img/menu/fa_mdl_auc.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_rpt { /* Reports */
+    background-image: url(../../../Design/img/menu/fa_mdl_rpt.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_acc { /* Accounts */
+    background-image: url(../../../Design/img/menu/fa_mdl_acc.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_sm { /* Special Monitoring */
+    background-image: url(../../../Design/img/menu/fa_mdl_sm.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_sp { /* Seasonal Planning */
+    background-image: url(../../../Design/img/menu/fa_mdl_sp.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_wl { /* Water Losses */
+    background-image: url(../../../Design/img/menu/fa_mdl_wl.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_fews { /* FEWS */
+    background-image: url(../../../Design/img/menu/fa_mdl_fews.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_ed { /* Entitlements & Deliveries */
+    background-image: url(../../../Design/img/menu/fa_mdl_ed.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_rp { /* Rotational Programs */
+    background-image: url(../../../Design/img/menu/fa_mdl_rp.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_wc { /* Water Charges */
+    background-image: url(../../../Design/img/menu/fa_mdl_wc.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.fa_mdl_gis { /* WebGIS */
+    background-image: url(../../../Design/img/menu/fa_mdl_gis.png);
+    height: 27px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.wordicon, .wordicon:hover, .wordicon:focus, .wordicon:active, .wordicon.active, .open > .dropdown-toggle.wordicon {
+    background-image: url(../img/icons_24/ms-word.png);
+}
+
+.pdficon, .pdficon:hover, .pdficon:focus, .pdficon:active, .pdficon.active, .open > .dropdown-toggle.pdficon {
+    background-image: url(../img/icons_24/pdf.png);
+}

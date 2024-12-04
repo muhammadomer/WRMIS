@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>DBConnection</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@StructureTypeID">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@StructureID">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>select case when @StructureTypeID in (11,13,15) then (select InfrastructureName from FO_ProtectionInfrastructure where ID = @StructureID) 
+			when @StructureTypeID in (1,2) then (select Name from CO_Station where ID = @StructureID)
+			when @StructureTypeID = 17 then (select Name from FO_Drain where ID = @StructureID)
+		end InfrastructureName,
+(select name from CO_StructureType where id =@StructureTypeID )  InfrastructureTypeName</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="InfrastructureName">
+        <DataField>InfrastructureName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="InfrastructureTypeName">
+        <DataField>InfrastructureTypeName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

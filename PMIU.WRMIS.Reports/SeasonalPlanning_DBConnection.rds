@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="SeasonalPlanning_DBConnection">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=172.16.7.181;Initial Catalog=WRMIS_QA</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>178af20c-f2b0-48bc-9fe9-77384db78e92</DataSourceID>
+</RptDataSource>

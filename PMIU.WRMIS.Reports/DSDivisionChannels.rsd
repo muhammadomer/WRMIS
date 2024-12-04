@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>DBConnection</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@DivisionID">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>select ID, Channel
+from
+(
+select 0 as ID, 'All' as Channel
+UNION
+select distinct ch.ID, ch.Name Channel
+from co_channel ch, CO_ChannelIrrigationBoundaries cib, co_section sec, co_subdivision sd , CO_Division cd
+where ch.id = cib.channelid
+     and cib.sectionid = sec.id
+     and sec.SubDivID = sd.id
+     and sd.DivisionID = cd.ID 
+     and cd.Id = @DivisionID
+) as records
+order by case when ID = 0 then 1 else 2 end, Channel</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="ID">
+        <DataField>ID</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="Channel">
+        <DataField>Channel</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

@@ -1,0 +1,138 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF url(../Images/Header.jpg) repeat-x left top;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #A19D9A;
+}
+
+.Title, .TitleLeft, .TitleCenter, .TitleRight
+{
+	height: 28px;
+}
+.TitleLeft
+{
+	background-image: url(../Images/BlueLeftCorner.png);
+	background-repeat: no-repeat;
+}
+.TitleCenter
+{
+	background-image: url(../Images/BlueCenter.png);
+	text-align: left;
+	font-weight: bold;
+	color: White;
+}
+.TitleRight
+{
+	background-image: url(../Images/BlueRightCorner.png);
+	background-repeat: no-repeat;
+}
+.Box
+{
+	border-bottom: solid 1px #006094;
+	border-right: solid 1px #006094;
+	border-left: solid 1px #006094;
+	text-align: left;
+}
+.GirdHeader
+{
+	background-color: #C5D9EB;
+	color: Black;
+	text-align: left;
+	height: 25px;
+}
+
+.GridRowBox, .GridAlternateRow, .GridItemRow
+{
+	-moz-border-radius: 6px;
+	border: solid 1px #ABDEFB;
+	border-radius: 10px;
+}
+.GridAlternateRow
+{
+	background-color: #D6EBFF;
+	color: black;
+	height: 26px;
+}
+.GridItemRow
+{
+	color: black;
+	height: 26px;
+}
+.GridAppStore
+{
+	font-weight: bold;
+	font-size: 8pt;
+}
+.GridApp
+{
+	font-weight: bold;
+	font-size: 8pt;
+}
+.GridAuthor
+{
+	color: #5D85AE;
+}
+.GridAuthor span
+{
+	font-weight: bold;
+}
+.GridFooter
+{
+	background-image: url('../Images/FooterBackground.png');
+	color: Black;
+}
+
+.PagingContainer
+{
+	border-top: 1px solid #C2C2C2;
+}
+.PagingContainer, .PagingContainer input, .PagingContainer select
+{
+	font-family: Verdana;
+	font-size: 8pt;
+}
+.PagingIcon, .PagingFirst, .PagingPrevious, .PagingNext, .PagingLast
+{
+	height: 16px;
+	width: 16px;
+	border-style: none;
+	cursor: pointer;
+}
+.PagingFirst
+{
+	background-image: url('../Images/PagingFirst.png');
+}
+.PagingPrevious
+{
+	background-image: url('../Images/PagingPrevious.png');
+}
+.PagingNext
+{
+	background-image: url('../Images/PagingNext.png');
+}
+.PagingLast
+{
+	background-image: url('../Images/PagingLast.png');
+}
+.CurrentPage
+{
+	text-align: center;
+}
+.PagingNavigation td
+{
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.PagingRecords td
+{
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.PagingShowingRecord
+{
+	padding-left: 2px;
+	padding-right: 2px;
+}

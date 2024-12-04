@@ -1,0 +1,13 @@
+11/21/2017 2:09:58 PM		10004	WebApp	Error	Exp: Object reference not set to an instance of an object.		
+11/21/2017 2:10:44 PM		10004	WebApp	Error	Exp: Object reference not set to an instance of an object.		
+11/21/2017 2:15:10 PM		10004	WebApp	Error	Exp: Input string was not in a correct format.		
+11/21/2017 2:49:12 PM		2	WebApp	Error	Exp: The cast to value type 'System.Double' failed because the materialized value is null. Either the result type's generic parameter or the query must use a nullable type.		
+11/21/2017 2:49:19 PM		2	WebApp	Error	Exp: The cast to value type 'System.Double' failed because the materialized value is null. Either the result type's generic parameter or the query must use a nullable type.		
+11/21/2017 2:49:40 PM		2	WebApp	Error	Exp: The cast to value type 'System.Double' failed because the materialized value is null. Either the result type's generic parameter or the query must use a nullable type.		
+11/21/2017 2:55:51 PM		2	WebApp	Error	Exp: The cast to value type 'System.Double' failed because the materialized value is null. Either the result type's generic parameter or the query must use a nullable type.		
+11/21/2017 3:05:33 PM		2	WebApp	Error	Exp: The cast to value type 'System.Double' failed because the materialized value is null. Either the result type's generic parameter or the query must use a nullable type.		
+11/21/2017 3:05:57 PM		2	WebApp	Error	Exp: The cast to value type 'System.Double' failed because the materialized value is null. Either the result type's generic parameter or the query must use a nullable type.		
+11/21/2017 3:07:44 PM		2	WebApp	Error	Exp: The cast to value type 'System.Double' failed because the materialized value is null. Either the result type's generic parameter or the query must use a nullable type.		
+11/21/2017 3:10:02 PM		2	WebApp	Error	Exp: The cast to value type 'System.Double' failed because the materialized value is null. Either the result type's generic parameter or the query must use a nullable type.		
+11/21/2017 3:16:14 PM		2	WebApp	Error	Exp: The cast to value type 'System.Double' failed because the materialized value is null. Either the result type's generic parameter or the query must use a nullable type.		
+11/21/2017 3:16:53 PM		2	WebApp	Error	Exp: The cast to value type 'System.Double' failed because the materialized value is null. Either the result type's generic parameter or the query must use a nullable type.		

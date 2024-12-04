@@ -1,0 +1,9 @@
+10/18/2016 3:04:26 PM: 	 GetInspectionConditions	An error occurred while executing the command definition. See the inner exception for details.
+10/18/2016 3:29:30 PM: 	 GetFloodInspectionsByStructureType	Parameter count does not match Parameter Value count.
+10/18/2016 3:32:16 PM: 	 GetFloodInspectionsByStructureType	Parameter count does not match Parameter Value count.
+10/18/2016 3:32:21 PM: 	 GetFloodInspectionsByStructureType	Parameter count does not match Parameter Value count.
+10/18/2016 3:33:16 PM: 	 GetFloodInspectionsByStructureType	Parameter count does not match Parameter Value count.
+10/18/2016 3:33:47 PM: 	 GetFloodInspectionsByStructureType	Parameter count does not match Parameter Value count.
+10/18/2016 4:42:37 PM: 	 GetFloodInspectionsByStructureType	Column 'StructureTypeID' does not belong to table Table.
+10/18/2016 4:43:25 PM: 	 GetFloodInspectionsByStructureType	Column 'StructureType' does not belong to table Table.
+10/18/2016 4:43:52 PM: 	 GetFloodInspectionsByStructureType	Column 'StructureType' does not belong to table Table.
